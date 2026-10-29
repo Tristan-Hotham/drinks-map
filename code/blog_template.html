@@ -1,0 +1,159 @@
+<!-- wp:paragraph -->
+<p><em>Champagne, Cognac, Rioja, Tequila: drinks are named after places more than almost anything else we buy. I tried to put every drink back where it came from, on one map, and found that the map says as much about who keeps the records as about who drinks.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/drinks-map/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/{{meta.doi|raw}}">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>After mapping what the world eats, the obvious next question was what it drinks. Wine and its appellations, beer and its styles, cider and perry, spirits of every kind, sake and the other rice drinks, and the old traditional drinks such as kvass, pulque, chicha and palm wine. Plus the brands, the people who make them, and the drink each country holds up as its own.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>No single dataset covers all of that, so the map combines four open sources. Wikidata, the open database behind Wikipedia, gives {{drinks.n|int}} named drinks with a country. The EU's register of protected names gives {{gi.n|int}} wines, spirits, beers and ciders whose names are protected in law. OpenStreetMap's volunteer mappers have tagged {{producers.osm_n|int}} wineries, breweries and distilleries. And two Wikipedia lists name the national drink of {{national.n_drink|int}} countries and the national liquor of {{national.n_liquor|int}}.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_producers_map.png|World dot map of every winery, brewery and distillery in OpenStreetMap: dense clusters across Europe, the eastern and western United States, southern Australia, Chile, Argentina and the South African Cape, and only scattered dots across most of Africa and Asia|Every winery (claret), brewery (amber) and distillery (navy) in OpenStreetMap.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The national drink is often tea</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Start with the pub question: what is your country's national drink? Wikipedia's list is a crowd's answer, and it is more sober than you might expect. Of the {{national.n_drink|int}} countries in it, {{national.first_nonalc|int}} ({{national.first_nonalc_pct|pc}}) list a drink without alcohol first: tea in {{national.first_tea|int}} countries, coffee in {{national.first_coffee|int}}, and everything else from mate in Argentina and lassi in India to kava across the Pacific.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_national_map.png|World map colouring each country by the kind of the first drink in Wikipedia's list of national drinks: green tea across China, North Africa and the Sahel, dark brown coffee in the United States, Arabia and Ethiopia, pale blue other non-alcoholic drinks across South Asia, Australia and much of South America, red spirits across Eastern Europe, Mexico and Central Africa, and teal for kvass in Russia|The first drink listed for each country in Wikipedia's list of national drinks, by kind.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Among countries that name an alcoholic drink first, spirits of every kind lead ({{national.first_spirits|int}} countries), brandies and fruit spirits most of all, then beer ({{national.first_kind.beer|int}}) and cocktails such as Brazil's caipirinha ({{national.first_kind.cocktail|int}}). The separate list of national liquors reads like a map of distilling traditions: rakija across the Balkans, arak around the eastern Mediterranean, rum in the Caribbean, baijiu in China, soju in Korea, shochu in Japan, tequila and mezcal in Mexico, and pisco claimed by both Peru and Chile. Across both lists, the most named drink is rum ({{national.most_named.0.count|int}} countries).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Wine: a continent of protected names</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wine is where drink and place are welded together by law. The EU register holds {{gi.by_cat.wine|int}} protected wine names: Italy has {{gi.top_wine.0.n|int}}, France {{gi.top_wine.1.n|int}}, Spain {{gi.top_wine.2.n|int}} and Greece {{gi.top_wine.3.n|int}}. I could put {{gi.placed|int}} of the {{gi.n|int}} protected drink names on the map, through the place Wikidata links to each one or a place of the same name in the same country. The region with the most is {{gi.wine_top_regions.0.name|raw}} ({{gi.wine_top_regions.0.n|int}}), home of Burgundy's village appellations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_europe_wine.png|Map of Europe shading each region by its number of protected wine names, darkest in Bourgogne-Franche-Comté, Occitania and Nouvelle-Aquitaine in France and in Veneto and Piedmont in Italy, with dots for the names placed on the map across France, Italy, Spain, Portugal, Greece, Hungary, Romania and Bulgaria|Protected wine names per region (shading) and the names placed on the map (dots).}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>On the ground, OpenStreetMap has {{producers.osm_by_group.wine|int}} wineries. France ({{producers.osm_top_wine.0.n|int}}) and Germany ({{producers.osm_top_wine.1.n|int}}) lead, and the busiest single region is {{producers.osm_topreg_wine.0.name|raw}} ({{producers.osm_topreg_wine.0.n|int}}). That says something about small family estates along German rivers, and something about how keen German mappers are.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Two maps of beer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Beer is where the sources part company. Wikidata knows {{drinks.by_group.beer|int}} named beers, almost all individual products, and {{drinks.beer_top3_pct|pc}} of them come from three countries: the United States, the Netherlands and Belgium. That is not a ranking of beer cultures. It is a ranking of who has typed beers into Wikidata: the makers with the most entries are small brewers such as {{drinks.beer_top_makers.0.name|raw}}, with {{drinks.beer_top_makers.0.n|int}} beers each listed one by one.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_beer_two_maps.png|Two bar charts side by side. Left, named beers in Wikidata: United States 41 per cent, Netherlands 27, Belgium 10, then Sweden, Germany and the UK at 2 to 3 per cent. Right, breweries in OpenStreetMap: United States 32 per cent, then France 10, the UK 8, Germany 8, Canada 5 and Spain 4|The same drink, two records: shares of Wikidata's named beers and of OpenStreetMap's breweries, by country.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The breweries tell a broader story: {{producers.osm_by_group.beer|int}} of them in OpenStreetMap, led by the United States, France, the United Kingdom and Germany, with {{producers.osm_topreg_beer.0.name|raw}} the busiest region ({{producers.osm_topreg_beer.0.n|int}}). Protected beer names are rare, just {{gi.by_cat.beer|int}}, {{cards.beer_cze_deu|int}} of them Czech or German.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Spirits, sake and the old drinks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Spirits are the most varied family and the most thinly recorded. The register protects {{gi.by_cat.spirits|int}} spirit names, {{gi.spirit_families.brandy|int}} of them brandies and fruit spirits: Bulgarian grozdova rakya, Hungarian pálinka, Italian grappa. OpenStreetMap has {{producers.osm_by_group.spirits|int}} distilleries, and the region with the most is {{producers.osm_topreg_spirits.0.name|raw}} ({{producers.osm_topreg_spirits.0.n|int}}).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_spirit_names.png|Bar chart of protected spirit names in the EU register by kind: brandy and fruit spirits 143, liqueurs and bitters 59, gin and juniper 16, rum 14, anise spirits 14, vodka 8, then a handful each of other spirits, baijiu, whisky, rice drinks and one tequila|Protected spirit names by kind, sorted by words in their names.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Some of the oldest drinks leave the faintest trace. Wikidata lists {{producers.sake_wikidata|int}} sake breweries, {{producers.sake_top.0.n|int}} of them in Japan. Cider and perry have {{gi.cider_n|int}} protected names, from Normandy and Asturias to Herefordshire. Kvass, pulque, chicha, tej, boza and palm wine appear in Wikidata as kinds of drink with a country, and almost never as anything more: much of what they are is made at home or sold in markets, not catalogued.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A map of who keeps the records</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Put every source together and Europe holds {{records.europe_pct|pc}} of the {{records.n|int}} records, North America {{records.by_continent.1.pct|pc}}, and Africa {{records.africa_pct|f1}}%. Read naively, the map would say the Netherlands is a greater beer nation than Germany and that Africa barely drinks. Read honestly, it shows where open data about drinks is rich and where it is silent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_coverage.png|Bar chart of all records by continent: Europe 43,812 (64.7 per cent), North America 18,566 (27.4 per cent), then Asia, South America and Oceania with about 1,500 to 1,700 each, and Africa 504 (0.7 per cent)|All records by continent: named drinks, producers and protected names.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>Wikidata knows {{drinks.top_beer.0.n|int}} American beers by name, and Ethiopian tej only as a word.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I fetched everything in a browser on {{meta.retrieved|raw}}. From Wikidata I took every type of alcoholic drink and every named drink below it, plus alcohol brands and a few drinks Wikidata does not connect to the rest (rum, kvass, kumis and tuba), and gave each a family from Wikidata's own class tree. Each drink is placed in its country of origin, and on the map at its own coordinates, its location's or its maker's. Cocktails are left out. Protected names come from the EU's eAmbrosia register and are placed through Wikidata, partly by matching names, so a few dots will sit on a namesake village. Producers come from Wikidata and OpenStreetMap, and national drinks from Wikipedia's two lists. The paper sets out every step and caveat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is a map of where drinks come from and what the open record says about them. It counts records, not litres, it does not rank anything, and nothing in it is a recommendation to drink. No logos are used.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/drinks-map/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/{{meta.doi|raw}}">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/drinks-map">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>The sister map of food is here: <a href="https://maps.tristanhotham.com/food-map/">What does the world eat?</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="https://www.wikidata.org/">Wikidata</a>, via <a href="https://qlever.cs.uni-freiburg.de/wikidata">QLever</a>. CC0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="https://ec.europa.eu/agriculture/eambrosia/geographical-indications-register/">eAmbrosia, the EU geographical indications register</a>, public API. © European Union, reused under the Commission's reuse policy (CC BY 4.0).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, via the Overpass API. ODbL 1.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>English Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_national_drinks">List of national drinks</a> and <a href="https://en.wikipedia.org/wiki/List_of_national_liquors">List of national liquors</a>. CC BY-SA 4.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="https://www.naturalearthdata.com/">Natural Earth</a> countries and states and provinces (public domain), and <a href="https://www.geonames.org/">GeoNames</a> city names (CC BY 4.0).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

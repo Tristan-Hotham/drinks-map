@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>What Does the World Drink?</title>
+<meta name="description" content="A world map of drinks and where they come from: wine, beer, cider and perry, spirits, sake and traditional drinks, national drinks, {{gi.n|int}} protected names and {{producers.osm_n|int}} wineries, breweries and distilleries, from Wikidata, Wikipedia, the EU register and OpenStreetMap.">
+<meta property="og:title" content="What does the world drink? Wine, beer, spirits, sake and national drinks on one map">
+<meta property="og:description" content="{{records.n|int}} records of drinks and their makers in {{records.n_countries|int}} countries: named drinks, protected names, wineries, breweries, distilleries and the national drink of {{national.n_drink|int}} countries.">
+<meta property="og:image" content="https://maps.tristanhotham.com/drinks-map/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/drinks-map/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Bottle shop: label paper, claret, hop gold, apple green, copper. Drink colours are set in the script. */
+:root{
+  --bg:#F8F4EC; --panel:#EFE8DA; --fg:#221C26; --muted:#6C6470; --rule:#E2D9C8; --card:#FFFCF6; --border:#D2C6B2;
+  --hot:#8E1F45; --cool:#3E5FB8; --gold:#E0A106; --land:#ECE5D7; --sea:#F3EFE7;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17141A; --panel:#221E26; --fg:#EFE9E2; --muted:#A99FAC; --rule:#38323E; --card:#1E1A22; --border:#4A4250;
+  --hot:#E0718F; --cool:#8EA6E6; --gold:#F2C14E; --land:#2A2530; --sea:#1B181F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17141A; --panel:#221E26; --fg:#EFE9E2; --muted:#A99FAC; --rule:#38323E; --card:#1E1A22; --border:#4A4250;
+  --hot:#E0718F; --cool:#8EA6E6; --gold:#F2C14E; --land:#2A2530; --sea:#1B181F; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,11vw,96px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)} h1 .b{color:var(--gold)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:54ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:290px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.scrollrow[hidden]{display:none}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.tabs .btn[aria-pressed="true"]{background:var(--tab,var(--hot));border-color:var(--tab,var(--hot));color:#fff}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:660px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 26px/1.1 var(--display);margin:2px 0 4px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side ol,.side ul{margin:4px 0 8px;padding-left:20px}
+.side li{margin:3px 0}
+.side li small,.side td small{color:var(--muted)}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px}
+.side td{padding:4px 4px 4px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.side td.num{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font:500 11px/1 var(--mono);padding:4px 7px;border-radius:999px;color:#fff;margin:0 4px 4px 0}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.15)}
+.lmap{height:620px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(62vh,460px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,520px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.cityL{font:500 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.cityL i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--fg);margin-right:4px;vertical-align:1px}
+.cityL.s{font-size:10px;font-weight:400}
+.regL{font:600 10.5px/1.1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none;text-align:center}
+.regL small{display:block;font-weight:400;color:var(--muted)}
+.cntL{font:700 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-transform:uppercase;letter-spacing:.06em;opacity:.75;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg);pointer-events:none;text-align:center}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(300px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote b{font-weight:600}
+.mapnote:empty{display:none}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:13px;height:13px;margin-right:6px;border-radius:2px;border:1px solid rgba(0,0,0,.15)}
+.legend i.c{border-radius:50%}
+.legend i.r{border-radius:50%;background:transparent!important;border:2.5px solid}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+@media (max-width:760px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-left:8px solid var(--c,var(--hot));padding:12px 14px;font:400 13px/1.5 var(--mono)}
+.card b{font:600 19px/1.2 var(--display);display:block;margin-bottom:2px}
+.card .big{font:900 28px/1.05 var(--display);margin:6px 0 2px}
+.card .big span{color:var(--muted);font:400 13px/1 var(--mono)}
+.card button{margin-top:8px}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Drink</span><span>World, 2026</span></div>
+<header class="hero">
+  <h1>What does the <span class="a">world</span> <span class="b">drink</span>?</h1>
+  <svg class="mark" viewBox="0 0 120 140" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Wine from Burgundy, beer from Bavaria, sake from Japan, tequila from Jalisco, and the tea, coffee and kava that dozens of countries name as their national drink. One map of where the world's drinks come from and who makes them, built from open data, with honest gaps where the record is thin.</p>
+</header>
+<div class="byline">Dr Tristan Hotham, Independent researcher · 2026 · Data: Wikidata; English Wikipedia; EU eAmbrosia register; OpenStreetMap; Natural Earth</div>
+
+<div class="stats">
+  <div><b class="h">{{gi.n|int}}</b><span>protected drink names in the EU register, from {{gi.n_countries|int}} countries</span></div>
+  <div><b class="g">{{producers.osm_n|int}}</b><span>wineries, breweries and distilleries mapped in OpenStreetMap</span></div>
+  <div><b class="c">{{drinks.n|int}}</b><span>named drinks in Wikidata with a country of origin</span></div>
+  <div><b>{{national.n_drink|int}}</b><span>countries with a suggested national drink; {{national.first_nonalc_pct|pc}} first name one without alcohol</span></div>
+</div>
+
+<p class="lede">Ask where a drink comes from and you usually get a place: Champagne, Cognac, Rioja, Islay, Jerez, Jalisco. Drinks are tied to places more tightly than almost anything else we buy, sometimes by law. So I tried to put the world's drinks on one map: wines and their appellations, beers and their styles, ciders and perries, spirits of every kind, sake and other rice drinks, the traditional drinks such as mead, kvass, pulque and palm wine, the brands and the people who make them, and the drink each country holds up as its own.</p>
+<p>The map below draws on four open sources. <b>Wikidata</b> gives {{drinks.n|int}} named drinks with a country (types and styles such as tequila or Kölsch, and brands and individual products), plus {{producers.wikidata_n|int}} wineries, breweries and distilleries. The <b>EU register of geographical indications</b> (eAmbrosia) gives {{gi.n|int}} protected names for wines, spirits, beers and ciders. <b>OpenStreetMap</b> gives {{producers.osm_n|int}} mapped producers. And two <b>English Wikipedia</b> lists give the national drink of {{national.n_drink|int}} countries and the national liquor of {{national.n_liquor|int}}. Choose a drink, then click a country, a region or a dot.</p>
+
+<h2><span class="n">01 · The map</span>Every drink, back to where it came from</h2>
+<div class="bleed" id="atlas">
+<div class="controls">
+  <div class="scrollrow tabs" id="layerTabs"><span class="ctl-l">Drink</span></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="natRow"><span class="ctl-l">Show</span><button class="btn" data-m="first" aria-pressed="true">First listed</button><button class="btn" data-m="alc">First alcoholic</button><button class="btn" data-m="liq">National liquor</button></div>
+  <div class="scrollrow" id="subRow" hidden><span class="ctl-l">Kind</span></div>
+</div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a country, region or drink" aria-label="Search a country, region or drink" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="focusRow"><span class="ctl-l">Zoom to</span></div>
+</div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="World drinks map"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src" id="mapsrc"></p>
+</div>
+
+<h2><span class="n">02 · National drinks</span>Tea, coffee and kava before beer</h2>
+<p>Wikipedia's list of national drinks is a crowd's answer to a pub question, and it is more sober than you might expect. Of the {{national.n_drink|int}} countries in it, {{national.first_nonalc|int}} ({{national.first_nonalc_pct|pc}}) list a drink without alcohol first: tea in {{national.first_tea|int}}, coffee in {{national.first_coffee|int}}, and the rest everything from mate in Argentina and lassi in India to kava across the Pacific. Among alcoholic drinks named first, spirits of every kind lead ({{national.first_spirits|int}} countries, brandies and fruit spirits most of all), then beer ({{national.first_kind.beer|int}}), cocktails such as Brazil's caipirinha ({{national.first_kind.cocktail|int}}) and traditional drinks ({{national.first_kind.trad|int}}).</p>
+<div class="figure"><p class="fig-h">What each country names first</p><p class="fig-sub">The first drink in each country's entry in Wikipedia's 'List of national drinks' ({{national.n_drink|int}} countries), by kind. Hover a bar for countries.</p><div class="chart" id="natChart"></div></div>
+<p>The separate list of national liquors covers {{national.n_liquor|int}} countries and is a map of distilling traditions: rakija and its cousins across the Balkans, arak around the eastern Mediterranean, rum in the Caribbean, baijiu in China, soju in Korea, shochu in Japan, tequila and mezcal in Mexico, pisco in Peru and Chile. The most named drinks across both lists are rum ({{national.most_named.0.count|int}} countries) and coffee ({{national.most_named.1.count|int}}).</p>
+<div class="cta"><a href="#atlas" data-show="nat" data-focus="GEO">Georgia on the map</a><a href="#atlas" data-show="nat" data-mode="liq" data-focus="BGR">Bulgaria's national liquor</a></div>
+
+<h2><span class="n">03 · Wine</span>A continent of names</h2>
+<p>Wine is where drink and place are welded together by law. The EU register holds {{gi.by_cat.wine|int}} protected wine names, and they are overwhelmingly European: Italy has {{gi.top_wine.0.n|int}}, France {{gi.top_wine.1.n|int}}, Spain {{gi.top_wine.2.n|int}} and Greece {{gi.top_wine.3.n|int}}. I could place {{gi.placed|int}} of the {{gi.n|int}} drink names ({{gi.placed_pct|pc}}) on the map, through the place Wikidata links to each one or a place of the same name in the same country. The region with the most placed wine names is {{gi.wine_top_regions.0.name|raw}} in France ({{gi.wine_top_regions.0.n|int}}), home of Burgundy's village appellations.</p>
+<div class="figure"><p class="fig-h">Protected wine names by country</p><p class="fig-sub">Wine GIs (PDO and PGI) in the EU eAmbrosia register, registered or applied for, including GIs of non-EU countries protected in the EU.</p><div class="chart" id="giChart"></div></div>
+<p>OpenStreetMap's mappers have tagged {{producers.osm_by_group.wine|int}} wineries. France ({{producers.osm_top_wine.0.n|int}}) and Germany ({{producers.osm_top_wine.1.n|int}}) lead, and the single busiest region is {{producers.osm_topreg_wine.0.name|raw}} ({{producers.osm_topreg_wine.0.n|int}}), home of the Mosel, Pfalz and Rheinhessen wine regions: a sign of how keen German mappers are as well as how many small estates there are. The grapes themselves have origins too: Wikidata gives a country of origin for {{grapes.n_origin|int}} of its {{grapes.n_all|int}} grape varieties, {{grapes.top.0.n|int}} of them Italian, which probably says more about how thoroughly Italian varieties have been entered in Wikidata than about Italy.</p>
+
+<h2><span class="n">04 · Beer</span>Two maps of beer</h2>
+<p>Here the open record splits in two. Wikidata knows {{drinks.by_group.beer|int}} named beers, almost all of them individual products rather than styles ({{drinks.beer_products_pct|pc}}), and {{drinks.beer_top3_pct|pc}} come from just three countries: the United States, the Netherlands and Belgium. That is not a ranking of beer cultures but of who has typed beers into Wikidata: the makers with the most beers in it are small brewers such as {{drinks.beer_top_makers.0.name|raw}} ({{drinks.beer_top_makers.0.n|int}} beers) and {{drinks.beer_top_makers.1.name|raw}} ({{drinks.beer_top_makers.1.n|int}}).</p>
+<div class="two">
+<div class="figure"><p class="fig-h">Named beers in Wikidata</p><p class="fig-sub">Share of {{drinks.by_group.beer|int}} beers with a country.</p><div class="chart" id="beerA"></div></div>
+<div class="figure"><p class="fig-h">Breweries in OpenStreetMap</p><p class="fig-sub">Share of {{producers.osm_by_group.beer|int}} mapped breweries.</p><div class="chart" id="beerB"></div></div>
+</div>
+<p>The breweries on the ground tell a broader story. Of the {{producers.osm_by_group.beer|int}} breweries in OpenStreetMap the United States has {{producers.osm_top_beer.0.n|int}}, then France, the United Kingdom and Germany, and the busiest single region is {{producers.osm_topreg_beer.0.name|raw}} ({{producers.osm_topreg_beer.0.n|int}}). Protected beer names are few, {{gi.by_cat.beer|int}} in the register, {{cards.beer_cze_deu|int}} of them Czech or German: České pivo, Bayerisches Bier, Kölsch, Münchener Bier.</p>
+
+<h2><span class="n">05 · Spirits</span>From rakija to baijiu</h2>
+<p>Spirits are the most varied family and the most thinly recorded. Wikidata names {{drinks.by_group.spirits|int}} spirits with a country, from {{drinks.n_spirits_countries|int}} countries, and the register protects {{gi.by_cat.spirits|int}} spirit names, {{gi.spirit_families.brandy|int}} of them brandies and fruit spirits (Bulgarian grozdova rakya, Hungarian pálinka, Italian grappa) and {{gi.spirit_families.liqueur|int}} liqueurs. OpenStreetMap has {{producers.osm_by_group.spirits|int}} distilleries; the region with the most is {{producers.osm_topreg_spirits.0.name|raw}} ({{producers.osm_topreg_spirits.0.n|int}}), as anyone who has driven through Speyside would guess.</p>
+<div class="figure"><p class="fig-h">Protected spirit names by kind</p><p class="fig-sub">{{gi.by_cat.spirits|int}} spirit GIs in the EU register, sorted by words in their names (brandy, grappa, rakija, liqueur, gin, ouzo...).</p><div class="chart" id="spChart"></div></div>
+
+<h2><span class="n">06 · Sake, cider and the old drinks</span>Small numbers, long histories</h2>
+<p>Some of the oldest drinks leave the faintest trace in open data. Wikidata lists {{producers.sake_wikidata|int}} sake breweries, {{producers.sake_top.0.n|int}} of them in Japan, and only {{drinks.by_group.rice|int}} named rice drinks with a country, such as sake and huangjiu. Cider and perry have {{gi.cider_n|int}} protected names, from Normandy and Brittany to Asturias, the Basque Country and the cider counties of Herefordshire, Gloucestershire and Worcestershire. Kvass, pulque, chicha, tej, boza, kumis and palm wine appear as types of drink with a country, and mead not even that, but almost never as products or producers: much of it is made at home or sold in markets, not catalogued.</p>
+<div class="cards" id="cards"></div>
+
+<h2><span class="n">07 · The gaps</span>A map of who keeps the records</h2>
+<p>Put every source together and Europe holds {{records.europe_pct|pc}} of the {{records.n|int}} records, North America {{records.by_continent.1.pct|pc}}, and Africa {{records.africa_pct|f1}}%. That is not a map of what the world drinks. It is a map of registers, of mappers, and of the people who type drinks into Wikidata. The protected-name register is the EU's; craft brewers and their fans catalogue beer; traditional drinks made at home leave no paperwork.</p>
+<div class="figure"><p class="fig-h">Records by continent</p><p class="fig-sub">All {{records.n|int}} records: named drinks, producers in Wikidata and OpenStreetMap, and protected names.</p><div class="chart" id="contChart"></div></div>
+<p class="pull">Wikidata knows {{drinks.top_beer.0.n|int}} American beers by name, and Ethiopian tej only as a word.</p>
+
+<h2><span class="n">08 · How I did this</span>Methods and caveats</h2>
+<p><b>Named drinks.</b> I took every Wikidata class below 'alcoholic beverage' and every item that is an instance of one, plus alcohol brands, and rum, kvass, kumis and tuba, which Wikidata does not connect to that class. Each drink gets a family from its place in Wikidata's class tree (whisky, gin, rum, agave spirits, vodka, brandy, anise, East Asian spirits, liqueurs, other spirits; wine; beer; cider and perry; sake and rice drinks; traditional drinks). Cocktails and other mixed drinks are left out. Its country is its country of origin, else its country, else the country of its location or maker; its point is its own coordinates, else its location's, else its maker's. A brand whose maker's head office is abroad is not drawn there. {{drinks.n_point|int}} of {{drinks.n|int}} named drinks have a point.</p>
+<p><b>Protected names.</b> The EU eAmbrosia register lists geographical indications for wine, spirits, aromatised wine and food. I kept the wine and spirit GIs and the food GIs whose customs code is beer, wine, cider and other fermented drinks, or spirits, leaving out cancelled and rejected names. A GI is placed through the Wikidata item that carries its eAmbrosia ID, or through a Wikidata place with the same name in the same country. Name matching is approximate: a few names will have landed on a namesake village, so treat a single dot with care.</p>
+<p><b>Producers.</b> Wikidata wineries, breweries, distilleries, sake breweries and cider mills, and OpenStreetMap features tagged as a winery, brewery, distillery or cider maker. OpenStreetMap is mapped by volunteers and is much fuller in some countries than others.</p>
+<p><b>National drinks.</b> The country lines of Wikipedia's 'List of national drinks' and 'List of national liquors', with each linked drink classified through Wikidata. Some countries list several drinks; I show the first. These lists are informal and some entries are unsourced.</p>
+<p><b>Regions.</b> Points are placed in Natural Earth states and provinces, merged into regions for Spain, Italy, France, Portugal and England, as in the sister study of food.</p>
+<p><b>What this is not.</b> It is not a map of what people drink or how much. It counts records, not litres, and it does not rank drinks. Coverage differs enormously between countries and families, as section 07 shows. Names of drinks and brands are used only to say where they come from; no logos are shown, and nothing here is a recommendation to drink.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>Wikidata, via QLever (https://qlever.cs.uni-freiburg.de/wikidata), retrieved {{retrieved|raw}}. CC0.</li>
+<li>English Wikipedia, 'List of national drinks' and 'List of national liquors'. CC BY-SA 4.0. The national drink table is derived from this text, so it is shared under CC BY-SA 4.0.</li>
+<li>EU geographical indications register eAmbrosia (https://ec.europa.eu/agriculture/eambrosia/), public API, © European Union, reused under the Commission's reuse policy (CC BY 4.0). Protected names are geographical indications protected in law; they are used here only to show where each comes from.</li>
+<li>OpenStreetMap contributors, via the Overpass API. ODbL 1.0. The producer table is a derived database under the ODbL.</li>
+<li>Natural Earth countries and states and provinces (public domain), and GeoNames city names (CC BY 4.0), as prepared for the food map.</li>
+<li>Base map tiles © Esri.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23764739">Read the paper</a><a href="https://github.com/Tristan-Hotham/drinks-map">Data and code</a><a href="https://maps.tristanhotham.com/food-map/">What does the world eat?</a><a href="https://blog.tristanhotham.com/">Blog home</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) What does the world drink? Wine, beer, cider, spirits, sake and national drinks from Wikidata, Wikipedia, the EU register and OpenStreetMap. Zenodo. <a href="https://doi.org/10.5281/zenodo.23764739">https://doi.org/10.5281/zenodo.23764739</a></p>
+<p>Sister study: <a href="https://maps.tristanhotham.com/food-map/">What does the world eat?</a> Blog post: <a href="https://blog.tristanhotham.com/2026/10/29/drinks-map/">blog.tristanhotham.com</a>. Licence: data CC BY-SA 4.0 (producer table ODbL 1.0), code MIT.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const SITE = /*SITE*/;
+const WORLD = /*WORLD*/;
+const CITIES = /*CITIES*/;
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const CN = iso => (SITE.cname[iso] || iso);
+const small = () => innerWidth < 900;
+const wlink = (w, t) => w ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(w.replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t);
+const wdlink = q => q ? ` <a href="https://www.wikidata.org/wiki/${esc(q)}" target="_blank" rel="noopener" title="Wikidata">wd</a>` : "";
+
+/* ---------- drinks, groups and colours ---------- */
+const FAM = {}; SITE.fams.forEach(([k, l, c]) => FAM[k] = { l, c });
+const FK = SITE.fams.map(f => f[0]);
+const GRP = {}; SITE.groups.forEach(([k, l, c]) => GRP[k] = { l, c });
+const GK = SITE.groups.map(g => g[0]);
+const SPIR = ["whisky", "gin", "rum", "agave", "vodka", "brandy", "anise", "asian", "liqueur", "spirit"];
+const famGrp = f => SPIR.includes(f) ? "spirits" : f;
+const KIND = { tea: ["Tea", "#2F6B4F"], coffee: ["Coffee", "#3E2A1F"], soft: ["Other non-alcoholic drink", "#8FBCDD"], cocktail: ["Cocktail or mixed drink", "#F28E6B"],
+  wine: ["Wine", FAM.wine.c], beer: ["Beer", FAM.beer.c], cider: ["Cider and perry", FAM.cider.c], spirits: ["Spirit", GRP.spirits.c], rice: ["Sake and rice drinks", FAM.rice.c],
+  trad: ["Traditional drink", FAM.trad.c], alcohol: ["Other alcoholic drink", "#7D6E86"], unclassified: ["Named, not classified", "#BDB6AA"] };
+const KORDER = ["tea", "coffee", "soft", "cocktail", "wine", "beer", "cider", "spirits", "rice", "trad", "alcohol", "unclassified"];
+const kindKey = k => k == null ? null : (SPIR.includes(k) ? "spirits" : k);
+const LAYERS = [["nat", "National drinks", "#2F6B4F"], ["wine", "Wine", FAM.wine.c], ["beer", "Beer", "#B07A00"], ["cider", "Cider and perry", "#5E8A1F"],
+  ["spirits", "Spirits", GRP.spirits.c], ["rice", "Sake and rice", FAM.rice.c], ["trad", "Traditional", FAM.trad.c], ["all", "Everything", "#221C26"]];
+
+/* hero mark: a glass filled with the kinds of first-listed national drinks */
+(function () {
+  const g = document.getElementById("heroMark"); const fk = R.national.first_kind; const agg = {};
+  Object.entries(fk).forEach(([k, n]) => { const kk = kindKey(k) || "unclassified"; agg[kk] = (agg[kk] || 0) + n; });
+  const rows = KORDER.filter(k => agg[k]).map(k => [k, agg[k]]); const tot = rows.reduce((s, r) => s + r[1], 0);
+  const top = 22, bot = 128, xl0 = 18, xr0 = 102, xl1 = 30, xr1 = 90; let y = bot;
+  const clip = el("clipPath", { id: "glassClip" }, g); el("path", { d: `M${xl0} ${top} L${xr0} ${top} L${xr1} ${bot} L${xl1} ${bot} Z` }, clip);
+  const gr = el("g", { "clip-path": "url(#glassClip)" }, g);
+  rows.forEach(([k, n]) => { const h = (bot - top - 6) * n / tot; y -= h; el("rect", { x: 0, y, width: 120, height: h + .5, fill: KIND[k][1] }, gr); });
+  el("path", { d: `M${xl0} ${top} L${xl1} ${bot} L${xr1} ${bot} L${xr0} ${top}`, fill: "none", stroke: "currentColor", "stroke-width": 3, "stroke-linejoin": "round" }, g);
+  el("path", { d: `M${xl0 + 8} ${top + 10} L${xl1 + 6} ${bot - 12}`, stroke: "#fff", "stroke-opacity": .55, "stroke-width": 3, "stroke-linecap": "round" }, g);
+})();
+
+/* ---------- map machinery: base tiles, hills, labels, our place names, borders, colour strength ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri, HERE, Garmin, USGS, NGA, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, and the GIS user community';
+const LYDEF = { base: "plain", hills: true, hillK: 50, labels: false, labelK: 80, names: true, nameLvl: 1, cnames: true, borders: true, colour: 85, pts: true, osm: true, regions: true };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("drinks_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("drinks_layers", JSON.stringify(LY)); } catch (e) {} };
+const map = L.map("map", { minZoom: 1, maxZoom: 12, maxBounds: [[-75, -200], [86, 200]], zoomSnap: .5 }).setView([30, 12], small() ? 1 : 2);
+["hills:250", "fill:400", "regions:410", "labels:450", "pts:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+const canvas = L.canvas({ pane: "pts", padding: .3, tolerance: 4 });
+let base = null, hills = null, labels = null; const names = L.layerGroup(), cnames = L.layerGroup();
+function setTiles() {
+  [base, labels, hills].forEach(l => { if (l) map.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  const url = LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(url, { maxZoom: 16, maxNativeZoom: LY.base === "relief" ? 13 : 16, attribution: ESRI_ATT }).addTo(map);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 16, pane: "hills" });
+  labels = L.tileLayer(`${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  if (!base) return;
+  if (LY.hills) { hills.addTo(map); hills.setOpacity(Math.min(1, .15 + LY.hillK / 120)); } else map.removeLayer(hills);
+  if (LY.labels) { labels.addTo(map); labels.setOpacity(LY.labelK / 100); } else map.removeLayer(labels);
+  if (LY.names) names.addTo(map); else map.removeLayer(names);
+  if (LY.cnames) cnames.addTo(map); else map.removeLayer(cnames);
+  restyle(); placeNames();
+}
+function placeNames() {
+  names.clearLayers(); cnames.clearLayers();
+  const z = map.getZoom(), bb = map.getBounds().pad(.05); const boxes = [];
+  if (LY.names) {
+    const minPop = [[2, 8e6], [3, 3e6], [4, 1e6], [5, 4e5], [6, 1.5e5], [99, 4e4]].find(([zz]) => z < zz + (LY.nameLvl === 2 ? 1.5 : LY.nameLvl === 0 ? -1 : 0))[1] * (LY.nameLvl === 0 ? 2 : 1);
+    let n = 0;
+    for (const c of CITIES) {
+      if (c.pop < minPop || !bb.contains([c.lat, c.lon])) continue;
+      const pt = map.latLngToContainerPoint([c.lat, c.lon]), big = c.pop >= 5e6;
+      const bx = [pt.x - 4, pt.y - 8, pt.x + 10 + c.name.length * (big ? 6.9 : 6.3), pt.y + 7];
+      if (boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue;
+      boxes.push(bx); L.marker([c.lat, c.lon], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cityL" + (big ? "" : " s"), html: `<i></i>${esc(c.name)}`, iconSize: null, iconAnchor: [3, 6] }) }).addTo(names);
+      if (++n >= 140) break;
+    }
+  }
+  if (LY.cnames && z >= 3 && z < 7) {
+    WORLD.features.forEach(f => { const g = SITE.cpos[f.properties.iso]; if (!g || !bb.contains([g[1], g[0]])) return; const nm = CN(f.properties.iso);
+      if (z < 4 && (g[2] || 0) < 2e7) return; const pt = map.latLngToContainerPoint([g[1], g[0]]), w = nm.length * 7.2;
+      const bx = [pt.x - w / 2, pt.y - 7, pt.x + w / 2, pt.y + 7]; if (boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) return; boxes.push(bx);
+      L.marker([g[1], g[0]], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cntL", html: esc(nm), iconSize: [w, 14], iconAnchor: [w / 2, 7] }) }).addTo(cnames); });
+  }
+}
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="plain">Plain grey</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hills and mountains</label><div class="sub"><span>strength</span><input type="range" data-k="hillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Map labels</label><div class="sub"><span>strength</span><input type="range" data-k="labelK" min="20" max="100" step="5" aria-label="Map label strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="names"> Bold city names</label><div class="sub"><span>how many</span><select data-k="nameLvl" aria-label="How many city names"><option value="0">Biggest only</option><option value="1">Some</option><option value="2">Lots</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="cnames"> Country names</label></div>
+ <div class="row"><label><input type="checkbox" data-k="borders"> Borders</label></div>
+ <div class="row"><label style="font-weight:600">Colour</label><div class="sub"><span>strength</span><input type="range" data-k="colour" min="20" max="100" step="5" aria-label="Colour strength"></div></div>
+ <div class="hd">Drinks</div>
+ <div class="row"><label><input type="checkbox" data-k="regions"> Regions when zoomed in</label></div>
+ <div class="row"><label><input type="checkbox" data-k="pts"> Drinks, names and makers</label></div>
+ <div class="row"><label><input type="checkbox" data-k="osm"> OpenStreetMap producers</label><div class="sub">from zoom 5</div></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const box = map.getContainer(), btn = box.querySelector(".lyrBtn"), pan = box.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    if (k === "hillK") LY.hills = true; if (k === "labelK") LY.labels = true; if (k === "nameLvl") LY.names = true;
+    sync(); saveLY(); if (k === "base") setTiles(); else { applyLayers(); regionsForView(); legend(); }
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); regionsForView(); };
+  sync();
+})();
+const Note = L.Control.extend({ options: { position: innerWidth < 600 ? "bottomleft" : "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "mapnote"); d.id = "mapnote"; L.DomEvent.disableClickPropagation(d); return d; } });
+map.addControl(new Note());
+const Scale = L.control.scale({ imperial: false, position: "bottomright" }); Scale.addTo(map);
+
+/* ---------- state ---------- */
+const S = { layer: "nat", mode: "first", sub: "all", sel: null, reg: null, item: null };
+const SRC = {
+  nat: "National drinks: English Wikipedia, 'List of national drinks' and 'List of national liquors' (informal lists; not official). Colour: kind of the first drink listed.",
+  fam: "Colour: number of records (named drinks in Wikidata, Wikidata and OpenStreetMap producers, EU protected names) for this drink. Dots: named drinks (solid), protected names (ringed), producers (small hollow); OpenStreetMap producers from zoom 5.",
+  all: "Colour: all records. Dots coloured by drink."
+};
+
+/* ---------- values and colours ---------- */
+const BINS = [1, 3, 10, 30, 100, 300, 1000];
+function mix(a, b, t) { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return "#" + A.map((x, i) => Math.round(x + (B[i] - x) * t).toString(16).padStart(2, "0")).join(""); }
+function rampCol(n, colour) { if (!n) return null; let k = 0; BINS.forEach((b, i) => { if (n >= b) k = i; }); const land = isDark() ? "#2a2530" : "#efe6d6"; return isDark() ? mix(land, colour, .35 + .6 * k / (BINS.length - 1)) : mix(land, colour, .26 + .6 * k / (BINS.length - 1)); }
+const layerColour = () => S.layer === "all" ? (isDark() ? "#c9bdd6" : "#6E5A7E") : S.layer === "spirits" && S.sub !== "all" ? FAM[S.sub].c : (GRP[S.layer] || FAM[S.layer]).c;
+function cval(iso) {
+  const c = SITE.c[iso]; if (!c) return 0;
+  if (S.layer === "all") return Object.values(c.r).reduce((a, b) => a + b, 0);
+  if (S.layer === "spirits" && S.sub !== "all") return (c.d[S.sub] || 0) + (c.gi[S.sub] ? c.gi[S.sub][0] : 0);
+  return c.r[S.layer] || 0;
+}
+function rval(k) { const r = SITE.reg[k]; if (!r) return 0; if (S.layer === "all") return Object.values(r).reduce((a, b) => a + b, 0); return r[S.layer] || 0; }
+function natKind(iso) { const c = SITE.c[iso]; if (!c) return null; if (S.mode === "first") return kindKey(c.nk); if (S.mode === "alc") return kindKey(c.na); return c.nl && c.nl.length ? kindKey(c.nl[0][1]) : null; }
+
+/* ---------- country layer ---------- */
+function cStyle(f) {
+  const iso = f.properties.iso, land = css("--land"), bd = css("--border") || "#999";
+  let fill = null;
+  if (S.layer === "nat") { const k = natKind(iso); fill = k ? KIND[k][1] : null; }
+  else { fill = rampCol(cval(iso), layerColour()); if (regionsOn && regCountries.has(iso)) return { color: bd, weight: LY.borders ? .6 : 0, fillOpacity: 0, fillColor: land }; }
+  const sel = iso === S.sel && !S.reg;
+  return { color: sel ? css("--fg") : bd, weight: LY.borders ? (sel ? 2.4 : .6) : (sel ? 2 : 0), fillColor: fill || land, fillOpacity: (fill ? .9 : .5) * LY.colour / 100 };
+}
+const cLayer = L.geoJSON(WORLD, { pane: "fill", style: cStyle, onEachFeature: (f, l) => {
+  l.on("click", () => pickCountry(f.properties.iso, false));
+  l.on("mousemove", e => { const r = map.getContainer().getBoundingClientRect(); showTip(cTip(f.properties.iso), r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+  l.on("mouseout", hideTip);
+} }).addTo(map);
+function cTip(iso) {
+  const c = SITE.c[iso];
+  if (S.layer === "nat") { if (!c) return `<b>${esc(CN(iso))}</b><br>Not in the lists`; const L1 = S.mode === "liq" ? c.nl : c.nd; const d = S.mode === "alc" ? (c.nd || []).find(x => !["tea", "coffee", "soft"].includes(x[1])) || (c.nl || [])[0] : (L1 || [])[0];
+    return `<b>${esc(CN(iso))}</b><br>${d ? esc(d[0]) + " · " + esc(KIND[kindKey(d[1])][0]) : "Not in this list"}`; }
+  return `<b>${esc(CN(iso))}</b><br>${fmt(cval(iso))} record${cval(iso) === 1 ? "" : "s"}${S.layer === "all" ? "" : " for " + esc(layerName().toLowerCase())}`;
+}
+const layerName = () => S.layer === "spirits" && S.sub !== "all" ? FAM[S.sub].l : S.layer === "all" ? "All drinks" : (GRP[S.layer] || {}).l || "";
+function restyle() { cLayer.setStyle(cStyle); if (regLayer) regLayer.setStyle(rStyle); drawPts(); }
+
+/* ---------- regions (loaded on first use) ---------- */
+let REG = null, regLayer = null, regionsOn = false, regLoading = null; const regCountries = new Set(); const regIndex = {};
+const regLabels = L.layerGroup();
+function loadRegions() {
+  if (regLoading) return regLoading;
+  regLoading = fetch("data/regions.json").then(r => r.json()).then(j => {
+    REG = j; j.features.forEach(f => { regIndex[f.properties.k] = f; });
+    regLayer = L.geoJSON(j, { pane: "regions", style: rStyle, onEachFeature: (f, l) => {
+      f.properties._l = l;
+      l.on("click", e => { L.DomEvent.stopPropagation(e); pickRegion(f.properties.k, false); });
+      l.on("mousemove", e => { const r = map.getContainer().getBoundingClientRect(); const v = rval(f.properties.k); showTip(`<b>${esc(f.properties.n)}</b> · ${esc(CN(f.properties.i))}<br>${fmt(v)} record${v === 1 ? "" : "s"}${S.layer === "all" ? "" : " for " + esc((GRP[S.layer] || {}).l || "").toLowerCase()}`, r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+      l.on("mouseout", hideTip);
+    } });
+    return j;
+  });
+  return regLoading;
+}
+function rStyle(f) {
+  const p = f.properties, on = regCountries.has(p.i), sel = p.k === S.reg;
+  if (!on) return { opacity: 0, fillOpacity: 0, weight: 0 };
+  const c = rampCol(rval(p.k), layerColour());
+  return { color: sel ? css("--fg") : (isDark() ? "#6b6270" : "#fff"), weight: sel ? 2.6 : (LY.borders ? .8 : 0), fillColor: c || css("--land"), fillOpacity: (c ? .9 : .45) * LY.colour / 100, opacity: 1 };
+}
+function regionsForView() {
+  const want = new Set();
+  const ok = S.layer !== "nat" && LY.regions && !(S.layer === "spirits" && S.sub !== "all");
+  if (ok && map.getZoom() >= 4) { if (!REG) { loadRegions().then(regionsForView); return; }
+    const bb = map.getBounds(); WORLD.features.forEach(f => { const i = f.properties.iso; if (SITE.rc[i] && L.geoJSON(f).getBounds().intersects(bb)) want.add(i); }); }
+  const changed = want.size !== regCountries.size || [...want].some(i => !regCountries.has(i));
+  if (changed) { regCountries.clear(); want.forEach(i => regCountries.add(i)); }
+  regionsOn = regCountries.size > 0;
+  if (regLayer) { if (regionsOn && !map.hasLayer(regLayer)) regLayer.addTo(map); if (!regionsOn && map.hasLayer(regLayer)) map.removeLayer(regLayer); }
+  if (changed) { cLayer.setStyle(cStyle); if (regLayer) regLayer.setStyle(rStyle); }
+  regionLabels();
+}
+function regionLabels() {
+  regLabels.clearLayers();
+  if (!regionsOn || map.getZoom() < 5) { map.removeLayer(regLabels); return; }
+  const bb = map.getBounds(), boxes = [];
+  const fs = REG.features.filter(f => regCountries.has(f.properties.i) && rval(f.properties.k) > 0).sort((a, b) => rval(b.properties.k) - rval(a.properties.k));
+  for (const f of fs) {
+    const l = f.properties._l; if (!l) continue; const c = l.getBounds().getCenter(); if (!bb.contains(c)) continue;
+    const pt = map.latLngToContainerPoint(c), w = Math.max(f.properties.n.length, 6) * 6.4;
+    const bx = [pt.x - w / 2, pt.y - 10, pt.x + w / 2, pt.y + 14];
+    if (boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue; boxes.push(bx);
+    L.marker(c, { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "regL", html: `${esc(f.properties.n)}<small>${fmt(rval(f.properties.k))}</small>`, iconSize: [w, 24], iconAnchor: [w / 2, 10] }) }).addTo(regLabels);
+    if (boxes.length > 50) break;
+  }
+  regLabels.addTo(map);
+}
+
+/* ---------- points (loaded after the page) ---------- */
+let PTS = null, OSM = null, osmLoading = null; const ptLayer = L.layerGroup().addTo(map);
+fetch("data/points.json").then(r => r.json()).then(j => { PTS = j; drawPts(); side(); });
+function loadOSM() { if (!osmLoading) osmLoading = fetch("data/osm.json").then(r => r.json()).then(j => { OSM = j; drawPts(); }); return osmLoading; }
+function famOK(f) { if (S.layer === "all") return true; if (S.layer === "spirits") return S.sub === "all" ? SPIR.includes(f) : f === S.sub; return famGrp(f) === S.layer; }
+function grpOK(g) { if (S.layer === "all") return true; if (S.layer === "spirits") return S.sub === "all" && g === "spirits"; return g === S.layer; }
+function drawPts() {
+  ptLayer.clearLayers();
+  if (!PTS || S.layer === "nat" || !LY.pts) return;
+  const z = map.getZoom(), bb = map.getBounds().pad(.05), stroke = isDark() ? "#111" : "#fff";
+  const cap = z < 3 ? 220 : z < 4 ? 500 : z < 5 ? 900 : z < 7 ? 1800 : 3000; let n = 0;
+  const add = (lat, lon, o, item, tipH) => { L.circleMarker([lat, lon], Object.assign({ renderer: canvas }, o)).on("click", e => { L.DomEvent.stopPropagation(e); pickItem(item, false); })
+    .on("mouseover", e => { const r = map.getContainer().getBoundingClientRect(); showTip(tipH, r.left + e.containerPoint.x, r.top + e.containerPoint.y); }).on("mouseout", hideTip).addTo(ptLayer); };
+  if (OSM && LY.osm && z >= 5) {
+    let m = 0; const G = OSM.groups;
+    for (const o of OSM.rows) { const g = G[o[2]]; if (!grpOK(g) || !bb.contains([o[1], o[0]])) continue;
+      add(o[1], o[0], { radius: z >= 8 ? 3.4 : 2.4, weight: 1, color: GRP[g].c, opacity: .9, fillColor: stroke, fillOpacity: .9 }, { t: "osm", o }, `<b>${esc(o[4] || "(no name)")}</b><br>${esc(GRP[g].l)} producer · OpenStreetMap`); if (++m > 4000) break; }
+  } else if (LY.osm && z >= 5 && S.layer !== "rice" && S.layer !== "trad") loadOSM();
+  if (S.layer === "wine") for (const w of PTS.wr) { if (!bb.contains([w[1], w[0]])) continue;
+    add(w[1], w[0], { radius: z >= 6 ? 7 : 5, weight: 2, color: FAM.wine.c, dashArray: "3 2", fillOpacity: 0 }, { t: "wr", w }, `<b>${esc(w[2])}</b><br>${esc(w[3])} · Wikidata`); }
+  for (const p of PTS.prod) { const g = SITE.groups[p[2]][0]; if (!grpOK(g) || !bb.contains([p[1], p[0]])) continue;
+    add(p[1], p[0], { radius: z >= 6 ? 4.5 : 3.2, weight: 1.6, color: GRP[g].c, fillColor: stroke, fillOpacity: 1 }, { t: "prod", p }, `<b>${esc(p[3])}</b><br>${esc(GRP[g].l)} producer · Wikidata`); if (++n > cap) break; }
+  for (const g of PTS.gi) { const f = FK[g[2]]; if (!famOK(f) || !bb.contains([g[1], g[0]])) continue;
+    add(g[1], g[0], { radius: z >= 6 ? 6.5 : 5, weight: 2.4, color: isDark() ? "#eee" : "#221C26", fillColor: FAM[f].c, fillOpacity: 1 }, { t: "gi", g }, `<b>${esc(g[3].split(" / ")[0])}</b><br>${esc(g[4])} · protected name`); }
+  n = 0;
+  for (const d of PTS.drinks) { const f = FK[d[2]]; if (!famOK(f) || !bb.contains([d[1], d[0]])) continue;
+    add(d[1], d[0], { radius: d[5] ? 6 : (z >= 6 ? 4.6 : 3.6), weight: 1.1, color: isDark() ? "#fff" : "#221C26", fillColor: FAM[f].c, fillOpacity: .95 }, { t: "d", d }, `<b>${esc(d[3])}</b><br>${esc(FAM[f].l)}${d[5] ? " · type or style" : ""}`); if (++n > cap) break; }
+}
+map.on("zoomend moveend", () => { placeNames(); regionsForView(); drawPts(); });
+
+/* ---------- legend, side panel, note ---------- */
+function legend() {
+  const e = document.getElementById("legend"); let h = "";
+  if (S.layer === "nat") { const used = new Set(Object.keys(SITE.c).map(natKind).filter(Boolean)); h = KORDER.filter(k => used.has(k)).map(k => `<span><i style="background:${KIND[k][1]}"></i>${esc(KIND[k][0])}</span>`).join(""); }
+  else {
+    const col = layerColour();
+    h = BINS.map((b, i) => `<span><i style="background:${rampCol(b, col)}"></i>${fmt(b)}${i < BINS.length - 1 ? " to " + fmt(BINS[i + 1] - 1) : "+"}</span>`).join("") + `<span>records</span>`;
+    if (LY.pts) {
+      const fams = S.layer === "all" ? FK : S.layer === "spirits" ? (S.sub === "all" ? SPIR : [S.sub]) : [S.layer];
+      h += `<span style="flex-basis:100%;height:0"></span>` + fams.map(f => `<span><i class="c" style="background:${FAM[f].c}"></i>${esc(FAM[f].l)}</span>`).join("");
+      h += `<span><i class="c" style="background:${FAM[fams[0]].c};border:2.5px solid var(--fg)"></i>protected name</span><span><i class="r" style="border-color:${S.layer === "all" ? "var(--fg)" : layerColour()}"></i>producer</span>`;
+      if (S.layer === "wine") h += `<span><i class="r" style="border-color:${FAM.wine.c};border-style:dashed"></i>wine region</span>`;
+    }
+  }
+  e.innerHTML = h;
+  document.getElementById("mapsrc").textContent = (S.layer === "nat" ? SRC.nat : S.layer === "all" ? SRC.all + " " + SRC.fam : SRC.fam) + " Sources: Wikidata (CC0), EU eAmbrosia (CC BY 4.0), OpenStreetMap contributors (ODbL), English Wikipedia (CC BY-SA 4.0). Outlines: Natural Earth. Base map tiles © Esri.";
+}
+function note(h) { document.getElementById("mapnote").innerHTML = h || ""; }
+const kindChip = k => { const kk = kindKey(k); return kk ? `<span class="chip" style="background:${KIND[kk][1]}">${esc(KIND[kk][0])}</span>` : ""; };
+function natBlock(c, compact) {
+  let h = "";
+  if (c && c.nd && c.nd.length) h += `<h4>National drink</h4>${kindChip(c.nd[0][1])}<ol>` + c.nd.slice(0, compact ? 3 : 8).map(d => `<li>${wlink(d[2], d[0])} <small>${esc(KIND[kindKey(d[1])] ? KIND[kindKey(d[1])][0].toLowerCase() : "")}</small></li>`).join("") + `</ol>`;
+  if (c && c.nl && c.nl.length) h += `<h4>National liquor</h4><ol>` + c.nl.map(d => `<li>${wlink(d[2], d[0])}</li>`).join("") + `</ol>`;
+  return h;
+}
+function countsTable(c, grp) {
+  const rows = [];
+  const fams = grp === "spirits" ? SPIR : [grp];
+  const nd = fams.reduce((s, f) => s + (c.d[f] || 0), 0), ng = fams.reduce((s, f) => s + (c.gi[f] ? c.gi[f][0] : 0), 0);
+  rows.push(["Named drinks (Wikidata)", nd], ["Protected names (EU register)", ng], ["Producers (Wikidata)", c.p[grp] || 0], ["Producers (OpenStreetMap)", c.o[grp] || 0]);
+  return `<table>` + rows.map(r => `<tr><td>${r[0]}</td><td class="num">${fmt(r[1])}</td></tr>`).join("") + `</table>`;
+}
+function itemsList(c, fams) {
+  let h = "";
+  fams.forEach(f => { const L1 = c.t[f]; if (!L1) return; h += `<h4><span class="sw" style="background:${FAM[f].c}"></span>${esc(FAM[f].l)}: ${fmt(c.d[f])} named</h4><ul>` + L1.map(t => `<li>${wlink(t[3], t[0])}${t[2] ? ` <small>type or style</small>` : ""}${wdlink(t[4])}</li>`).join("") + `</ul>`; });
+  fams.forEach(f => { const G1 = c.gi[f]; if (!G1) return; h += `<h4>Protected names: ${esc(FAM[f].l.toLowerCase())} (${fmt(G1[0])})</h4><p>${G1.slice(1).map(esc).join(", ")}${G1[0] > 6 ? "..." : ""}</p>`; });
+  return h;
+}
+function side() {
+  const box = document.getElementById("side"); let h = "";
+  if (S.item) { h = itemPanel(S.item); box.innerHTML = h; const b = box.querySelector(".back"); if (b) b.onclick = () => { S.item = null; side(); }; return; }
+  if (S.reg) {
+    const k = S.reg, iso = k.split(":")[0], r = SITE.reg[k] || {}, name = SITE.rn[k] || (regIndex[k] && regIndex[k].properties.n) || k;
+    h = `<h4>Region</h4><div class="big">${esc(name)}</div><p class="sub">${esc(CN(iso))} · <span class="go" data-c="${iso}">country view</span></p><table>` + GK.filter(g => r[g]).map(g => `<tr><td><span class="sw" style="background:${GRP[g].c}"></span>${esc(GRP[g].l)}</td><td class="num">${fmt(r[g])}</td></tr>`).join("") + `</table><p class="sub">Records placed in this region: named drinks, protected names and producers with a point.</p>`;
+    if (PTS) {
+      const grp = S.layer === "all" ? null : S.layer;
+      const gi = PTS.gi.filter(g => g[10] === k && (!grp || famGrp(FK[g[2]]) === grp));
+      const dr = PTS.drinks.filter(d => d[12] === k && (!grp || famGrp(FK[d[2]]) === grp)).slice(0, 12);
+      const pr = PTS.prod.filter(p => p[10] === k && (!grp || SITE.groups[p[2]][0] === grp)).slice(0, 10);
+      if (gi.length) h += `<h4>Protected names (${fmt(gi.length)})</h4><p>${gi.slice(0, 30).map(g => esc(g[3].split(" / ")[0])).join(", ")}${gi.length > 30 ? "..." : ""}</p>`;
+      if (dr.length) h += `<h4>Named drinks</h4><ul>` + dr.map(d => `<li>${wlink(d[7], d[3])} <small>${esc(FAM[FK[d[2]]].l.toLowerCase())}</small></li>`).join("") + `</ul>`;
+      if (pr.length) h += `<h4>Producers in Wikidata</h4><ul>` + pr.map(p => `<li>${wlink(p[6], p[3])}${p[8] ? ` <small>founded ${esc(p[8])}</small>` : ""}</li>`).join("") + `</ul>`;
+    }
+    note(`<b>${esc(name)}</b>: ${fmt(Object.values(r).reduce((a, b) => a + b, 0))} records`);
+  } else if (S.sel) {
+    const iso = S.sel, c = SITE.c[iso];
+    h = `<h4>${S.layer === "nat" ? "National drinks" : esc(layerName())}</h4><div class="big">${esc(CN(iso))}</div>`;
+    if (!c) h += `<p class="sub">No records for this country in these sources.</p>`;
+    else if (S.layer === "nat") { h += natBlock(c, false) || `<p class="sub">Not in Wikipedia's lists.</p>`; h += `<h4>All records</h4><table>` + GK.filter(g => c.r[g]).map(g => `<tr><td><span class="sw" style="background:${GRP[g].c}"></span>${esc(GRP[g].l)}</td><td class="num">${fmt(c.r[g])}</td></tr>`).join("") + `</table>`; }
+    else if (S.layer === "all") { h += `<table>` + GK.filter(g => c.r[g]).map(g => `<tr><td><span class="sw" style="background:${GRP[g].c}"></span>${esc(GRP[g].l)}</td><td class="num">${fmt(c.r[g])}</td></tr>`).join("") + `</table>` + natBlock(c, true) + itemsList(c, FK.filter(f => c.t[f]).sort((a, b) => (c.d[b] || 0) - (c.d[a] || 0)).slice(0, 3)); }
+    else {
+      const fams = S.layer === "spirits" ? (S.sub === "all" ? SPIR : [S.sub]) : [S.layer];
+      h += countsTable(c, S.layer) + itemsList(c, fams);
+      if (S.layer === "wine" && c.gr) h += `<h4>Grape varieties from here (${fmt(c.gr[0])})</h4><p>${c.gr.slice(1).map(esc).join(", ")}${c.gr[0] > 8 ? "..." : ""}</p>`;
+      h += natBlock(c, true);
+    }
+    if (SITE.rc[iso] && S.layer !== "nat") h += `<p class="sub">Zoom in to see regions; click one for its list.</p>`;
+    const v = cval(iso); note(S.layer === "nat" ? (c && c.nd && c.nd[0] ? `<b>${esc(CN(iso))}</b>: ${esc(c.nd[0][0])}` : "") : `<b>${esc(CN(iso))}</b>: ${fmt(v)} record${v === 1 ? "" : "s"}`);
+  } else {
+    if (S.layer === "nat") h = `<h4>National drinks</h4><div class="big">Pick a country</div><p>${fmt(R.national.n_drink)} countries have a suggested national drink in Wikipedia's list. The colour shows the kind of drink listed first; switch to the first alcoholic drink or the national liquor above.</p>`;
+    else h = `<h4>${esc(layerName())}</h4><div class="big">Pick a country</div><p>Countries are shaded by the number of records for this drink. Zoom in for regions and for named drinks, protected names and producers; click any of them for details.</p>`;
+    note("");
+  }
+  box.innerHTML = h;
+  box.querySelectorAll("[data-c]").forEach(e => e.onclick = () => { S.reg = null; pickCountry(e.dataset.c, true); });
+}
+function itemPanel(it) {
+  let h = `<button class="back">Back</button>`;
+  if (it.t === "d") { const d = it.d, f = FK[d[2]];
+    h += `<h4>${d[5] ? "Type or style of drink" : "Named drink"}</h4><div class="big">${esc(d[3])}</div><p><span class="chip" style="background:${FAM[f].c}">${esc(FAM[f].l)}</span></p><table>
+<tr><td>Country</td><td>${esc(CN(d[6]))}</td></tr>${d[9] ? `<tr><td>Place</td><td>${esc(d[9])}</td></tr>` : ""}${d[10] ? `<tr><td>Maker</td><td>${esc(d[10])}</td></tr>` : ""}${d[11] ? `<tr><td>Since</td><td>${esc(d[11])}</td></tr>` : ""}${d[12] ? `<tr><td>Region</td><td>${esc(SITE.rn[d[12]] || "")}</td></tr>` : ""}</table>
+<p>${d[7] ? wlink(d[7], "Wikipedia") + " · " : ""}<a href="https://www.wikidata.org/wiki/${esc(d[8])}" target="_blank" rel="noopener">Wikidata</a></p><p class="sub">The dot is at ${d[9] ? "its place or maker" : "its own coordinates or its maker's"}.</p>`; }
+  else if (it.t === "gi") { const g = it.g, f = FK[g[2]];
+    h += `<h4>Protected name (${esc(g[4])})</h4><div class="big">${esc(g[3].split(" / ")[0])}</div><p><span class="chip" style="background:${FAM[f].c}">${esc(FAM[f].l)}</span></p><table>
+<tr><td>All names</td><td>${esc(g[3])}</td></tr><tr><td>Country</td><td>${esc(CN(g[5]))}</td></tr><tr><td>Category</td><td>${esc(g[6])}</td></tr>${g[9] ? `<tr><td>Year</td><td>${esc(g[9])}</td></tr>` : ""}<tr><td>Placed by</td><td>${esc(g[7])}${g[7] === "name match" ? " (approximate)" : ""}</td></tr></table>
+<p><a href="https://ec.europa.eu/agriculture/eambrosia/geographical-indications-register/" target="_blank" rel="noopener">EU register</a> <small>${esc(g[8])}</small></p>`; }
+  else if (it.t === "prod") { const p = it.p, g = SITE.groups[p[2]][0];
+    h += `<h4>${esc(GRP[g].l)} producer</h4><div class="big">${esc(p[3])}</div><table><tr><td>Country</td><td>${esc(CN(p[5]))}</td></tr>${p[8] ? `<tr><td>Founded</td><td>${esc(p[8])}</td></tr>` : ""}${p[9] ? `<tr><td>Closed</td><td>${esc(p[9])}</td></tr>` : ""}${p[10] ? `<tr><td>Region</td><td>${esc(SITE.rn[p[10]] || "")}</td></tr>` : ""}</table><p>${p[6] ? wlink(p[6], "Wikipedia") + " · " : ""}<a href="https://www.wikidata.org/wiki/${esc(p[7])}" target="_blank" rel="noopener">Wikidata</a></p>`; }
+  else if (it.t === "wr") { const w = it.w;
+    h += `<h4>Wine region (Wikidata)</h4><div class="big">${esc(w[2])}</div><table><tr><td>Kind</td><td>${esc(w[3])}</td></tr><tr><td>Country</td><td>${esc(CN(w[4]))}</td></tr></table><p>${w[6] ? wlink(w[6], "Wikipedia") : ""}</p>`; }
+  else if (it.t === "osm") { const o = it.o, g = OSM.groups[o[2]];
+    h += `<h4>${esc(GRP[g].l)} producer (OpenStreetMap)</h4><div class="big">${esc(o[4] || "No name tagged")}</div><table><tr><td>Country</td><td>${esc(CN(o[3]))}</td></tr>${o[5] ? `<tr><td>Region</td><td>${esc(SITE.rn[o[5]] || "")}</td></tr>` : ""}</table><p><a href="https://www.openstreetmap.org/#map=17/${o[1]}/${o[0]}" target="_blank" rel="noopener">OpenStreetMap</a></p>`; }
+  return h;
+}
+function toMap() { if (small()) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" }); }
+
+/* ---------- actions ---------- */
+function setLayer(l) {
+  S.layer = l; S.item = null;
+  document.querySelectorAll("#layerTabs .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === l));
+  document.getElementById("natRow").hidden = l !== "nat"; document.getElementById("subRow").hidden = l !== "spirits";
+  if (l === "nat") S.reg = null;
+  regionsForView(); restyle(); legend(); side();
+}
+function setSub(s) { S.sub = s; document.querySelectorAll("#subRow .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.s === s)); regionsForView(); restyle(); legend(); side(); }
+function setMode(m) { S.mode = m; document.querySelectorAll("#natRow .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === m)); restyle(); legend(); side(); }
+const FIT = { USA: [[24, -125], [50, -66]], FRA: [[41.3, -5.2], [51.2, 9.6]], ESP: [[35.8, -9.5], [43.9, 4.4]], PRT: [[36.9, -9.6], [42.2, -6.1]], NOR: [[57.9, 4.5], [71.2, 31]], RUS: [[41, 27], [70, 140]], GBR: [[49.9, -8.2], [58.7, 1.8]], NLD: [[50.7, 3.3], [53.6, 7.3]], CHN: [[18, 73], [53.6, 135]], CHL: [[-56, -76], [-17.5, -66]], NZL: [[-47.5, 166], [-34, 179]] };
+function fitIso(iso) { const f = WORLD.features.find(x => x.properties.iso === iso); if (!f) return; map.fitBounds(FIT[iso] || L.geoJSON(f).getBounds(), { padding: [10, 10], maxZoom: 7 }); }
+function pickCountry(iso, move) { S.sel = iso; S.reg = null; S.item = null; if (move) { fitIso(iso); toMap(); } restyle(); side(); }
+function pickRegion(k, move) {
+  loadRegions().then(() => { const f = regIndex[k]; if (!f) return; if (S.layer === "nat") setLayer("all"); S.reg = k; S.sel = f.properties.i; S.item = null;
+    if (move) { map.fitBounds(f.properties._l.getBounds(), { padding: [20, 20], maxZoom: 8 }); toMap(); }
+    regionsForView(); if (regLayer) regLayer.setStyle(rStyle); side(); });
+}
+function pickItem(it, move) {
+  S.item = it; const ll = it.t === "d" ? [it.d[1], it.d[0]] : it.t === "gi" ? [it.g[1], it.g[0]] : it.t === "prod" ? [it.p[1], it.p[0]] : it.t === "wr" ? [it.w[1], it.w[0]] : [it.o[1], it.o[0]];
+  S.sel = it.t === "d" ? it.d[6] : it.t === "gi" ? it.g[5] : it.t === "prod" ? it.p[5] : it.t === "wr" ? it.w[4] : it.o[3];
+  if (move) { map.setView(ll, Math.max(map.getZoom(), 7)); toMap(); }
+  note(`<b>${esc(it.t === "d" ? it.d[3] : it.t === "gi" ? it.g[3].split(" / ")[0] : it.t === "prod" ? it.p[3] : it.t === "wr" ? it.w[2] : it.o[4])}</b>`);
+  side(); cLayer.setStyle(cStyle);
+}
+(function tabs() {
+  const row = document.getElementById("layerTabs");
+  LAYERS.forEach(([k, l, c]) => { const b = document.createElement("button"); b.className = "btn"; b.dataset.l = k; b.style.setProperty("--tab", c); b.innerHTML = `<span class="dot" style="background:${c}"></span>${esc(l)}`; b.setAttribute("aria-pressed", k === S.layer); b.onclick = () => setLayer(k); row.appendChild(b); });
+  const sub = document.getElementById("subRow");
+  [["all", "All spirits", GRP.spirits.c]].concat(SPIR.map(f => [f, FAM[f].l, FAM[f].c])).forEach(([k, l, c]) => { const b = document.createElement("button"); b.className = "btn"; b.dataset.s = k; b.innerHTML = `<span class="dot" style="background:${c}"></span>${esc(l)}`; b.setAttribute("aria-pressed", k === "all"); b.onclick = () => setSub(k); sub.appendChild(b); });
+  document.querySelectorAll("#natRow .btn").forEach(b => b.onclick = () => setMode(b.dataset.m));
+})();
+document.querySelectorAll("[data-show]").forEach(b => b.onclick = e => { e.preventDefault(); setLayer(b.dataset.show); if (b.dataset.mode) setMode(b.dataset.mode); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); if (b.dataset.focus) setTimeout(() => pickCountry(b.dataset.focus, true), 350); });
+(function focusRow() {
+  const row = document.getElementById("focusRow");
+  const F = [["FRA", "France"], ["ITA", "Italy"], ["ESP", "Spain"], ["DEU", "Germany"], ["GBR", "UK"], ["IRL", "Ireland"], ["BEL", "Belgium"], ["GEO", "Georgia"], ["USA", "US"], ["MEX", "Mexico"], ["PER", "Peru"], ["JPN", "Japan"], ["KOR", "Korea"], ["CHN", "China"], ["ZAF", "South Africa"], ["AUS", "Australia"], ["WLD", "World"]];
+  F.forEach(([iso, n]) => { const b = document.createElement("button"); b.className = "btn"; b.textContent = n; b.onclick = () => { if (iso === "WLD") { S.sel = null; S.reg = null; S.item = null; map.setView([30, 12], small() ? 1 : 2); restyle(); side(); toMap(); return; } pickCountry(iso, true); }; row.appendChild(b); });
+})();
+
+/* ---------- search: countries, regions, drinks, national drinks ---------- */
+(function search() {
+  const inp = document.getElementById("q"), sug = document.getElementById("sug"); let opts = [], k = -1;
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const natD = []; Object.entries(SITE.c).forEach(([iso, c]) => (c.nd || []).concat(c.nl || []).forEach(x => natD.push({ n: x[0], iso })));
+  function build(q) {
+    const nq = norm(q); if (nq.length < 2) return [];
+    const out = [];
+    WORLD.features.forEach(f => { const n = CN(f.properties.iso); if (norm(n).includes(nq)) out.push({ t: "c", n, iso: f.properties.iso, s: norm(n).startsWith(nq) ? 4 : 1.2 }); });
+    Object.entries(SITE.rn).forEach(([key, n]) => { if (norm(n).includes(nq)) out.push({ t: "r", n, k: key, s: norm(n).startsWith(nq) ? 3 : 1 }); });
+    if (PTS) {
+      let m = 0; for (const d of PTS.drinks) { if (norm(d[3]).includes(nq)) { out.push({ t: "d", n: d[3], it: { t: "d", d }, s: (norm(d[3]).startsWith(nq) ? 2 : 1) + Math.min(d[4], 90) / 100 + (d[5] ? .5 : 0) }); if (++m > 300) break; } }
+      for (const g of PTS.gi) if (norm(g[3]).includes(nq)) out.push({ t: "g", n: g[3].split(" / ")[0], it: { t: "gi", g }, s: norm(g[3]).startsWith(nq) ? 2.4 : 1.1 });
+      for (const p of PTS.prod) if (norm(p[3]).includes(nq)) out.push({ t: "p", n: p[3], it: { t: "prod", p }, s: (norm(p[3]).startsWith(nq) ? 1.8 : .9) + Math.min(p[4], 60) / 100 });
+    }
+    natD.forEach(x => { if (norm(x.n).includes(nq)) out.push({ t: "n", n: x.n, iso: x.iso, s: norm(x.n).startsWith(nq) ? 2.2 : 1 }); });
+    const seen = new Set(); return out.sort((a, b) => b.s - a.s).filter(o => { const key = o.t + o.n + (o.iso || ""); if (seen.has(key)) return false; seen.add(key); return true; }).slice(0, 12);
+  }
+  const lab = o => o.t === "c" ? `${esc(o.n)} <span>country</span>` : o.t === "r" ? `${esc(o.n)} <span>region, ${esc(CN(o.k.split(":")[0]))}</span>` : o.t === "d" ? `${esc(o.n)} <span>${esc(FAM[FK[o.it.d[2]]].l.toLowerCase())}, ${esc(CN(o.it.d[6]))}</span>` : o.t === "g" ? `${esc(o.n)} <span>protected name, ${esc(CN(o.it.g[5]))}</span>` : o.t === "p" ? `${esc(o.n)} <span>producer, ${esc(CN(o.it.p[5]))}</span>` : `${esc(o.n)} <span>national drink, ${esc(CN(o.iso))}</span>`;
+  const show = () => { sug.innerHTML = opts.map((o, i) => `<li role="option" aria-selected="${i === k}" data-i="${i}">${lab(o)}</li>`).join(""); sug.style.display = opts.length ? "block" : "none"; };
+  const choose = o => { sug.style.display = "none"; inp.value = o.n; inp.blur();
+    if (o.t === "c") pickCountry(o.iso, true); else if (o.t === "r") { if (S.layer === "nat") setLayer("all"); pickRegion(o.k, true); }
+    else if (o.t === "n") { setLayer("nat"); pickCountry(o.iso, true); }
+    else { const f = o.t === "d" ? FK[o.it.d[2]] : o.t === "g" ? FK[o.it.g[2]] : SITE.groups[o.it.p[2]][0]; const g = famGrp(f); setLayer(GRP[g] ? g : "all"); if (g === "spirits" && FAM[f]) setSub(f); pickItem(o.it, true); } };
+  inp.addEventListener("focus", () => loadRegions());
+  inp.addEventListener("input", () => { opts = build(inp.value); k = -1; show(); });
+  inp.addEventListener("keydown", e => { if (e.key === "ArrowDown") { k = Math.min(opts.length - 1, k + 1); show(); e.preventDefault(); } else if (e.key === "ArrowUp") { k = Math.max(0, k - 1); show(); e.preventDefault(); } else if (e.key === "Enter" && opts.length) { choose(opts[Math.max(0, k)]); } else if (e.key === "Escape") { sug.style.display = "none"; } });
+  sug.addEventListener("click", e => { const li = e.target.closest("li"); if (li) choose(opts[+li.dataset.i]); });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) sug.style.display = "none"; });
+})();
+
+/* ---------- charts ---------- */
+function hbars(box, rows, opts) {
+  resp(box, (w, sm) => {
+    const maxLab = Math.max(...rows.map(r => String(r.lab ?? r.v).length)), lw = sm ? Math.min(150, w * .44) : Math.min(230, w * .42), rh = 26, h = rows.length * rh + 10, x0 = lw, x1 = w - 10 - maxLab * 7.4, max = Math.max(...rows.map(r => r.v)) || 1;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": opts.aria }, box);
+    rows.forEach((r, i) => {
+      const y = 4 + i * rh, bw = Math.max(r.v > 0 ? 2 : 0, (x1 - x0) * r.v / max);
+      const cut = sm ? 19 : 30;
+      const t = lbl(svg, x0 - 8, y + 16, r.n.length > cut ? r.n.slice(0, cut - 1) + "." : r.n, "lab", "end");
+      const b = el("rect", { x: x0, y: y + 3, width: bw, height: rh - 9, fill: r.c, rx: 2 }, svg);
+      lbl(svg, x0 + bw + 6, y + 16, r.lab ?? fmt(r.v), "lab b");
+      if (r.tip) [b, t].forEach(e => { e.addEventListener("mousemove", ev => showTip(r.tip, ev.clientX, ev.clientY)); e.addEventListener("mouseleave", hideTip); });
+    });
+  });
+}
+(function charts() {
+  const agg = {}; Object.entries(R.national.first_kind).forEach(([k, n]) => { const kk = kindKey(k); agg[kk] = (agg[kk] || 0) + n; });
+  const who = {}; Object.entries(SITE.c).forEach(([iso, c]) => { const kk = kindKey(c.nk); if (kk) (who[kk] = who[kk] || []).push(CN(iso)); });
+  hbars(document.getElementById("natChart"), KORDER.filter(k => agg[k]).map(k => ({ n: KIND[k][0], v: agg[k], c: KIND[k][1], tip: `<b>${esc(KIND[k][0])}</b><br>${esc((who[k] || []).slice(0, 14).join(", "))}${(who[k] || []).length > 14 ? "..." : ""}` })).sort((a, b) => b.v - a.v), { aria: "Bar chart of the kinds of first-listed national drinks" });
+  hbars(document.getElementById("giChart"), R.gi.top_wine.map(c => ({ n: c.name, v: c.n, c: FAM.wine.c })), { aria: "Bar chart of protected wine names by country" });
+  hbars(document.getElementById("beerA"), R.drinks.top_beer.slice(0, 6).map(c => ({ n: c.name.replace("United States of America", "United States"), v: c.pct, c: FAM.beer.c, lab: c.pct.toFixed(0) + "%" })), { aria: "Share of named beers by country" });
+  hbars(document.getElementById("beerB"), R.producers.osm_top_beer.slice(0, 6).map(c => ({ n: c.name.replace("United States of America", "United States"), v: c.pct, c: "#8A6A12", lab: c.pct.toFixed(0) + "%" })), { aria: "Share of mapped breweries by country" });
+  const sf = R.gi.spirit_families; hbars(document.getElementById("spChart"), Object.keys(sf).sort((a, b) => sf[b] - sf[a]).map(f => ({ n: FAM[f].l, v: sf[f], c: FAM[f].c })), { aria: "Bar chart of protected spirit names by kind" });
+  hbars(document.getElementById("contChart"), R.records.by_continent.filter(c => c.n > 50).map(c => ({ n: c.name, v: c.n, c: "#5B4D63", lab: `${fmt(c.n)} (${c.pct.toFixed(1)}%)` })), { aria: "Bar chart of records by continent" });
+  const box = document.getElementById("cards");
+  [["JPN", "rice", "Japan", "sake breweries in Wikidata", R.producers.sake_top[0].n], ["FRA", "cider", "France", "protected cider and perry names", R.gi.cider_by_country.FRA], ["GBR", "spirits", "Scotland", "distilleries in OpenStreetMap", R.producers.osm_topreg_spirits[0].n],
+   ["MEX", "spirits", "Mexico", "national liquors in Wikipedia, among them tequila, mezcal and pulque", R.cards.mex_liquors], ["BGR", "spirits", "Bulgaria", `protected spirit names, ${R.cards.bgr_grozdova} of them grozdova rakya`, R.cards.bgr_spirits], ["DEU", "beer", "Bavaria", "breweries in OpenStreetMap", R.producers.osm_topreg_beer[0].n]].forEach(([iso, l, name, what, n]) => {
+    const d = document.createElement("div"); d.className = "card"; const col = GRP[l] ? GRP[l].c : FAM[l].c; d.style.setProperty("--c", col);
+    d.innerHTML = `<b>${esc(name)}</b><div class="big">${fmt(n)} <span>${esc(what)}</span></div><button class="btn">Show on the map</button>`;
+    d.querySelector("button").onclick = () => { setLayer(l); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); setTimeout(() => { if (name === "Scotland") { map.fitBounds([[54.6, -7.7], [58.8, -1.5]]); pickCountry("GBR", false); } else if (name === "Bavaria") { map.fitBounds([[47.2, 8.9], [50.6, 13.9]]); pickCountry("DEU", false); } else pickCountry(iso, true); toMap(); }, 350); };
+    box.appendChild(d); });
+})();
+
+/* ---------- start ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; setTiles(); legend(); redraws.forEach(f => f()); };
+setLayer("nat"); setTiles(); legend(); side(); placeNames();
+</script>
+/*FULLSCREEN*/
+</body>
+</html>
