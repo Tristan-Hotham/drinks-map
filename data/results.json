@@ -1,0 +1,1347 @@
+{
+ "retrieved": "29 October 2026",
+ "meta": {
+  "doi": "10.5281/zenodo.23764739",
+  "retrieved": "29 October 2026",
+  "page": "https://maps.tristanhotham.com/drinks-map/",
+  "repo": "https://github.com/Tristan-Hotham/drinks-map",
+  "blog": "https://blog.tristanhotham.com/2026/10/29/drinks-map/"
+ },
+ "drinks": {
+  "n": 27322,
+  "n_types": 1476,
+  "n_products": 25846,
+  "n_point": 19527,
+  "n_countries": 125,
+  "by_group": {
+   "wine": 6174,
+   "beer": 20381,
+   "cider": 122,
+   "spirits": 594,
+   "rice": 21,
+   "trad": 30
+  },
+  "by_family": {
+   "wine": 6174,
+   "beer": 20381,
+   "cider": 122,
+   "whisky": 91,
+   "gin": 25,
+   "rum": 34,
+   "agave": 14,
+   "vodka": 65,
+   "brandy": 69,
+   "anise": 14,
+   "asian": 22,
+   "liqueur": 174,
+   "spirit": 86,
+   "rice": 21,
+   "trad": 30
+  },
+  "point_from": {
+   "own": 241,
+   "none": 7795,
+   "location": 3109,
+   "manufacturer": 16177
+  },
+  "top_wine": [
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 3004,
+    "pct": 48.7
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 2821,
+    "pct": 45.7
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 126,
+    "pct": 2.0
+   },
+   {
+    "iso": "HUN",
+    "name": "Hungary",
+    "n": 19,
+    "pct": 0.3
+   },
+   {
+    "iso": "GEO",
+    "name": "Georgia",
+    "n": 18,
+    "pct": 0.3
+   },
+   {
+    "iso": "RUS",
+    "name": "Russia",
+    "n": 17,
+    "pct": 0.3
+   },
+   {
+    "iso": "PRT",
+    "name": "Portugal",
+    "n": 14,
+    "pct": 0.2
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 12,
+    "pct": 0.2
+   }
+  ],
+  "top_beer": [
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 8326,
+    "pct": 40.9
+   },
+   {
+    "iso": "NLD",
+    "name": "Netherlands",
+    "n": 5483,
+    "pct": 26.9
+   },
+   {
+    "iso": "BEL",
+    "name": "Belgium",
+    "n": 2086,
+    "pct": 10.2
+   },
+   {
+    "iso": "SWE",
+    "name": "Sweden",
+    "n": 689,
+    "pct": 3.4
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 496,
+    "pct": 2.4
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 358,
+    "pct": 1.8
+   },
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "n": 342,
+    "pct": 1.7
+   },
+   {
+    "iso": "DNK",
+    "name": "Denmark",
+    "n": 220,
+    "pct": 1.1
+   }
+  ],
+  "top_cider": [
+   {
+    "iso": "DNK",
+    "name": "Denmark",
+    "n": 32,
+    "pct": 26.2
+   },
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 23,
+    "pct": 18.9
+   },
+   {
+    "iso": "SWE",
+    "name": "Sweden",
+    "n": 20,
+    "pct": 16.4
+   },
+   {
+    "iso": "NOR",
+    "name": "Norway",
+    "n": 12,
+    "pct": 9.8
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 7,
+    "pct": 5.7
+   },
+   {
+    "iso": "FIN",
+    "name": "Finland",
+    "n": 6,
+    "pct": 4.9
+   },
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "n": 5,
+    "pct": 4.1
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 4,
+    "pct": 3.3
+   }
+  ],
+  "top_spirits": [
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 74,
+    "pct": 12.5
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 55,
+    "pct": 9.3
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 51,
+    "pct": 8.6
+   },
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 41,
+    "pct": 6.9
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 26,
+    "pct": 4.4
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 22,
+    "pct": 3.7
+   },
+   {
+    "iso": "JPN",
+    "name": "Japan",
+    "n": 21,
+    "pct": 3.5
+   },
+   {
+    "iso": "NLD",
+    "name": "Netherlands",
+    "n": 21,
+    "pct": 3.5
+   }
+  ],
+  "top_rice": [
+   {
+    "iso": "JPN",
+    "name": "Japan",
+    "n": 15,
+    "pct": 71.4
+   },
+   {
+    "iso": "IND",
+    "name": "India",
+    "n": 1,
+    "pct": 4.8
+   },
+   {
+    "iso": "CHN",
+    "name": "People's Republic of China",
+    "n": 1,
+    "pct": 4.8
+   },
+   {
+    "iso": "NOR",
+    "name": "Norway",
+    "n": 1,
+    "pct": 4.8
+   },
+   {
+    "iso": "IDN",
+    "name": "Indonesia",
+    "n": 1,
+    "pct": 4.8
+   },
+   {
+    "iso": "KOR",
+    "name": "South Korea",
+    "n": 1,
+    "pct": 4.8
+   },
+   {
+    "iso": "VNM",
+    "name": "Vietnam",
+    "n": 1,
+    "pct": 4.8
+   }
+  ],
+  "top_trad": [
+   {
+    "iso": "MEX",
+    "name": "Mexico",
+    "n": 5,
+    "pct": 16.7
+   },
+   {
+    "iso": "SWE",
+    "name": "Sweden",
+    "n": 5,
+    "pct": 16.7
+   },
+   {
+    "iso": "PER",
+    "name": "Peru",
+    "n": 2,
+    "pct": 6.7
+   },
+   {
+    "iso": "ZAF",
+    "name": "South Africa",
+    "n": 2,
+    "pct": 6.7
+   },
+   {
+    "iso": "UKR",
+    "name": "Ukraine",
+    "n": 1,
+    "pct": 3.3
+   },
+   {
+    "iso": "BOL",
+    "name": "Bolivia",
+    "n": 1,
+    "pct": 3.3
+   },
+   {
+    "iso": "LTU",
+    "name": "Lithuania",
+    "n": 1,
+    "pct": 3.3
+   },
+   {
+    "iso": "CHN",
+    "name": "People's Republic of China",
+    "n": 1,
+    "pct": 3.3
+   }
+  ],
+  "beer_top3_pct": 78.0,
+  "wine_fra_ita_pct": 94.3,
+  "beer_top_makers": [
+   {
+    "name": "Moersleutel",
+    "n": 402
+   },
+   {
+    "name": "Omnipollo",
+    "n": 381
+   },
+   {
+    "name": "Brouwerij Kees",
+    "n": 368
+   },
+   {
+    "name": "Brouwerij De Molen",
+    "n": 365
+   },
+   {
+    "name": "Hop Butcher For The World",
+    "n": 331
+   }
+  ],
+  "beer_products_pct": 99.2,
+  "n_spirits_countries": 88,
+  "types_top": [
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 601
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 134
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 121
+   },
+   {
+    "iso": "BEL",
+    "name": "Belgium",
+    "n": 57
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 55
+   },
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 44
+   },
+   {
+    "iso": "JPN",
+    "name": "Japan",
+    "n": 30
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 30
+   },
+   {
+    "iso": "MEX",
+    "name": "Mexico",
+    "n": 25
+   },
+   {
+    "iso": "NLD",
+    "name": "Netherlands",
+    "n": 22
+   }
+  ],
+  "types_countries": 101,
+  "types_by_group": {
+   "wine": 857,
+   "beer": 155,
+   "cider": 17,
+   "spirits": 409,
+   "rice": 17,
+   "trad": 21
+  }
+ },
+ "producers": {
+  "wikidata_n": 6044,
+  "wikidata_point": 5108,
+  "wikidata_by_group": {
+   "wine": 1469,
+   "beer": 3577,
+   "cider": 52,
+   "spirits": 858,
+   "rice": 88
+  },
+  "osm_n": 32425,
+  "osm_by_group": {
+   "wine": 17682,
+   "beer": 11649,
+   "cider": 32,
+   "spirits": 3062
+  },
+  "osm_countries": 177,
+  "osm_no_country": 21,
+  "osm_top_wine": [
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 3198,
+    "pct": 18.1
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 2803,
+    "pct": 15.9
+   },
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 2210,
+    "pct": 12.5
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 1789,
+    "pct": 10.1
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 1479,
+    "pct": 8.4
+   },
+   {
+    "iso": "AUT",
+    "name": "Austria",
+    "n": 633,
+    "pct": 3.6
+   },
+   {
+    "iso": "AUS",
+    "name": "Australia",
+    "n": 613,
+    "pct": 3.5
+   },
+   {
+    "iso": "HUN",
+    "name": "Hungary",
+    "n": 501,
+    "pct": 2.8
+   }
+  ],
+  "osm_topreg_wine": [
+   {
+    "k": "DEU:DEU-1580",
+    "name": "Rhineland-Palatinate",
+    "iso": "DEU",
+    "n": 1980
+   },
+   {
+    "k": "FRA:Nouvelle-Aquitaine",
+    "name": "Nouvelle-Aquitaine",
+    "iso": "FRA",
+    "n": 903
+   },
+   {
+    "k": "USA:USA-3521",
+    "name": "California",
+    "iso": "USA",
+    "n": 717
+   },
+   {
+    "k": "FRA:Occitanie",
+    "name": "Occitania",
+    "iso": "FRA",
+    "n": 629
+   },
+   {
+    "k": "FRA:Centre-Val de Loire",
+    "name": "Centre-Val de Loire",
+    "iso": "FRA",
+    "n": 442
+   },
+   {
+    "k": "ESP:Castilla y León",
+    "name": "Castile and León",
+    "iso": "ESP",
+    "n": 388
+   },
+   {
+    "k": "AUT:AUT-2330",
+    "name": "Lower Austria",
+    "iso": "AUT",
+    "n": 364
+   },
+   {
+    "k": "FRA:Bourgogne-Franche-Comté",
+    "name": "Bourgogne-Franche-Comté",
+    "iso": "FRA",
+    "n": 339
+   }
+  ],
+  "osm_top_beer": [
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 3788,
+    "pct": 32.5
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 1117,
+    "pct": 9.6
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 884,
+    "pct": 7.6
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 880,
+    "pct": 7.6
+   },
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "n": 591,
+    "pct": 5.1
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 432,
+    "pct": 3.7
+   },
+   {
+    "iso": "CZE",
+    "name": "Czech Republic",
+    "n": 279,
+    "pct": 2.4
+   },
+   {
+    "iso": "BEL",
+    "name": "Belgium",
+    "n": 252,
+    "pct": 2.2
+   }
+  ],
+  "osm_topreg_beer": [
+   {
+    "k": "DEU:DEU-1591",
+    "name": "Bavaria",
+    "iso": "DEU",
+    "n": 387
+   },
+   {
+    "k": "USA:USA-3521",
+    "name": "California",
+    "iso": "USA",
+    "n": 331
+   },
+   {
+    "k": "USA:USA-3522",
+    "name": "Colorado",
+    "iso": "USA",
+    "n": 304
+   },
+   {
+    "k": "USA:USA-3559",
+    "name": "New York",
+    "iso": "USA",
+    "n": 277
+   },
+   {
+    "k": "USA:USA-3549",
+    "name": "North Carolina",
+    "iso": "USA",
+    "n": 231
+   },
+   {
+    "k": "USA:USA-3536",
+    "name": "Texas",
+    "iso": "USA",
+    "n": 184
+   },
+   {
+    "k": "CAN:CAN-633",
+    "name": "British Columbia",
+    "iso": "CAN",
+    "n": 180
+   },
+   {
+    "k": "CAN:CAN-682",
+    "name": "Ontario",
+    "iso": "CAN",
+    "n": 168
+   }
+  ],
+  "osm_top_spirits": [
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 643,
+    "pct": 21.0
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 525,
+    "pct": 17.1
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 272,
+    "pct": 8.9
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 270,
+    "pct": 8.8
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 103,
+    "pct": 3.4
+   },
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "n": 97,
+    "pct": 3.2
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 96,
+    "pct": 3.1
+   },
+   {
+    "iso": "AUT",
+    "name": "Austria",
+    "n": 92,
+    "pct": 3.0
+   }
+  ],
+  "osm_topreg_spirits": [
+   {
+    "k": "GBR:Scotland",
+    "name": "Scotland",
+    "iso": "GBR",
+    "n": 177
+   },
+   {
+    "k": "DEU:DEU-1591",
+    "name": "Bavaria",
+    "iso": "DEU",
+    "n": 172
+   },
+   {
+    "k": "DEU:DEU-1573",
+    "name": "Baden-Württemberg",
+    "iso": "DEU",
+    "n": 161
+   },
+   {
+    "k": "ESP:Cataluña",
+    "name": "Catalonia",
+    "iso": "ESP",
+    "n": 65
+   },
+   {
+    "k": "USA:USA-3548",
+    "name": "Kentucky",
+    "iso": "USA",
+    "n": 55
+   },
+   {
+    "k": "USA:USA-3559",
+    "name": "New York",
+    "iso": "USA",
+    "n": 48
+   },
+   {
+    "k": "DEU:DEU-1580",
+    "name": "Rhineland-Palatinate",
+    "iso": "DEU",
+    "n": 44
+   },
+   {
+    "k": "FRA:Nouvelle-Aquitaine",
+    "name": "Nouvelle-Aquitaine",
+    "iso": "FRA",
+    "n": 43
+   }
+  ],
+  "sake_wikidata": 88,
+  "sake_top": [
+   {
+    "iso": "JPN",
+    "n": 87
+   },
+   {
+    "iso": "USA",
+    "n": 1
+   }
+  ]
+ },
+ "gi": {
+  "n": 1985,
+  "by_cat": {
+   "wine": 1665,
+   "spirits": 273,
+   "beer": 25,
+   "fermented": 20,
+   "aromatised": 2
+  },
+  "n_registered": 1960,
+  "n_pending": 25,
+  "n_third": 45,
+  "third_countries": [
+   "BRA",
+   "CHN",
+   "CUB",
+   "GBR",
+   "GTM",
+   "GUY",
+   "IRL",
+   "MEX",
+   "NOR",
+   "PER",
+   "RUS",
+   "TUR",
+   "UKR",
+   "USA",
+   "VEN"
+  ],
+  "n_countries": 40,
+  "placed": 996,
+  "placed_by": {
+   "name match": 789,
+   "not placed": 989,
+   "Wikidata eAmbrosia ID": 207
+  },
+  "spirit_families": {
+   "vodka": 8,
+   "liqueur": 59,
+   "whisky": 4,
+   "gin": 16,
+   "brandy": 143,
+   "rum": 14,
+   "anise": 14,
+   "spirit": 7,
+   "asian": 5,
+   "rice": 2,
+   "agave": 1
+  },
+  "total_register": 3933,
+  "total_reported": 3935,
+  "cancelled_rejected": 32,
+  "placed_pct": 50.2,
+  "top_wine": [
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 522
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 442
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 150
+   },
+   {
+    "iso": "GRC",
+    "name": "Greece",
+    "n": 147
+   },
+   {
+    "iso": "ROU",
+    "name": "Romania",
+    "n": 55
+   },
+   {
+    "iso": "BGR",
+    "name": "Bulgaria",
+    "n": 54
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 47
+   },
+   {
+    "iso": "HUN",
+    "name": "Hungary",
+    "n": 44
+   }
+  ],
+  "top_spirits": [
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 52
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 35
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 34
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 19
+   },
+   {
+    "iso": "HUN",
+    "name": "Hungary",
+    "n": 16
+   },
+   {
+    "iso": "GRC",
+    "name": "Greece",
+    "n": 14
+   },
+   {
+    "iso": "PRT",
+    "name": "Portugal",
+    "n": 14
+   },
+   {
+    "iso": "BGR",
+    "name": "Bulgaria",
+    "n": 12
+   }
+  ],
+  "wine_top_regions": [
+   {
+    "k": "FRA:Bourgogne-Franche-Comté",
+    "name": "Bourgogne-Franche-Comté",
+    "iso": "FRA",
+    "n": 70
+   },
+   {
+    "k": "FRA:Occitanie",
+    "name": "Occitania",
+    "iso": "FRA",
+    "n": 56
+   },
+   {
+    "k": "FRA:Nouvelle-Aquitaine",
+    "name": "Nouvelle-Aquitaine",
+    "iso": "FRA",
+    "n": 45
+   },
+   {
+    "k": "ITA:Veneto",
+    "name": "Veneto",
+    "iso": "ITA",
+    "n": 34
+   },
+   {
+    "k": "ITA:Piemonte",
+    "name": "Piedmont",
+    "iso": "ITA",
+    "n": 33
+   },
+   {
+    "k": "FRA:Auvergne-Rhône-Alpes",
+    "name": "Auvergne-Rhône-Alpes",
+    "iso": "FRA",
+    "n": 32
+   },
+   {
+    "k": "ITA:Toscana",
+    "name": "Tuscany",
+    "iso": "ITA",
+    "n": 32
+   },
+   {
+    "k": "ITA:Apulia",
+    "name": "Apulia",
+    "iso": "ITA",
+    "n": 27
+   },
+   {
+    "k": "ITA:Lazio",
+    "name": "Lazio",
+    "iso": "ITA",
+    "n": 26
+   },
+   {
+    "k": "ITA:Sicily",
+    "name": "Sicily",
+    "iso": "ITA",
+    "n": 24
+   }
+  ],
+  "by_decade": {
+   "1970": 423,
+   "1980": 228,
+   "1990": 353,
+   "2000": 669,
+   "2010": 205,
+   "2020": 107
+  },
+  "beer_names": [
+   "Bayerisches Bier",
+   "Bere Sadu",
+   "Bremer Bier",
+   "Brněnské pivo / Starobrněnské pivo",
+   "Budějovické pivo",
+   "Budějovický měšťanský var",
+   "Březnický ležák",
+   "Chodské pivo",
+   "Dortmunder Bier",
+   "Hofer Bier",
+   "Kaimiškas Jovarų alus",
+   "Kentish ale and Kentish strong ale",
+   "Kulmbacher Bier",
+   "Kölsch",
+   "Mainfranken Bier",
+   "Münchener Bier",
+   "Oktoberfestbier",
+   "Reuther Bier",
+   "Rutland Bitter",
+   "Vlaams roodbruin bier / Flanders Red Ale",
+   "Znojemské pivo",
+   "Černá Hora",
+   "Českobudějovické pivo",
+   "České pivo",
+   "辽中玫瑰 / Liaozhong Mei Gui"
+  ],
+  "cider_n": 15,
+  "cider_by_country": {
+   "DEU": 1,
+   "FRA": 7,
+   "ESP": 2,
+   "GBR": 5
+  }
+ },
+ "wine_regions": {
+  "n": 471,
+  "by_kind": {
+   "wine region": 195,
+   "American Viticultural Area": 254,
+   "appellation": 1,
+   "DOCG": 2,
+   "geographical indication (New Zealand)": 3,
+   "AOC": 8,
+   "DO": 8
+  },
+  "top": [
+   {
+    "iso": "USA",
+    "n": 255
+   },
+   {
+    "iso": "FRA",
+    "n": 60
+   },
+   {
+    "iso": "AUS",
+    "n": 33
+   },
+   {
+    "iso": "ESP",
+    "n": 28
+   },
+   {
+    "iso": "ITA",
+    "n": 20
+   },
+   {
+    "iso": "PRT",
+    "n": 17
+   }
+  ]
+ },
+ "grapes": {
+  "n_all": 2830,
+  "n_origin": 1108,
+  "n_countries": 36,
+  "top": [
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 800
+   },
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 83
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 50
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 33
+   },
+   {
+    "iso": "HUN",
+    "name": "Hungary",
+    "n": 26
+   },
+   {
+    "iso": "GEO",
+    "name": "Georgia",
+    "n": 20
+   },
+   {
+    "iso": "BGR",
+    "name": "Bulgaria",
+    "n": 19
+   },
+   {
+    "iso": "PRT",
+    "name": "Portugal",
+    "n": 14
+   },
+   {
+    "iso": "RUS",
+    "name": "Russia",
+    "n": 13
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 13
+   }
+  ]
+ },
+ "national": {
+  "n_countries": 207,
+  "n_drink": 201,
+  "n_liquor": 90,
+  "first_kind": {
+   "cocktail": 10,
+   "coffee": 16,
+   "agave": 1,
+   "rum": 5,
+   "soft": 55,
+   "alcohol": 6,
+   "liqueur": 4,
+   "brandy": 14,
+   "beer": 12,
+   "trad": 9,
+   "unclassified": 21,
+   "spirit": 13,
+   "wine": 6,
+   "anise": 4,
+   "whisky": 1,
+   "vodka": 2,
+   "gin": 1,
+   "tea": 19,
+   "asian": 2
+  },
+  "first_alc_kind": {
+   "cocktail": 11,
+   "whisky": 2,
+   "agave": 1,
+   "rum": 8,
+   "wine": 9,
+   "spirit": 23,
+   "alcohol": 6,
+   "liqueur": 5,
+   "brandy": 16,
+   "beer": 13,
+   "trad": 13,
+   "unclassified": 21,
+   "vodka": 3,
+   "anise": 9,
+   "gin": 2,
+   "asian": 5
+  },
+  "first_nonalc": 90,
+  "first_nonalc_pct": 44.8,
+  "first_spirits": 47,
+  "first_tea": 19,
+  "first_coffee": 16,
+  "liquor_first_kind": {
+   "whisky": 4,
+   "agave": 1,
+   "wine": 3,
+   "rum": 7,
+   "spirit": 32,
+   "brandy": 18,
+   "liqueur": 6,
+   "cocktail": 1,
+   "vodka": 3,
+   "anise": 7,
+   "asian": 4,
+   "trad": 2,
+   "rice": 1,
+   "gin": 1
+  },
+  "most_named": [
+   {
+    "n": "rum",
+    "count": 17
+   },
+   {
+    "n": "coffee",
+    "count": 13
+   },
+   {
+    "n": "arak",
+    "count": 12
+   },
+   {
+    "n": "wine",
+    "count": 10
+   },
+   {
+    "n": "rakija",
+    "count": 10
+   },
+   {
+    "n": "tea",
+    "count": 8
+   },
+   {
+    "n": "arabic coffee",
+    "count": 8
+   },
+   {
+    "n": "kava",
+    "count": 7
+   }
+  ]
+ },
+ "records": {
+  "n": 67755,
+  "n_countries": 186,
+  "top": [
+   {
+    "iso": "USA",
+    "name": "United States of America",
+    "n": 16251
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "n": 8784
+   },
+   {
+    "iso": "NLD",
+    "name": "Netherlands",
+    "n": 6068
+   },
+   {
+    "iso": "ITA",
+    "name": "Italy",
+    "n": 5721
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "n": 5688
+   },
+   {
+    "iso": "BEL",
+    "name": "Belgium",
+    "n": 3066
+   },
+   {
+    "iso": "ESP",
+    "name": "Spain",
+    "n": 2687
+   },
+   {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "n": 2300
+   },
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "n": 1664
+   },
+   {
+    "iso": "AUT",
+    "name": "Austria",
+    "n": 1144
+   }
+  ],
+  "europe_pct": 64.7,
+  "by_continent": [
+   {
+    "name": "Europe",
+    "n": 43812,
+    "pct": 64.7
+   },
+   {
+    "name": "North America",
+    "n": 18566,
+    "pct": 27.4
+   },
+   {
+    "name": "Asia",
+    "n": 1664,
+    "pct": 2.5
+   },
+   {
+    "name": "South America",
+    "n": 1654,
+    "pct": 2.4
+   },
+   {
+    "name": "Oceania",
+    "n": 1546,
+    "pct": 2.3
+   },
+   {
+    "name": "Africa",
+    "n": 504,
+    "pct": 0.7
+   },
+   {
+    "name": "Seven seas (open ocean)",
+    "n": 9,
+    "pct": 0.0
+   }
+  ],
+  "africa": 504,
+  "africa_pct": 0.7
+ },
+ "examples": {
+  "tequila": {
+   "n": "tequila",
+   "iso": "MEX",
+   "fam": "agave",
+   "sl": 83
+  },
+  "baijiu": {
+   "n": "baijiu",
+   "iso": "CHN",
+   "fam": "asian",
+   "sl": 31
+  },
+  "soju": null,
+  "sake": {
+   "n": "sake",
+   "iso": "JPN",
+   "fam": "rice",
+   "sl": 84
+  },
+  "pisco": {
+   "n": "pisco",
+   "iso": "PER",
+   "fam": "brandy",
+   "sl": 36
+  },
+  "kolsch": {
+   "n": "Kölsch",
+   "iso": "DEU",
+   "fam": "beer",
+   "sl": 28
+  },
+  "cognac": {
+   "n": "cognac",
+   "iso": "FRA",
+   "fam": "brandy",
+   "sl": 80
+  },
+  "scotch": {
+   "n": "Scotch whisky",
+   "iso": "GBR",
+   "fam": "whisky",
+   "sl": 49
+  }
+ },
+ "cards": {
+  "mex_liquors": 4,
+  "bgr_spirits": 12,
+  "bgr_grozdova": 8,
+  "beer_cze_deu": 19
+ },
+ "regions": {
+  "n_regions": 955,
+  "n_countries": 66
+ }
+}

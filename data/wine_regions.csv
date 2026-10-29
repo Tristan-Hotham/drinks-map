@@ -1,0 +1,472 @@
+wikidata,name,kind,country_iso3,region,lat,lon,sitelinks,enwiki,description
+Q138645997,Vino de Neuquén,wine region,ARG,ARG:ARG-1276,-38.9517,-68.0744,0,,
+Q4735530,Alpine Valleys,wine region,AUS,AUS:AUS-2656,-36.7268,146.949,1,Alpine Valleys,"region in North East Victoria, Australia"
+Q4863063,Barossa Valley,wine region,AUS,AUS:AUS-2655,-34.5167,138.88,5,Barossa Valley wine region,wine region in South Australia
+Q5031253,Canberra District wine region,wine region,AUS,AUS:AUS-2654,-35.0,149.333,1,Canberra District wine region,wine producing region in Australia
+Q1612687,Clare Valley,wine region,AUS,AUS:AUS-2655,-33.8833,138.6,6,Clare Valley wine region,region of South Australia
+Q24521767,Cowra wine region,wine region,AUS,AUS:AUS-2654,-33.7,148.6,1,Cowra wine region,"wine region in New South Wales, Australia"
+Q19461524,Eden Valley wine region,wine region,AUS,AUS:AUS-2655,-30.0,135.0,1,Eden Valley wine region,"wine region in South Australia, Australia"
+Q5593940,Grampians,wine region,AUS,AUS:AUS-2656,-37.2432,142.275,1,Grampians wine region,"wine-producing region in Victoria, Australia"
+Q14935800,Great Southern,wine region,AUS,AUS:AUS-2651,-35.0,117.0,3,Great Southern (wine region),wine region in Western Australia
+Q24521763,Gundagai wine region,wine region,AUS,AUS:AUS-2654,-35.0,148.0,1,Gundagai wine region,"wine region in Gundagai, NSW, Australia"
+Q5693656,Heathcote wine region,wine region,AUS,AUS:AUS-2656,-36.9161,144.696,1,Heathcote wine region,"wine region in Victoria, Australia"
+Q24521733,Hilltops wine region,wine region,AUS,AUS:AUS-2654,-34.3167,148.3333,1,Hilltops wine region,"wine region in New South Wales, Australia"
+Q19597670,Langhorne Creek wine region,wine region,AUS,AUS:AUS-2655,-35.3167,139.0,1,Langhorne Creek wine region,Australian Geographical indication
+Q6759841,Margaret River,wine region,AUS,AUS:AUS-2651,-33.955,115.075,3,Margaret River (wine region),Wine region in Western Australia
+Q6802082,McLaren Vale,wine region,AUS,AUS:AUS-2655,-35.2194,138.544,2,McLaren Vale,Australian Geographical indication
+Q11786209,Mount Benson,wine region,AUS,AUS:AUS-2655,-37.0333,139.8,3,Mount Benson wine region,wine region in South Australia
+Q19875806,Mount Gambier wine region,wine region,AUS,AUS:AUS-2655,-37.8667,140.9,1,Mount Gambier wine region,"wine-producing region in South Australia, Australia"
+Q24521768,Mudgee wine region,wine region,AUS,AUS:AUS-2654,-32.5,149.8,1,Mudgee wine region,
+Q25182598,Murray Darling,wine region,AUS,AUS:AUS-2656,-34.1889,142.1583,1,Murray Darling,wine region and Australian Geographical Indication
+Q99317948,Nagambie Lakes wine region,wine region,AUS,AUS:AUS-2656,-36.8542,144.2811,1,Nagambie Lakes wine region,"wine region in central Victoria, Australia"
+Q28183583,North East Victoria,wine region,AUS,AUS:AUS-2656,-36.46,146.6,1,North East Victoria,Australian geographical indication (zone)
+Q24521769,Orange wine region,wine region,AUS,AUS:AUS-2654,-33.4,149.1,1,Orange wine region,registered Australian Geographical Indication
+Q19573545,Padthaway wine region,wine region,AUS,AUS:AUS-2655,-36.5833,140.65,1,Padthaway wine region,wine-growing region in South Australia
+Q19573687,Piccadilly Valley wine sub-region,wine region,AUS,AUS:AUS-2655,-34.8667,138.8,1,Piccadilly Valley wine sub-region,"wine-producing region in South Australia, Australia"
+Q3411307,Pyrenees,wine region,AUS,AUS:AUS-2656,-37.1165,143.314,8,Pyrenees (Victoria),"wine region in Victoria, Australia"
+Q19877927,Robe wine region,wine region,AUS,AUS:AUS-2655,-37.25,139.8667,1,Robe wine region,"wine region adjoining the town of Robe, South Australia"
+Q19879273,Southern Fleurieu wine region,wine region,AUS,AUS:AUS-2655,-35.45,138.4833,1,Southern Fleurieu wine region,wine region of South Australia
+Q24521756,Swan Hill wine region,wine region,AUS,AUS:AUS-2656,-35.25,143.5,1,Swan Hill wine region,
+Q641419,Swan Valley,wine region,AUS,AUS:AUS-2651,-31.8333,116.0,7,Swan Valley (Western Australia),"region in north eastern Perth, Western Australia."
+Q9362650,Tumbarumba wine region,wine region,AUS,AUS:AUS-2654,-35.6,148.0,2,Tumbarumba wine region,"wine region in New South Wales, Australia"
+Q101212516,Upper Goulburn,wine region,AUS,AUS:AUS-2656,-36.8542,144.2811,1,Upper Goulburn,"wine region of Victoria, Australia"
+Q73334818,Western Plains,wine region,AUS,AUS:AUS-2654,-32.0,147.0,1,Western Plains wine zone,"wine growing zone in New South Wales, Australia"
+Q24090012,Western Victoria,wine region,AUS,AUS:AUS-2656,-37.0,142.0,1,Western Victoria (wine region),Australian geographical indication (zone)
+Q8049508,Yarra Valley,wine region,AUS,AUS:AUS-2656,-37.7667,145.617,2,Yarra Valley wine region,"wine region in Victoria, Australia"
+Q55632668,Schilcherland DAC,wine region,AUT,AUT:AUT-2323,46.823,15.25,2,Schilcherland DAC,
+Q16545630,Côtes de Sambre et Meuse,wine region,BEL,BEL:BEL-3476,50.35,5.2667,1,,
+Q7081806,Okanagan Valley,wine region,CAN,CAN:CAN-633,54.5,-124.5,1,Okanagan Valley (wine region),"wine-producing area in British Columbia, Canada"
+Q1270756,Dézaley,wine region,CHE,CHE:CHE-3422,46.6,6.55,3,,geographic region
+Q666244,La Côte,wine region,CHE,CHE:CHE-3422,46.6,6.55,5,,vineyard of Switzerland
+Q6159082,Colchagua Valley,wine region,CHL,,-34.1697,-70.7411,2,,Chilean wine region and protected designation of origin
+Q5061975,Valle Central,wine region,CHL,,-35.4267,-71.6717,5,Central Valley (Chilean wine region),Chilean wine region and protected designation of origin
+Q5573789,Valle del Rapel,wine region,CHL,,-34.1697,-70.7411,2,,Chilean wine region and protected designation of origin
+Q14226096,Mutěnice Wine Region,wine region,CZE,,49.1,16.6,1,,
+Q29017177,Roudnice vineyard,wine region,CZE,,50.1762,15.6518,1,,
+Q402640,Ahr,wine region,DEU,DEU:DEU-1580,50.54,7.04,12,Ahr (wine region),wine-producing region
+Q647902,Baden,wine region,DEU,DEU:DEU-1573,48.5378,9.0411,12,Baden (wine region),wine-producing region
+Q153250,Franconia,wine region,DEU,DEU:DEU-1591,49.0786,11.3856,8,Franconia (wine region),wine-producing region
+Q323855,Hessische Bergstraße,wine region,DEU,DEU:DEU-1574,49.717,8.617,8,Hessische Bergstraße,wine-producing region
+Q464929,Mittelrhein,wine region,DEU,DEU:DEU-1580,49.9131,7.4497,6,Mittelrhein (wine region),German wine region
+Q672776,Mosel,wine region,DEU,DEU:DEU-1580,49.9131,7.4497,17,Mosel (wine region),wine-producing region
+Q315052,Nahe,wine region,DEU,DEU:DEU-1580,49.9131,7.4497,8,Nahe (wine region),German wine region
+Q7031142,Niederlausitz,wine region,DEU,DEU:DEU-3487,52.3946,13.0603,1,Niederlausitz (wine region),"small wine-growing region in Brandenburg, Germany"
+Q185439,Palatinate,wine region,DEU,DEU:DEU-1580,49.9131,7.4497,7,Palatinate (wine region),German wine region
+Q387316,Rheingau,wine region,DEU,DEU:DEU-1574,50.608,9.0285,13,Rheingau (wine region),German wine region
+Q567327,Rheinhessen,wine region,DEU,DEU:DEU-1580,49.9,8.0,9,Rheinhessen (wine region),German wine region
+Q111133928,Roter Hang (Rhine-Hesse),wine region,DEU,DEU:DEU-1580,49.9,8.33,2,,Collective term for several vineyards
+Q683582,Saale-Unstrut,wine region,DEU,DEU:DEU-1577,51.0,11.0,13,Saale-Unstrut,wine-producing region
+Q467095,Saxony,wine region,DEU,DEU:DEU-1601,51.0493,13.7381,9,Saxony (wine region),wine-producing region
+Q166387,Württemberg,wine region,DEU,DEU:DEU-1573,48.5378,9.0411,9,Württemberg (wine region),wine-producing region
+Q128996548,vineyards of Nierstein,wine region,DEU,DEU:DEU-1580,49.8694,8.3375,1,,vineyards in the region of Rhine-Hesse
+Q322801,Abona,wine region,ESP,ESP:Canary Is.,28.1659,-16.5021,4,Abona (DO),Spanish wine area
+Q4792100,Arlanza,DO,ESP,ESP:Castilla y León,42.0264,-3.7589,5,Arlanza (DO),"Arlanza is a Spanish Denominación de Origen Protegida (DOP) located in the provinces of Burgos and Palencia,"
+Q624640,Bierzo,wine region,ESP,ESP:Castilla y León,42.55,-6.5833,8,Bierzo (DO),Spanish Denominación de Origen Protegida (DOP) for wines located in the northwest of the province of León
+Q2887617,Calatayud PDO,wine region,ESP,ESP:Aragón,41.65,-0.8833,7,Calatayud (DO),protected designation of origin of wine of Spain
+Q2935540,Campo de Borja (DO),wine region,ESP,ESP:Aragón,41.8348,-1.5338,6,Campo de Borja (DO),wine of Spain
+Q2832748,Cariñena,wine region,ESP,ESP:Aragón,41.3333,-1.2167,8,Cariñena DOP,wine of Spain
+Q5049887,Castilla y León,wine region,ESP,ESP:Castilla y León,41.7544,-4.7819,3,Castilla y León (Vino de la Tierra),Spanish geographical indication for Vino de la Tierra wines located in the autonomous region of Castile and León
+Q131278789,Category:Aylés (DO),wine region,ESP,ESP:Aragón,41.3382,-1.2242,2,,
+Q131278782,Category:Urbezo (DO),wine region,ESP,ESP:Aragón,41.3382,-1.2242,2,,Wine in Aragon
+Q1124398,Condado de Huelva,appellation,ESP,ESP:Cataluña,42.4811,1.6506,5,Condado de Huelva,Denominación de Origen (DO) for wines located in the south-east of the province of Huelva
+Q6746472,Designation of Origin Pla de Bages (Wine Region),wine region,ESP,ESP:Cataluña,41.7206,1.8397,6,Pla de Bages,"Is a Wine Region, located close to Barcelona, set in the heart of Catalonia, Spain. Lies between the mountain of Montserrat. A unique terrain dotted with small vineyards, sorrounded by woodland and teeming with an amazing biodiversity."
+Q774085,Gamonéu cheese,DO,ESP,ESP:Asturias,43.2959,-4.9718,11,Gamonéu cheese,"Spanish firm cheese made from cow, goat, and sheep's milk"
+Q5884650,Granada,wine region,ESP,ESP:Andalucía,37.1833,-3.6006,4,Granada (wine),Spanish wine region
+Q6462787,La Gomera,DO,ESP,ESP:Canary Is.,28.1174,-17.2325,3,La Gomera (DO),"La Gomera is a Spanish Denominación de Origen Protegida (DOP) for wines that covers the entire island of La Gomera (Canary Islands, Spain)"
+Q1290583,Orotava Valley,wine region,ESP,ESP:Canary Is.,28.3875,-16.5454,11,Orotava Valley,Valley and comarca of Tenerife
+Q1754563,Priorat (DO),wine region,ESP,ESP:Cataluña,41.165,0.76,11,Priorat DOQ,"designation of origin of a wine from Catalonia , Spain"
+Q1473908,Ribeiro,DO,ESP,ESP:Galicia,42.1667,-7.5,8,Ribeiro (DO),Spanish Denominación de Origen (DO) for wines
+Q2167338,Ribera del Duero,wine region,ESP,ESP:Castilla y León,42.3833,-3.6667,13,Ribera del Duero,Spanish Denominación de Origen Protegida (DOP) located in the autonomous community of Castile and León
+Q7322328,Ribera del Júcar,DO,ESP,ESP:Castilla-La Mancha,39.3667,-2.2,4,Ribera del Júcar,Spanish wine DO
+Q1569384,Rioja,wine region,ESP,ESP:La Rioja,42.4618,-2.4457,20,Rioja DOCa,Spanish wine region
+Q30674832,Sherry Triangle,wine region,ESP,ESP:Andalucía,36.69,-6.27,1,Sherry Triangle,"Wine region in Cádiz, Spain"
+Q1938017,Somontano,wine region,ESP,ESP:Aragón,42.0361,0.1264,11,Somontano,Spanish Denominación de Origen Protegida (DOP) for wine
+Q1719149,Tacoronte-Acentejo,DO,ESP,ESP:Canary Is.,28.4797,-16.4133,4,Tacoronte-Acentejo,DO Spain wine
+Q3064521,Tarragona wine DO,DO,ESP,ESP:Cataluña,41.1333,1.25,7,Tarragona (DO),Spanish wine DO
+Q544423,Tierra del Vino de Zamora DO,wine region,ESP,ESP:Castilla y León,41.4989,-5.7556,4,Tierra del Vino de Zamora DO,
+Q1665965,Uclés,DO,ESP,ESP:Castilla-La Mancha,39.9833,-2.85,5,Uclés (DO),
+Q2509282,Valle de la Orotava,wine region,ESP,ESP:Canary Is.,28.3919,-16.5253,4,Valle de la Orotava,
+Q16398,sherry,wine region,ESP,ESP:Andalucía,36.6839,-6.1262,56,Sherry,fortified wine made from white grapes
+Q745121,Alsace wine region,wine region,FRA,FRA:Grand Est,48.5,7.5,18,Alsace wine region,wine-producing region
+Q3558198,Beaujolais vineyard,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.9955,4.7196,3,,
+Q892806,Bonnezeaux,wine region,FRA,FRA:Pays de la Loire,47.45,-0.6,3,,wine-producing region
+Q1016093,Burgundy wine region,wine region,FRA,FRA:Bourgogne-Franche-Comté,47.167,4.95,31,Burgundy wine,wine made in the Burgundy region in eastern France
+Q1025147,Cadillac AOC,wine region,FRA,FRA:Nouvelle-Aquitaine,44.8333,-0.6667,4,Cadillac AOC,Bordeaux wine from the Entre Deux Mers subregion
+Q2428809,Champagne,wine region,FRA,FRA:Grand Est,49.0,4.0,20,Champagne wine region,wine region of France
+Q1090927,Chenas,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.9955,4.7196,4,,wine producing region
+Q1074779,Chiroubles,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.9955,4.7196,4,,French wine
+Q1090298,Château-Chalon AOC,wine region,FRA,FRA:Bourgogne-Franche-Comté,46.6753,5.5544,3,Château-Chalon AOC,French wine
+Q2669603,Châteaumeillant,wine region,FRA,FRA:Centre-Val de Loire,47.0811,2.4444,3,,French wine
+Q1999642,Corsica wine,wine region,FRA,FRA:Corse,42.4667,9.2,7,Corsican wine,regional French wine
+Q1136597,Coteaux de Pierrevert AOC,wine region,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.0953,6.24,4,Coteaux de Pierrevert AOC,French wine
+Q1136603,Coteaux du Languedoc,wine region,FRA,FRA:Occitanie,43.0833,2.4167,2,,wine region in France
+Q1136602,Coteaux du Loir,wine region,FRA,FRA:Pays de la Loire,48.2833,0.2167,2,,wine-producing region
+Q1136606,Coteaux du Lyonnais,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.9955,4.7196,4,Coteaux du Lyonnais,wine-producing region
+Q28496739,Cruet AOC,AOC,FRA,FRA:Auvergne-Rhône-Alpes,45.5833,6.3333,2,,
+Q471950,Côte Chalonnaise,wine region,FRA,FRA:Bourgogne-Franche-Comté,46.81,4.7,7,Côte Chalonnaise,subregion of the Burgundy wine region of France
+Q1150937,Côte Roannaise,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.7539,4.2247,2,,wine-producing region
+Q1150940,Côte de Beaune,wine region,FRA,FRA:Bourgogne-Franche-Comté,46.99,4.78,11,Côte de Beaune,"southern part of the Côte d'Or, Burgundy, France"
+Q777013,Côte de Nuits,wine region,FRA,FRA:Bourgogne-Franche-Comté,47.18,4.96,14,Côte de Nuits,Côte de Nuits
+Q1136598,Côteaux du Giennois,wine region,FRA,FRA:Centre-Val de Loire,47.9167,2.1667,4,,French wine
+Q1150990,Côtes de Provence,wine region,FRA,FRA:Provence-Alpes-Côte-d'Azur,43.4008,6.21,2,,wine-producing region
+Q1150991,Côtes du Forez,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.7539,4.2247,3,,wine-producing region
+Q1150995,Côtes du Jura wine,wine region,FRA,FRA:Bourgogne-Franche-Comté,46.6753,5.5544,2,,wine-producing region
+Q458070,Côtes du Luberon AOC,AOC,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.0,5.1667,5,Luberon AOC,
+Q1151005,Côtes du Rhône AOC,wine region,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.0,5.1667,11,Côtes du Rhône AOC,French wine appellation
+Q1151010,Côtes du Roussillon AOC,wine region,FRA,FRA:Occitanie,42.8653,2.8956,7,Côtes du Roussillon AOC,wine-producing region
+Q973682,Côtes du Ventoux AOC,wine region,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.0,5.1667,6,Ventoux AOC,French wine
+Q1151015,Côtes du Vivarais AOC,wine region,FRA,FRA:Auvergne-Rhône-Alpes,44.6667,4.4167,5,Côtes du Vivarais AOC,wine-producing region
+Q1151017,Côtes d’Auvergne,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.7,3.2167,4,,wine-producing region
+Q1150988,Côtes-de-saint-mont,wine region,FRA,FRA:Occitanie,43.65,0.5833,4,,wine-producing region
+Q3010721,Côtes-de-thongue,wine region,FRA,FRA:Occitanie,43.6109,3.8772,2,,
+Q1422135,Côtes-du-Rhône Villages AOC,AOC,FRA,FRA:Auvergne-Rhône-Alpes,44.75,5.1667,5,Côtes-du-Rhône Villages AOC,French wine
+Q3558190,Entre-Deux-Mers,wine region,FRA,FRA:Nouvelle-Aquitaine,44.8333,-0.6667,8,Entre-Deux-Mers,French wine growing region
+Q470974,Fitou AOC,wine region,FRA,FRA:Occitanie,43.0833,2.4167,8,Fitou AOC,French wine appellation
+Q1150996,Fronton AOC,wine region,FRA,FRA:Occitanie,44.0,1.3333,7,Fronton AOC,French wine
+Q2922357,Hautes-Côtes de Beaune,wine region,FRA,FRA:Bourgogne-Franche-Comté,47.4167,4.8333,5,Hautes-Côtes de Beaune,subregion of the Burgundy wine
+Q1683850,Jasnières,wine region,FRA,FRA:Pays de la Loire,48.2833,0.2167,4,Jasnières,French wine
+Q2987951,Jurisdiction of Saint-Emilion,wine region,FRA,FRA:Nouvelle-Aquitaine,44.8947,0.1553,3,,
+Q923449,La Tâche AOC,AOC,FRA,FRA:Bourgogne-Franche-Comté,47.1592,4.9511,6,La Tâche AOC,"Grand Cru vineyard in Burgundy, France"
+Q1805438,Languedoc-Roussillon wine,wine region,FRA,FRA:Occitanie,43.0833,2.4167,12,Languedoc-Roussillon wine,Classification of wine produced in southern France
+Q1954580,Loire Valley,wine region,FRA,FRA:Pays de la Loire,47.3333,-1.6667,14,Loire Valley (wine),wine region in France
+Q2516636,Madiran wine,wine region,FRA,FRA:Nouvelle-Aquitaine,43.25,-0.8333,5,Madiran wine,"wine region in Gascony, south west France"
+Q532734,Margaux AOC,wine region,FRA,FRA:Nouvelle-Aquitaine,44.9969,-0.6886,8,Margaux AOC,"French wine AOC, sub-region of the Haut Medoc, the Medoc and Bordeaux"
+Q2120260,Maury AOC,wine region,FRA,FRA:Occitanie,42.5,2.75,6,Maury AOC,French wine
+Q3322288,Montagne de Reims,wine region,FRA,FRA:Grand Est,49.1421,4.1484,2,Montagne de Reims,French wine region
+Q1421562,Pomerol AOC,AOC,FRA,FRA:Nouvelle-Aquitaine,44.8333,-0.6667,9,Pomerol AOC,Bordeaux wine appellation
+Q82561786,Pyrénées-Orientales wine region,wine region,FRA,FRA:Occitanie,42.5,2.75,1,,wine region in the south of France
+Q2123199,Quincy AOC,wine region,FRA,FRA:Centre-Val de Loire,47.0811,2.4444,3,Quincy AOC,French wine-producing region
+Q3419962,Rasteau AOC,AOC,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.2258,4.9885,2,Rasteau AOC,Southern Rhône wine appelation
+Q2146579,Reuilly AOC,wine region,FRA,FRA:Centre-Val de Loire,46.7667,1.6,4,Reuilly AOC,French wine
+Q1891041,Rhône wine,wine region,FRA,FRA:Auvergne-Rhône-Alpes,45.0,4.83,18,Rhône wine,wine region
+Q28496945,Ripaille AOC,AOC,FRA,FRA:Auvergne-Rhône-Alpes,46.0,6.3333,2,,
+Q2167339,Rosette AOC,wine region,FRA,FRA:Nouvelle-Aquitaine,45.0,0.6667,3,,French wine
+Q3443195,Rouge d'Ottrott,AOC,FRA,FRA:Grand Est,48.8167,7.7833,2,Rouge d'Ottrott,French variety of Pinot Noir red wine
+Q927571,South West France,wine region,FRA,FRA:Nouvelle-Aquitaine,44.0,-0.5,10,South West France (wine region),French wine region
+Q28497141,Vaison-la-romaine wine,wine region,FRA,FRA:Provence-Alpes-Côte-d'Azur,44.245,5.0711,2,,Protected appellation for French wine
+Q763660,Vignoble de Chablis,wine region,FRA,FRA:Bourgogne-Franche-Comté,47.8,3.5667,7,,human settlement in France
+Q507055,Vinsobres AOC,wine region,FRA,FRA:Auvergne-Rhône-Alpes,44.75,5.1667,4,Vinsobres AOC,French wine
+Q3560958,Viré-Clessé,wine region,FRA,FRA:Bourgogne-Franche-Comté,46.4164,4.815,3,Viré-Clessé,
+Q1283900,Nemea,wine region,GRC,GRC:GRC-2885,37.838,22.6351,2,,wine-growing region of Greece
+Q1226362,Dingač,wine region,HRV,,42.9178,17.3698,3,Dingač,wine growing region
+Q788297,Badacsony wine,wine region,HUN,HUN:HUN-3158,47.1667,17.75,6,Badacsony wine region,wine region in Hungary
+Q1153040,Balatonboglár Wine Region,wine region,HUN,HUN:HUN-3157,46.4167,17.5833,4,Balatonboglár wine region,Wine region in Hungary
+Q804659,Balatonfüred-Csopak Wine Region,wine region,HUN,HUN:HUN-3158,47.1667,17.75,4,,
+Q987950,Eger,wine region,HUN,HUN:HUN-3174,47.8333,20.25,6,Eger wine region,traditional wine region in Hungary
+Q1032804,Hajós-Baja Wine Region,wine region,HUN,HUN:HUN-3161,46.5,19.4167,4,,
+Q1122026,Kunság Wine Region,wine region,HUN,HUN:HUN-3164,47.4167,19.3333,3,,
+Q6035587,Mátra Wine Region,wine region,HUN,HUN:HUN-3174,47.8333,20.25,2,,
+Q1151541,Somló,wine region,HUN,HUN:HUN-3158,47.1471,17.3702,5,Somló,wine region
+Q828125,Tokaj wine region,wine region,HUN,HUN:HUN-3168,48.15,21.35,41,Tokaj wine region,wine-producing region
+Q109810085,Tokaj-Hegyalja Wine Region,wine region,HUN,HUN:HUN-3168,48.25,21.0,1,,UNESCO World Heritage site in Northern Hungary
+Q140131057,Alto Adige,wine region,ITA,ITA:Trentino-Alto Adige,46.5,11.3333,4,South Tyrol wine,"wine-producing area in Trentino-Alto Adige, Italy"
+Q808584,Barolo DOCG,DOCG,ITA,ITA:Piemonte,44.3833,7.55,29,Barolo,Italian controlled and guaranteed designation of origin wine from Piedmont
+Q139916958,Bivongi DOC,wine region,ITA,ITA:Calabria,38.91,16.5875,1,,Italian controlled designation of origin wine from Calabria
+Q1071629,Chianti,wine region,ITA,ITA:Toscana,43.6,10.95,30,Chianti (region),"wine-producing area in Tuscany, Italy"
+Q2983286,Colli Piacentini,wine region,ITA,ITA:Emilia-Romagna,45.05,9.7,6,Colli Piacentini,Italian wine region
+Q26260858,Colli Romagna Centrale DOC,wine region,ITA,ITA:Emilia-Romagna,44.4178,12.1994,2,,Italian controlled designation of origin wine from Emilia-Romagna
+Q241136,Euganean Hills,wine region,ITA,ITA:Veneto,45.3167,11.6667,24,Euganean Hills,mountain range
+Q140131034,Franciacorta,wine region,ITA,ITA:Lombardia,45.62,10.02,17,Franciacorta,"wine-producing area in Lombardy, Italy"
+Q1135592,Gavi DOCG,DOCG,ITA,ITA:Piemonte,44.6833,8.8028,10,Cortese di Gavi,Italian controlled and guaranteed designation of origin wine from Piedmont
+Q1109872,Gorizia Hills,wine region,ITA,,45.9865,13.4925,8,Gorizia Hills,mountain range
+Q19865,Langhe,wine region,ITA,ITA:Piemonte,44.6086,7.9636,25,Langhe,"hilly area in Piedmont, Italy"
+Q65029145,Le Colline del Prosecco di Conegliano e Valdobbiadene,wine region,ITA,ITA:Veneto,45.953,12.2261,10,,World Heritage site in Italy
+Q19868,Montferrat,wine region,ITA,ITA:Piemonte,44.6086,7.9636,38,Montferrat,part of the region of Piedmont in northern Italy
+Q19870,Roero,wine region,ITA,ITA:Piemonte,44.7,7.85,15,Roero,"geographical area in Piedmont, north-west Italy"
+Q17296768,The Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato,wine region,ITA,ITA:Piemonte,44.6519,7.9942,25,Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato,UNESCO World Heritage Site in the region of Piedmont (Italy)
+Q137604964,Val Demone wine,wine region,ITA,ITA:Sicily,37.6,14.0167,1,,viticultural region of northeastern Sicily
+Q137604961,Val di Mazara wine,wine region,ITA,ITA:Sicily,37.6,14.0167,1,,viticultural region of western Sicily
+Q137604963,Val di Noto wine,wine region,ITA,ITA:Sicily,37.6,14.0167,1,,viticultural region of southeastern Sicily
+Q852467,Valpolicella,wine region,ITA,ITA:Veneto,45.5167,10.8833,22,Valpolicella,"valley and wine region in Verona, Italy"
+Q448096,Vulture,wine region,ITA,ITA:Basilicata,40.95,15.7,11,Vulture (region),"place in Basilicata, Italy"
+Q65040905,Koshu Valley,wine region,JPN,JPN:JPN-1861,35.6641,138.5684,2,Koshu Valley,wine-producing area in Japan
+Q48688339,Mergelland,wine region,NLD,NLD:NLD-898,51.2167,5.9333,1,,wine area
+Q117085188,Auckland wine region,wine region,NZL,,-36.9,174.7833,2,Auckland wine region,wine region in New Zealand
+Q119953341,Bridge Pa Triangle,wine region,NZL,,-39.4167,176.8167,1,Bridge Pa Triangle,wine region in New Zealand
+Q5061573,Central Otago wine region,geographical indication (New Zealand),NZL,,-45.2333,169.3667,4,Central Otago wine region,wine region in New Zealand
+Q119953361,Gimblett Gravels,wine region,NZL,,-39.4167,176.8167,0,,wine-growing district in New Zealand
+Q85765961,Hawke's Bay wine region,wine region,NZL,,-39.4167,176.8167,2,Hawke's Bay wine region,wine region in New Zealand
+Q85783963,Marlborough wine region,geographical indication (New Zealand),NZL,,-41.8833,173.6667,3,Marlborough wine region,New Zealand's largest wine region
+Q117074142,North Canterbury wine region,wine region,NZL,,-43.6,172.0,2,Canterbury wine region,Wine region in New Zealand
+Q117074428,Waiheke Island wine region,wine region,NZL,,-36.9,174.7833,1,Waiheke Island wine region,wine region in New Zealand
+Q131767653,Waitaki Valley,geographical indication (New Zealand),NZL,,-44.926,170.635,2,Waitaki Valley wine region,New Zealand wine region
+Q2832196,Alcobaça (IPR),wine region,PRT,PRT:Centro,39.55,-8.973,2,Alcobaça wine,Portuguese wine region
+Q2832671,Alenquer (DOC),wine region,PRT,PRT:Lisbon,39.057,-9.012,3,Alenquer DOC,Portuguese wine region
+Q649738,Alto Douro Wine Region,wine region,PRT,PRT:Centro,41.1657,-7.5177,31,Alto Douro (region),UNESCO World Heritage Site
+Q2879982,Arrábida (IPR),wine region,PRT,PRT:Norte,40.4819,-8.452,7,Bairrada DOC,Portuguese wine region
+Q5049724,Castelo Rodrigo (DOC),wine region,PRT,PRT:Centro,40.8833,-6.95,1,Castelo Rodrigo wine,Portuguese wine region
+Q1094448,Douro (DOC),wine region,PRT,PRT:Centro,41.1017,-7.7989,1,,Portuguese protected geographic appellation
+Q1269612,Dão  (DOC),wine region,PRT,PRT:Centro,40.52,-7.8872,8,Dão DOC,wine region
+Q6471797,Lafões (IPR),wine region,PRT,PRT:Centro,40.7925,-8.0349,2,Lafões IPR,
+Q3216175,Lagoa (DOC),wine region,PRT,PRT:Algarve,37.1326,-8.4509,3,Lagoa DOC,
+Q3216201,Lagos (DOC),wine region,PRT,PRT:Algarve,37.1153,-8.683,2,,Portuguese wine region
+Q2448665,Landscape of the Pico Island Vineyard Culture,wine region,PRT,PRT:PRT-735,38.5133,-28.5411,22,Landscape of the Pico Island Vineyard Culture,World Heritage site in Portugal
+Q64686735,"Landscape of the Pico Island Vineyard Culture, part I",wine region,PRT,PRT:PRT-735,38.5555,-28.4055,0,,part of World Heritage site in Portugal
+Q64686736,"Landscape of the Pico Island Vineyard Culture, part II",wine region,PRT,PRT:PRT-735,38.5555,-28.4055,0,,part of World Heritage site in Portugal
+Q3242467,Lisboa (VR),wine region,PRT,PRT:Lisbon,38.715,-9.4478,3,Lisboa VR,Portuguese wine region called Estremadura until 2009
+Q3264017,Lourinhã (DOC),wine region,PRT,PRT:Lisbon,39.25,-9.3167,2,,
+Q27697,Madeira wine (DOC),wine region,PRT,PRT:PRT-736,32.75,-17.0,43,Madeira wine,Portuguese wine
+Q140379672,Região Demarcada do Douro (RDD),wine region,PRT,PRT:Norte,41.1768,-7.3319,13,Douro DOC,wine made in the Douro region
+Q325555,Recaș,wine region,ROU,ROU:ROU-280,45.8014,21.5133,32,Recaș,"town in Timiș County, Romania"
+Q63213877,Srem wine region,wine region,SRB,SRB:SRB-281,45.0932,19.9381,2,,
+Q12772543,Nitra wine region,wine region,SVK,,48.4189,18.4119,3,,
+Q64523899,Tokaj wine region,wine region,SVK,,48.5,21.75,0,,Tentative World Heritage site in Slovakia
+Q16557744,Friuli Annia DOC,wine region,SVN,SVN:SVN-261,45.9398,13.6234,2,,Italian controlled designation of origin wine from Friuli-Venezia Giulia
+Q18350205,Adelaida District AVA,American Viticultural Area,USA,USA:USA-3521,35.6437,-120.8029,2,Adelaida District AVA,"appelation that designates wine in San Luis Obispo County, California"
+Q1669449,Alexander Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.75,-122.9,4,Alexander Valley AVA,wine region in California
+Q4720978,Alexandria Lakes AVA,American Viticultural Area,USA,USA:USA-3514,45.9667,-95.3833,1,Alexandria Lakes AVA,American Viticultural Area in Minnesota
+Q107313688,Alisos Canyon AVA,American Viticultural Area,USA,USA:USA-3521,34.7522,-120.2108,1,Alisos Canyon AVA,"American Viticultural Area in Santa Barbara, California"
+Q433582,Alta Mesa AVA,American Viticultural Area,USA,USA:USA-3521,38.4498,-121.2978,2,Alta Mesa AVA,"American Viticultural Area in Sacramento County, California"
+Q446275,Altus AVA,American Viticultural Area,USA,USA:USA-3528,35.4391,-93.7404,2,Altus AVA,"wine-growing region near Altus, Arkansas"
+Q23018002,Ancient Lakes of the Columbia Valley AVA,American Viticultural Area,USA,USA:USA-3519,47.2306,-119.9513,1,Ancient Lakes of Columbia Valley,American Viticultural Area in Washington
+Q491692,Anderson Valley AVA,American Viticultural Area,USA,USA:USA-3521,39.079,-123.468,3,Anderson Valley AVA,wine region in California
+Q4771211,Antelope Valley of the California High Desert AVA,American Viticultural Area,USA,USA:USA-3521,34.7547,-118.2115,1,Antelope Valley of the California High Desert AVA,American Viticultural Area in California
+Q130478551,Appalachian High Country AVA,American Viticultural Area,USA,USA:USA-3549,36.1904,-81.8405,1,Appalachian High Country AVA,American Viticultural Area in Virginia and West Virginia
+Q621543,Applegate Valley AVA,American Viticultural Area,USA,USA:USA-3525,42.2254,-123.0474,2,Applegate Valley AVA,American Viticultural Area
+Q672893,Arkansas Mountain AVA,American Viticultural Area,USA,USA:USA-3528,35.4136,-93.2377,2,Arkansas Mountain AVA,viticultural area
+Q703208,Arroyo Grande Valley AVA,American Viticultural Area,USA,USA:USA-3521,35.1167,-120.5833,2,Arroyo Grande Valley AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q263615,Arroyo Seco AVA,American Viticultural Area,USA,USA:USA-3521,36.3415,-121.3413,2,Arroyo Seco AVA,"appelation that designates wine in Monterey County, CA"
+Q757192,Atlas Peak AVA,American Viticultural Area,USA,USA:USA-3521,38.44,-122.27,3,Atlas Peak AVA,California wine region
+Q765628,Augusta AVA,American Viticultural Area,USA,USA:USA-3531,38.5944,-90.8616,3,Augusta AVA,American Viticultural Area in Missouri
+Q107261141,Ballard Canyon AVA,American Viticultural Area,USA,USA:USA-3521,34.6241,-120.1185,1,Ballard Canyon AVA,"winemaking region in California, United States"
+Q815710,Bell Mountain AVA,American Viticultural Area,USA,USA:USA-3536,30.315,-98.9245,2,Bell Mountain AVA,"viticultural area in Gillespie County, Texas"
+Q816548,Ben Lomond Mountain AVA,American Viticultural Area,USA,USA:USA-3521,37.0453,-122.1445,2,Ben Lomond Mountain AVA,California wine region in Santa Cruz County
+Q817804,Benmore Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.9982,-122.989,2,Benmore Valley AVA,"wine growing region in Lake County, California"
+Q817854,Bennett Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.4,-122.64,2,Bennett Valley AVA,California wine region
+Q96373547,Big Valley District-Lake County AVA,American Viticultural Area,USA,USA:USA-3521,39.0032,-122.8756,1,Big Valley District-Lake County AVA,viticultural area in California
+Q893402,Borden Ranch AVA,American Viticultural Area,USA,USA:USA-3521,38.35,-121.1,2,Borden Ranch AVA,California wine region
+Q771542,California Shenandoah Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.53,-120.8,2,California Shenandoah Valley AVA,American viticultural area
+Q5021434,Calistoga AVA,American Viticultural Area,USA,USA:USA-3521,38.5705,-122.5543,1,Calistoga AVA,an American Viticultural Area: a designated wine grape-growing region in the United States
+Q1034211,Capay Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.8157,-122.2119,2,Capay Valley AVA,"American Viticultural Area in Yolo County, California"
+Q65084213,Cape May Peninsula AVA,American Viticultural Area,USA,USA:USA-3558,39.1417,-74.8,1,Cape May Peninsula AVA,American Viticultural Area in New Jersey
+Q1043531,Carmel Valley AVA,American Viticultural Area,USA,USA:USA-3521,36.4854,-121.7327,2,Carmel Valley AVA,"American Viticultural Area in Monterey County, California"
+Q1051244,Catoctin AVA,American Viticultural Area,USA,USA:USA-3557,39.65,-77.4667,3,Catoctin AVA,wine-producing region in Maryland
+Q1052050,Cayuga Lake AVA,American Viticultural Area,USA,USA:USA-3559,42.5742,-76.6512,2,Cayuga Lake AVA,New York wine region
+Q1053730,Central Coast AVA,American Viticultural Area,USA,USA:USA-3521,36.0,-121.2,4,Central Coast AVA,winemaking region
+Q1053753,Central Delaware Valley AVA,American Viticultural Area,USA,USA:USA-3558,40.449,-74.896,3,Central Delaware Valley AVA,American Viticultural Area in New Jersey
+Q1059721,Chalk Hill AVA,American Viticultural Area,USA,USA:USA-3521,38.56,-122.77,3,Chalk Hill AVA,American wine region
+Q1060179,Chalone AVA,American Viticultural Area,USA,USA:USA-3521,36.4707,-121.2298,2,Chalone AVA,American Viticultural Area in the Monterey and San Benito counties of California
+Q1068966,Chehalem Mountains AVA,American Viticultural Area,USA,USA:USA-3525,45.4333,-122.967,2,Chehalem Mountains AVA,American Viticultural Area
+Q1072890,Chiles Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.6254,-122.371,3,Chiles Valley AVA,"American Viticultural Area in Napa County, California"
+Q1091786,Cienega Valley AVA,American Viticultural Area,USA,USA:USA-3521,36.7434,-121.3883,2,Cienega Valley AVA,American Viticultural Area in California
+Q1095860,Clarksburg AVA,American Viticultural Area,USA,USA:USA-3521,38.4264,-121.5326,2,Clarksburg AVA,"wine-growing region in Yolo, Sacramento and Solano Counties, California"
+Q224762,Clear Lake AVA,American Viticultural Area,USA,USA:USA-3521,38.9828,-122.6153,2,Clear Lake AVA,California wine region in Lake County
+Q1100382,Clements Hills AVA,American Viticultural Area,USA,USA:USA-3521,38.0348,-121.0306,2,Clements Hills AVA,California wine region in San Joaquin County
+Q828795,Cole Ranch AVA,American Viticultural Area,USA,USA:USA-3521,39.0605,-123.2239,5,Cole Ranch AVA,California wine region in Mendocino County
+Q1112474,Columbia Gorge AVA,American Viticultural Area,USA,USA:USA-3519,45.718,-121.496,5,Columbia Gorge AVA,American Viticultural Area
+Q2984578,Columbia Valley AVA,American Viticultural Area,USA,USA:USA-3519,47.1211,-119.288,4,Columbia Valley AVA,American Viticultural Area in Washington and Oregon
+Q131447844,Contra Costa AVA,American Viticultural Area,USA,USA:USA-3521,38.0052,-122.101,1,Contra Costa AVA,
+Q5167628,Coombsville AVA,American Viticultural Area,USA,USA:USA-3521,38.3165,-122.2295,1,Coombsville AVA,American Viticultural Area in California
+Q1136553,Cosumnes River AVA,American Viticultural Area,USA,USA:USA-3521,38.3532,-121.3712,2,Cosumnes River AVA,American Viticultural Area in Sacramento County and San Joaquin County
+Q735126,Covelo AVA,American Viticultural Area,USA,USA:USA-3521,39.8014,-123.2328,2,Covelo AVA,California wine region in Mendocino County
+Q19867019,Creston District AVA,American Viticultural Area,USA,USA:USA-3521,35.513,-120.4474,1,Creston District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q131437681,Crystal Springs of Napa Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.5596,-122.4734,1,Crystal Springs of Napa Valley AVA,"appelation that designates wine in Napa County, California"
+Q1142996,Cucamonga Valley AVA,American Viticultural Area,USA,USA:USA-3521,34.1072,-117.61,2,Cucamonga Valley AVA,American Viticultural Area in California
+Q1143716,Cumberland Valley AVA,American Viticultural Area,USA,USA:USA-3560,39.9167,-77.6667,2,Cumberland Valley AVA,wine region
+Q131198571,Dahlonega Plateau AVA,American Viticultural Area,USA,USA:USA-3543,33.0,-83.5,1,Dahlonega Plateau AVA,American Viticultural Area in Georgia
+Q1207979,Diablo Grande AVA,American Viticultural Area,USA,USA:USA-3521,37.406,-121.256,2,Diablo Grande AVA,"American Viticultural Area in Stanislaus County, California"
+Q1110765,Diamond Mountain District AVA,American Viticultural Area,USA,USA:USA-3521,38.5448,-122.5778,3,Diamond Mountain District AVA,winemaking region
+Q1250917,Dos Rios AVA,American Viticultural Area,USA,USA:USA-3521,39.722,-123.359,2,Dos Rios AVA,California wine region in Mendocino County
+Q1261546,Dry Creek Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.7,-122.967,5,Dry Creek Valley AVA,California wine region
+Q251411,Dundee Hills AVA,American Viticultural Area,USA,USA:USA-3525,45.2586,-123.0438,2,Dundee Hills AVA,American Viticultural Area in Oregon
+Q1266207,Dunnigan Hills AVA,American Viticultural Area,USA,USA:USA-3521,38.8152,-121.9434,2,Dunnigan Hills AVA,"wine-growing region in Yolo County, California"
+Q107451820,Eagle Foothills AVA,American Viticultural Area,USA,USA:USA-3518,43.832,-116.4079,1,Eagle Foothills AVA,"appelation that designates wine in Gem and Ada Counties, Idaho"
+Q19461467,Eagle Peak Mendocino County AVA,American Viticultural Area,USA,USA:USA-3521,39.2758,-123.2567,1,Eagle Peak Mendocino County AVA,"American Viticultural Area in Mendocino County, California"
+Q106959125,Eastern Connecticut Highlands AVA,American Viticultural Area,USA,USA:USA-3537,41.7042,-73.2204,1,Eastern Connecticut Highlands AVA,American Viticultural Area in Connecticut
+Q1287253,Edna Valley AVA,American Viticultural Area,USA,USA:USA-3521,35.2173,-120.6075,3,Edna Valley AVA,American Viticultural Area in California
+Q1324076,El Dorado AVA,American Viticultural Area,USA,USA:USA-3521,38.7797,-120.8924,2,El Dorado AVA,"American Viticultural Area located in El Dorado County, California"
+Q132398237,El Pomar District AVA,American Viticultural Area,USA,USA:USA-3521,35.5512,-120.5976,1,El Pomar District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q28232791,Elkton Oregon American Viticultural Area,American Viticultural Area,USA,USA:USA-3525,45.2586,-123.0438,1,Elkton Oregon AVA,American Viticultural Area in southern Oregon
+Q1346283,Eola-Amity Hills AVA,American Viticultural Area,USA,USA:USA-3525,45.056,-123.116,3,Eola-Amity Hills AVA,Oregon wine region
+Q1367302,Escondido Valley AVA,American Viticultural Area,USA,USA:USA-3536,30.78,-102.72,2,Escondido Valley AVA,"wine area in Texas, United States"
+Q1393017,Fair Play AVA,American Viticultural Area,USA,USA:USA-3521,38.5967,-120.6573,2,Fair Play AVA,California wine region in El Dorado County
+Q1404805,Fennville AVA,American Viticultural Area,USA,USA:USA-3562,42.528,-86.172,2,Fennville AVA,American Viticultural Area in Michigan
+Q1411155,Fiddletown AVA,American Viticultural Area,USA,USA:USA-3521,38.51,-120.757,2,Fiddletown AVA,California wine region in Amador County
+Q5450198,Finger Lakes AVA,American Viticultural Area,USA,USA:USA-3559,42.7,-77.0,1,Finger Lakes AVA,American Viticultural Area in New York
+Q133816353,Fort Ross-Seaview AVA,American Viticultural Area,USA,USA:USA-3521,38.5115,-123.1945,1,Fort Ross-Seaview AVA,"American Viticultural Area in Sonoma County, California"
+Q133828726,Fountaingrove District AVA,American Viticultural Area,USA,USA:USA-3521,38.495,-122.7237,1,Fountaingrove District AVA,"American Viticultural Area in Sonoma County, California"
+Q113309,Fredericksburg in the Texas Hill Country AVA,American Viticultural Area,USA,USA:USA-3536,30.2742,-98.8719,2,Fredericksburg in the Texas Hill Country AVA,American Viticultural Area located in central Texas
+Q1542850,Grand River Valley AVA,American Viticultural Area,USA,USA:USA-3550,41.7696,-81.0513,2,Grand River Valley AVA,American Viticultural Area in Ohio
+Q1544659,Green Valley of Russian River Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.42,-122.9,3,Green Valley of Russian River Valley AVA,American wine region
+Q5614823,Guenoc Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.7363,-122.5282,1,Guenoc Valley AVA,American Viticultural Area
+Q1573357,Hames Valley AVA,American Viticultural Area,USA,USA:USA-3521,35.8713,-120.8332,2,Hames Valley AVA,"viticultural area in Monterey County, California"
+Q5652573,Happy Canyon of Santa Barbara AVA,American Viticultural Area,USA,USA:USA-3521,34.6233,-119.986,1,Happy Canyon of Santa Barbara AVA,"winemaking region in California, United States"
+Q16928188,Haw River Valley AVA,American Viticultural Area,USA,USA:USA-3549,35.9269,-79.3083,1,Haw River Valley AVA,American Viticultural Area in North Carolina
+Q1610495,Hermann AVA,American Viticultural Area,USA,USA:USA-3531,38.68,-91.46,2,Hermann AVA,Missouri wine region
+Q1455026,High Valley AVA,American Viticultural Area,USA,USA:USA-3521,39.048,-122.7073,2,High Valley AVA,"wine region in Lake County, California"
+Q5396376,Honeoye,American Viticultural Area,USA,USA:USA-3559,42.7905,-77.5115,20,"Honeoye, New York","census-designated place in Ontario County, New York"
+Q1628973,Horse Heaven Hills AVA,American Viticultural Area,USA,USA:USA-3519,46.0,-120.0,3,Horse Heaven Hills AVA,"viticultural area in southeastern Washington, USA"
+Q1631986,Howell Mountain AVA,American Viticultural Area,USA,USA:USA-3521,38.58,-122.45,2,Howell Mountain AVA,"American Viticultural Area located in Napa County, California"
+Q1561756,Hudson River Region AVA,American Viticultural Area,USA,USA:USA-3559,41.658,-74.0118,2,Hudson River Region AVA,American Viticultural Area in New York
+Q104871823,Indiana Uplands AVA,American Viticultural Area,USA,USA:USA-3547,38.4469,-85.9387,1,Indiana Uplands AVA,American Viticultural Area in Indiana
+Q1454225,Isle St. George AVA,American Viticultural Area,USA,USA:USA-3550,41.7148,-82.8193,2,Isle St. George AVA,Ohio wine region
+Q1233697,Jahant AVA,American Viticultural Area,USA,USA:USA-3521,38.2272,-121.2215,2,Jahant AVA,"American Viticultural Area in San Joaquin County, California"
+Q6360817,Kanawha River Valley AVA,American Viticultural Area,USA,USA:USA-3554,38.5833,-81.8333,1,Kanawha River Valley AVA,West Virginia wine region
+Q96385612,Kelsey Bench-Lake County AVA,American Viticultural Area,USA,USA:USA-3521,38.9813,-122.8539,1,Kelsey Bench-Lake County AVA,"American Viticultural Area in Lake County, California"
+Q1493028,Knights Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.6333,-122.683,2,Knights Valley AVA,American wine region
+Q6475300,Lake Chelan AVA,American Viticultural Area,USA,USA:USA-3519,47.841,-120.0165,2,Lake Chelan AVA,Washington wine region in Chelan County
+Q477264,Lake Erie AVA,American Viticultural Area,USA,USA:USA-3560,42.0,-80.4333,2,Lake Erie AVA,American wine region in the Great Lakes region
+Q1801007,Lake Michigan Shore AVA,American Viticultural Area,USA,USA:USA-3562,42.2,-86.1,2,Lake Michigan Shore AVA,Michigan wine region
+Q138556,Lake Wisconsin AVA,American Viticultural Area,USA,USA:USA-3553,43.3167,-89.6167,2,Lake Wisconsin AVA,American Viticultural Area located in south central Wisconsin
+Q107133177,Lamorinda AVA,American Viticultural Area,USA,USA:USA-3521,37.8858,-122.118,1,Lamorinda AVA,
+Q1801780,Lancaster Valley AVA,American Viticultural Area,USA,USA:USA-3560,40.1808,-76.4353,2,Lancaster Valley AVA,American Viticultural Area in Pennsylvania
+Q107071961,Laurelwood District AVA,American Viticultural Area,USA,USA:USA-3525,45.38,-122.9357,1,Laurelwood District AVA,American wine region located in Oregon
+Q954423,Leelanau Peninsula AVA,American Viticultural Area,USA,USA:USA-3562,44.89,-85.79,2,Leelanau Peninsula AVA,American Viticultural Area in Michigan
+Q1813109,Lehigh Valley AVA,American Viticultural Area,USA,USA:USA-3558,39.1115,-74.8752,2,Lehigh Valley AVA,Pennsylvania wine region
+Q6525017,Leona Valley AVA,American Viticultural Area,USA,USA:USA-3521,35.6311,-120.8766,1,Leona Valley AVA,California wine region in Los Angeles County
+Q106946507,Lewis-Clark Valley AVA,American Viticultural Area,USA,USA:USA-3518,46.6776,-115.562,1,Lewis-Clark Valley AVA,American Viticultural Area in Washington and Oregon
+Q1825414,Lime Kiln Valley AVA,American Viticultural Area,USA,USA:USA-3521,36.687,-121.3616,2,Lime Kiln Valley AVA,wine growing region of California
+Q6553771,Linganore AVA,American Viticultural Area,USA,USA:USA-3557,39.4333,-77.2667,3,Linganore AVA,"American Viticultural Area in parts of Frederick and Carroll counties, Maryland"
+Q1866441,Livermore Valley AVA,American Viticultural Area,USA,USA:USA-3521,37.65,-121.76,2,Livermore Valley AVA,California wine region in Alameda County
+Q1867760,Lodi AVA,American Viticultural Area,USA,USA:USA-3521,38.0156,-121.0268,2,Lodi AVA,Wine grape-growing region in California
+Q107057632,Loess Hills District AVA,American Viticultural Area,USA,USA:USA-3529,41.4627,-95.5854,1,Loess Hills District AVA,American Viticultural Area in western Iowa and northwestern Missouri
+Q736525,Long Island AVA,American Viticultural Area,USA,USA:USA-3559,40.9296,-73.3265,2,Long Island AVA,New York wine region
+Q1340893,Loramie Creek AVA,American Viticultural Area,USA,USA:USA-3550,40.2833,-84.3333,2,Loramie Creek AVA,American Viticultural Area in Ohio
+Q1870486,Los Carneros AVA,American Viticultural Area,USA,USA:USA-3521,38.2535,-122.403,3,Los Carneros AVA,wine region in California
+Q107261149,Los Olivos District AVA,American Viticultural Area,USA,USA:USA-3521,34.6295,-120.0837,1,Los Olivos District AVA,"winemaking region in California, United States"
+Q608542,Madera AVA,American Viticultural Area,USA,USA:USA-3521,36.8581,-119.9971,2,Madera AVA,California wine region
+Q29641548,Malibu Coast AVA,American Viticultural Area,USA,USA:USA-3521,34.0648,-118.7661,1,Malibu Coast AVA,
+Q1887322,Malibu-Newton Canyon AVA,American Viticultural Area,USA,USA:USA-3521,34.0345,-118.7965,2,Malibu-Newton Canyon AVA,"appelation that designates wine in Los Angeles County, California"
+Q1903116,Martha's Vineyard AVA,American Viticultural Area,USA,USA:USA-3513,41.4,-70.6167,2,Martha's Vineyard AVA,appelation that designates wine in Massachusetts
+Q1915122,McDowell Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.9703,-123.0554,2,McDowell Valley AVA,California wine region in Mendocino County
+Q925840,McMinnville AVA,American Viticultural Area,USA,USA:USA-3525,45.14,-123.293,2,McMinnville AVA,American Viticultural Area in Oregon
+Q1278962,Mendocino AVA,American Viticultural Area,USA,USA:USA-3521,39.2489,-123.2077,3,Mendocino AVA,American Viticultural Area in California
+Q1920369,Mendocino Ridge AVA,American Viticultural Area,USA,USA:USA-3521,39.1135,-123.4875,3,Mendocino Ridge AVA,"wine region in California, USA"
+Q1922041,Merritt Island AVA,American Viticultural Area,USA,USA:USA-3521,38.3689,-121.5361,3,Merritt Island (California),Island and viticultural area in California
+Q6821327,Mesilla Valley AVA,American Viticultural Area,USA,USA:USA-3524,32.3266,-106.7754,1,Mesilla Valley AVA,wine growing area (Viticulture) in New Mexico and Texas
+Q14706065,Middle Rio Grande Valley AVA,American Viticultural Area,USA,USA:USA-3524,35.2295,-106.6284,1,Middle Rio Grande Valley AVA,American Viticultural Area located in the watershed of the Rio Grande in central New Mexico
+Q14712839,Middleburg AVA,American Viticultural Area,USA,USA:USA-3552,38.9667,-77.7333,1,Middleburg Virginia AVA,City of United States
+Q6862022,Mimbres Valley AVA,American Viticultural Area,USA,USA:USA-3524,32.8525,-107.9775,1,Mimbres Valley AVA,American Viticultural Area in southwestern New Mexico
+Q6879116,Mississippi Delta AVA,American Viticultural Area,USA,USA:USA-3544,34.0,-90.5,1,Mississippi Delta AVA,American Viticultural Area
+Q6879615,Missouri Rhineland,American Viticultural Area,USA,USA:USA-3531,38.6,-91.0,3,Missouri Rhineland,area of the U.S. state of Missouri
+Q768554,Mokelumne River AVA,American Viticultural Area,USA,USA:USA-3521,38.1118,-121.26,2,Mokelumne River AVA,"American Viticultural Area in San Joaquin County, California"
+Q1946108,Monterey AVA,American Viticultural Area,USA,USA:USA-3521,36.3271,-121.2831,2,Monterey AVA,"viticultural area in Monterey County, California"
+Q1946331,Monticello AVA,American Viticultural Area,USA,USA:USA-3552,38.0,-78.4167,2,Monticello AVA,American Viticultural Area in Virginia
+Q107299166,Moon Mountain District Sonoma County,American Viticultural Area,USA,USA:USA-3521,38.3325,-122.4456,1,Moon Mountain District Sonoma County,American Viticultural Area in California
+Q250964,Mount Harlan AVA,American Viticultural Area,USA,USA:USA-3521,36.7254,-121.3583,2,Mt. Harlan AVA,viticultural area in California
+Q131824397,"Mount Pisgah, Polk County, Oregon AVA",American Viticultural Area,USA,USA:USA-3525,44.8746,-123.2924,1,"Mount Pisgah, Polk County, Oregon AVA",American Viticultural Area in Oregon
+Q183511,Mount Veeder AVA,American Viticultural Area,USA,USA:USA-3521,38.3512,-122.3813,3,Mount Veeder AVA,American wine region
+Q6957146,Naches Heights AVA,American Viticultural Area,USA,USA:USA-3519,46.6281,-120.622,2,Naches Heights AVA,"viticultural area in Yakima County, Washington, USA"
+Q1151105,Napa Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.3867,-122.35,23,Napa Valley AVA,wine region
+Q139328870,Nashoba Valley AVA,American Viticultural Area,USA,USA:USA-3513,42.4311,-71.6163,1,Nashoba Valley AVA,American Viticultural Area in Massachusetts
+Q16970138,New Mexico wine,wine region,USA,USA:USA-3524,34.0,-106.0,2,New Mexico wine,"Wine made from grapes in New Mexico, United States"
+Q1984507,Niagara Escarpment AVA,American Viticultural Area,USA,USA:USA-3559,43.1767,-78.9908,2,Niagara Escarpment AVA,New York wine region
+Q139328915,Nine Lakes of East Tennessee AVA,American Viticultural Area,USA,USA:USA-3551,36.1891,-85.6125,1,Nine Lakes of East Tennessee AVA,viticultural area in Tennessee
+Q2000573,North Coast AVA,American Viticultural Area,USA,USA:USA-3521,38.75,-122.9,4,North Coast AVA,American Viticultural Area in California
+Q2000670,North Fork of Long Island AVA,American Viticultural Area,USA,USA:USA-3559,40.9667,-72.6167,3,North Fork of Long Island AVA,wine growing region in New York
+Q1337328,North Fork of Roanoke AVA,American Viticultural Area,USA,USA:USA-3552,37.3767,-80.331,3,North Fork of Roanoke AVA,American Viticultural Area l
+Q371146,North Yuba AVA,American Viticultural Area,USA,USA:USA-3521,39.329,-121.242,2,North Yuba AVA,California wine region in Yuba County
+Q751581,Northern Neck George Washington Birthplace AVA,American Viticultural Area,USA,USA:USA-3552,37.9666,-76.6333,3,Northern Neck George Washington Birthplace AVA,American Viticultural Area in Virginia
+Q1454419,Northern Sonoma AVA,American Viticultural Area,USA,USA:USA-3521,38.5,-122.8,3,Northern Sonoma AVA,American wine region
+Q1319214,Oak Knoll District of Napa Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.3325,-122.4456,3,Oak Knoll District of Napa Valley AVA,"California wine region in Napa County, California"
+Q1748339,Oakville AVA,American Viticultural Area,USA,USA:USA-3521,38.4384,-122.4025,3,Oakville AVA,American Viticultural Area
+Q1260347,Ohio River Valley AVA,American Viticultural Area,USA,USA:USA-3550,39.1029,-84.8192,3,Ohio River Valley AVA,wine region along the Ohio River
+Q7084546,Old Mission Peninsula AVA,American Viticultural Area,USA,USA:USA-3562,44.878,-85.515,1,Old Mission Peninsula AVA,American Viticultural Area in Michigan
+Q2041950,Outer Coastal Plain AVA,American Viticultural Area,USA,USA:USA-3558,39.471,-74.791,2,Outer Coastal Plain AVA,wine region in New Jersey recognized as an American Viticultural Area
+Q2043033,Ozark Highlands AVA,American Viticultural Area,USA,USA:USA-3531,38.0024,-91.8125,2,Ozark Highlands AVA,American Viticultural Area located in southern Missouri
+Q642565,Ozark Mountain AVA,American Viticultural Area,USA,USA:USA-3531,37.3311,-93.4034,2,Ozark Mountain AVA,"American Viticultural Area in Arkansas, Missouri, and Oklahoma"
+Q2045379,Pacheco Pass AVA,American Viticultural Area,USA,USA:USA-3521,37.0085,-121.36,2,Pacheco Pass AVA,"appelation that designates wine in Santa Clara County, California"
+Q2046371,Paicines AVA,American Viticultural Area,USA,USA:USA-3521,36.7238,-121.2708,2,Paicines AVA,American grape-growing area
+Q132175239,Paso Robles Estrella District AVA,American Viticultural Area,USA,USA:USA-3521,35.7203,-120.6156,1,Paso Robles Estrella District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q132200537,Paso Robles Geneseo District AVA,American Viticultural Area,USA,USA:USA-3521,35.645,-120.5861,1,Paso Robles Geneseo District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q131995697,Paso Robles Highlands District AVA,American Viticultural Area,USA,USA:USA-3521,35.5047,-120.2449,1,Paso Robles Highlands District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q133093969,Paso Robles Willow Creek District AVA,American Viticultural Area,USA,USA:USA-3521,35.597,-120.831,1,Paso Robles Willow Creek District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q133579113,Paulsell Valley AVA,American Viticultural Area,USA,USA:USA-3521,37.9215,-120.3773,1,Paulsell Valley AVA,American Viticultural Area in California
+Q107223280,Petaluma Gap AVA,American Viticultural Area,USA,USA:USA-3521,38.2225,-122.6825,1,Petaluma Gap AVA,American Viticultural Area
+Q17085576,Pine Mountain-Cloverdale AVA,American Viticultural Area,USA,USA:USA-3521,38.8542,-122.9609,1,Pine Mountain-Cloverdale Peak AVA,American Viticultural Area
+Q2106600,Potter Valley AVA,American Viticultural Area,USA,USA:USA-3521,39.3612,-123.1285,2,Potter Valley AVA,California wine region in Mendocino County
+Q1616505,Puget Sound AVA,American Viticultural Area,USA,USA:USA-3519,48.541,-122.9005,4,Puget Sound AVA,"viticultural area in Washington, USA"
+Q1569501,Rattlesnake Hills AVA,American Viticultural Area,USA,USA:USA-3519,46.4033,-120.256,3,Rattlesnake Hills AVA,"viticultural area in Yakima County and Benton County in Washington State, USA"
+Q7304271,"Red Hill Douglas County, Oregon AVA",American Viticultural Area,USA,USA:USA-3525,43.5333,-123.275,1,Red Hill Douglas County AVA,located in the Umpqua Valley AVA of Oregon
+Q2135997,Red Hills Lake County AVA,American Viticultural Area,USA,USA:USA-3521,38.9173,-122.7559,3,Red Hills Lake County AVA,located in North Coast AVA of California
+Q1572683,Red Mountain AVA,American Viticultural Area,USA,USA:USA-3519,46.2761,-119.454,3,Red Mountain AVA,US viticultural area
+Q1624781,Redwood Valley AVA,American Viticultural Area,USA,USA:USA-3521,39.2957,-123.2049,4,Redwood Valley AVA,California wine region in Mendocino County
+Q178467,Ribbon Ridge AVA,American Viticultural Area,USA,USA:USA-3525,45.35,-123.067,2,Ribbon Ridge AVA,Oregon wine region in Yamhill County
+Q2155493,River Junction AVA,American Viticultural Area,USA,USA:USA-3521,37.663,-121.238,2,River Junction AVA,viticultural area in California
+Q2160744,Rockpile AVA,American Viticultural Area,USA,USA:USA-3521,38.7903,-123.229,2,Rockpile AVA,wine region in California
+Q2160809,Rocky Knob AVA,American Viticultural Area,USA,USA:USA-3552,36.798,-80.375,2,Rocky Knob AVA,Virginia wine region
+Q131378492,Rocky Reach AVA,American Viticultural Area,USA,USA:USA-3519,47.769,-120.1416,1,Rocky Reach AVA,"viticultural area in Washington, USA"
+Q266538,Rogue Valley AVA,American Viticultural Area,USA,USA:USA-3525,42.4167,-123.4167,2,Rogue Valley AVA,American Viticultural Area
+Q2177011,Russian River Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.4833,-122.817,4,Russian River Valley AVA,American wine region
+Q1512490,Rutherford AVA,American Viticultural Area,USA,USA:USA-3521,38.4587,-122.4233,5,Rutherford AVA,"American Viticultural Area centered on the town of Rutherford, California"
+Q1513613,Saddle Rock-Malibu AVA,American Viticultural Area,USA,USA:USA-3521,34.0973,-118.8302,2,Saddle Rock-Malibu AVA,"appelation that designates wine in Los Angeles County, California"
+Q1393909,Salado Creek AVA,American Viticultural Area,USA,USA:USA-3521,37.4385,-121.141,2,Salado Creek AVA,"wine region in Stanislaus County, California"
+Q2219237,San Antonio Valley AVA,American Viticultural Area,USA,USA:USA-3521,35.9304,-121.1387,2,San Antonio Valley AVA,wine region in Monterey County
+Q222950,San Benito AVA,American Viticultural Area,USA,USA:USA-3521,36.726,-121.3581,2,San Benito AVA,California wine region in San Benito County
+Q2219290,San Bernabe AVA,American Viticultural Area,USA,USA:USA-3521,36.1502,-121.0978,2,San Bernabe AVA,American Viticultural Area in California
+Q2219535,San Francisco Bay AVA,American Viticultural Area,USA,USA:USA-3521,37.4905,-122.3152,2,San Francisco Bay AVA,wine-growing region in the US state of California
+Q131933420,San Juan Creek AVA,American Viticultural Area,USA,USA:USA-3521,35.6282,-120.3774,1,San Juan Creek AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q1678633,San Lucas AVA,American Viticultural Area,USA,USA:USA-3521,36.0671,-120.9559,2,San Lucas AVA,"appelation that designates wine in Monterey County, CA"
+Q131860871,San Luis Rey AVA,American Viticultural Area,USA,USA:USA-3521,33.3515,-117.2013,1,San Luis Rey AVA,"appelation that designates wine in San Diego County, California"
+Q132797959,San Miguel District AVA,American Viticultural Area,USA,USA:USA-3521,35.7344,-120.6249,1,San Miguel District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q2219868,San Pasqual Valley AVA,American Viticultural Area,USA,USA:USA-3521,33.0248,-116.8509,2,San Pasqual Valley AVA,"wine region in San Diego County, California"
+Q2220146,San Ysidro District AVA,American Viticultural Area,USA,USA:USA-3521,37.0279,-121.4984,2,San Ysidro District AVA,Californian wine region in Santa Clara County
+Q2222839,Santa Clara Valley AVA,American Viticultural Area,USA,USA:USA-3521,37.1133,-121.6801,3,Santa Clara Valley AVA,California wine region in Santa Clara County
+Q2222903,Santa Cruz Mountains AVA,American Viticultural Area,USA,USA:USA-3521,37.0513,-122.0769,4,Santa Cruz Mountains AVA,American Viticultural Area (AVA)
+Q2222992,Santa Lucia Highlands AVA,American Viticultural Area,USA,USA:USA-3521,36.4336,-121.4202,2,Santa Lucia Highlands AVA,"appelation that designates wine in Monterey County, CA"
+Q133091074,Santa Margarita Ranch AVA,American Viticultural Area,USA,USA:USA-3521,35.3748,-120.6474,1,Santa Margarita Ranch AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q2223286,Santa Ynez Valley AVA,American Viticultural Area,USA,USA:USA-3521,34.5887,-120.1035,3,Santa Ynez Valley AVA,wine region
+Q2800372,Seiad Valley AVA,American Viticultural Area,USA,USA:USA-3521,41.8436,-123.2016,2,Seiad Valley AVA,American Viticultural Area
+Q1408902,Seneca Lake AVA,American Viticultural Area,USA,USA:USA-3559,42.5226,-76.878,2,Seneca Lake AVA,New York wine region
+Q7491533,Shawnee Hills AVA,American Viticultural Area,USA,USA:USA-3546,37.5,-88.8333,1,Shawnee Hills AVA,wine region
+Q2278039,Shenandoah Valley AVA,American Viticultural Area,USA,USA:USA-3552,39.0,-78.25,2,Shenandoah Valley AVA,American Viticultural Area in Virginia and West Virginia
+Q1646258,Sierra Foothills AVA,American Viticultural Area,USA,USA:USA-3521,38.1621,-120.479,4,Sierra Foothills AVA,"wine region in the California, U.S"
+Q7511543,Sierra Pelona Valley AVA,American Viticultural Area,USA,USA:USA-3521,34.5039,-118.313,1,Sierra Pelona Valley AVA,American viticultural area
+Q2294439,Sloughhouse AVA,American Viticultural Area,USA,USA:USA-3521,38.4678,-121.1431,2,Sloughhouse AVA,"American Viticultural Area in Sacramento County, California"
+Q2295723,Snake River Valley AVA,American Viticultural Area,USA,USA:USA-3518,43.6,-116.8,2,Snake River Valley AVA,"viticultural area in Idaho and Oregon, USA"
+Q7547826,Snipes Mountain AVA,American Viticultural Area,USA,USA:USA-3519,46.3161,-120.086,1,Snipes Mountain AVA,wine region in Washington State
+Q2298239,Solano County Green Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.243,-122.163,2,Solano County Green Valley AVA,"American Viticultural Area in Solano County, California"
+Q2302334,Sonoita AVA,American Viticultural Area,USA,USA:USA-3520,31.5412,-110.755,2,Sonoita AVA,Wine region in Arizona
+Q1764996,Sonoma Coast AVA,American Viticultural Area,USA,USA:USA-3521,38.4,-123.0,3,Sonoma Coast AVA,American wine region
+Q2302339,Sonoma Mountain AVA,American Viticultural Area,USA,USA:USA-3521,38.36,-122.556,3,Sonoma Mountain AVA,American wine region
+Q826340,Sonoma Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.3667,-122.5,5,Sonoma Valley AVA,American wine region
+Q2304380,South Coast AVA,American Viticultural Area,USA,USA:USA-3521,33.3787,-117.2045,2,South Coast AVA,California wine region
+Q2304646,Southeastern New England AVA,American Viticultural Area,USA,USA:USA-3539,41.5,-71.5,2,Southeastern New England AVA,American wine region compromising of several New England states
+Q7570232,Southern Oregon AVA,American Viticultural Area,USA,USA:USA-3525,42.4337,-123.0917,1,Southern Oregon AVA,American Viticultural Area
+Q2313841,Spring Mountain District AVA,American Viticultural Area,USA,USA:USA-3521,38.5079,-122.4924,2,Spring Mountain District AVA,"American Viticultural Area in California, United States"
+Q107203465,Squaw Valley-Miramonte AVA,American Viticultural Area,USA,USA:USA-3521,36.6928,-119.103,1,Squaw Valley-Miramonte AVA,"appelation that designates wine in Fresno County, California"
+Q1765190,St. Helena AVA,American Viticultural Area,USA,USA:USA-3521,38.5149,-122.509,3,St. Helena AVA,California wine region in Napa Valley
+Q7595677,Sta. Rita Hills AVA,American Viticultural Area,USA,USA:USA-3521,34.6341,-120.2882,3,Sta. Rita Hills AVA,winemaking region
+Q2328901,Stags Leap District AVA,American Viticultural Area,USA,USA:USA-3521,38.3997,-122.3236,4,Stags Leap District AVA,winemaking region
+Q1707546,Suisun Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.281,-122.118,3,Suisun Valley AVA,American Viticultural Area in California
+Q7653431,Swan Creek,American Viticultural Area,USA,USA:USA-3549,36.0983,-80.7603,2,"Swan Creek, North Carolina","unincorporated community in Yadkin County, North Carolina, United States"
+Q7653432,Swan Creek AVA,American Viticultural Area,USA,USA:USA-3549,36.1891,-80.8945,2,Swan Creek AVA,American wine region
+Q2402542,Temecula Valley AVA,American Viticultural Area,USA,USA:USA-3521,33.5436,-117.043,3,Temecula Valley AVA,American Viticultural Area
+Q132572901,Templeton Gap District AVA,American Viticultural Area,USA,USA:USA-3521,35.555,-120.6432,1,Templeton Gap District AVA,"appelation that designates wine in San Luis Obispo County, CA"
+Q764154,Texas Davis Mountains AVA,American Viticultural Area,USA,USA:USA-3536,30.363,-103.569,2,Texas Davis Mountains AVA,American Viticultural Area located in western Texas
+Q1661388,Texas High Plains AVA,American Viticultural Area,USA,USA:USA-3536,33.4764,-101.7898,2,Texas High Plains AVA,American Viticultural Area located in northwest Texas
+Q634633,Texas Hill Country AVA,American Viticultural Area,USA,USA:USA-3536,30.1742,-99.0653,3,Texas Hill Country AVA,American Viticultural Area located in central Texas
+Q17108846,Texoma AVA,American Viticultural Area,USA,USA:USA-3536,33.5544,-96.1527,1,Texoma AVA,American Viticultural Area located in north Texas
+Q788845,"The Hamptons, Long Island AVA",American Viticultural Area,USA,USA:USA-3559,40.9084,-72.3675,2,"The Hamptons, Long Island AVA",wine growing region in New York
+Q18168395,The Rocks AVA,American Viticultural Area,USA,USA:USA-3525,45.9583,-118.408,1,The Rocks District of Milton-Freewater AVA,American Viticultural Area in Oregon
+Q30595493,Tip of the Mitt AVA,American Viticultural Area,USA,USA:USA-3562,45.3628,-84.8947,1,Tip of the Mitt AVA,American Viticultural Area in Michigan
+Q1478702,Tracy Hills AVA,American Viticultural Area,USA,USA:USA-3521,37.701,-121.4108,2,Tracy Hills AVA,California wine region
+Q2453586,Trinity Lakes AVA,American Viticultural Area,USA,USA:USA-3521,40.796,-122.782,2,Trinity Lakes AVA,California wine region in Trinity County
+Q107104695,Tualatin Hills AVA,American Viticultural Area,USA,USA:USA-3525,45.5476,-123.1574,1,Tualatin Hills AVA,American wine region located in Oregon
+Q7881781,Umpqua Valley AVA,American Viticultural Area,USA,USA:USA-3525,43.2706,-123.4975,1,Umpqua Valley AVA,wine growing region
+Q23018036,Upper Hiwassee Highlands AVA,American Viticultural Area,USA,USA:USA-3549,35.0231,-84.0295,1,Upper Hiwassee Highlands AVA,American Viticultural Area in North Carolina and Georgia
+Q48739548,Upper Hudson AVA,American Viticultural Area,USA,USA:USA-3559,42.7406,-73.9676,1,Upper Hudson AVA,American Viticultural Area in New York
+Q125986261,Upper Lake Valley AVA,American Viticultural Area,USA,USA:USA-3521,39.1562,-122.9138,1,Upper Lake Valley AVA,"American Viticultural Area in Lake County, California"
+Q7898802,Upper Mississippi River Valley AVA,American Viticultural Area,USA,USA:USA-3553,44.8021,-92.5139,1,Upper Mississippi River Valley AVA,American wine grape-growing region
+Q60774354,Van Duzer Corridor AVA,American Viticultural Area,USA,USA:USA-3525,44.9856,-123.2787,1,Van Duzer Corridor AVA,American Viticultural Area of Oregon
+Q2527817,Virginia's Eastern Shore AVA,American Viticultural Area,USA,USA:USA-3552,37.49,-75.898,3,Virginia's Eastern Shore AVA,American Viticultural Area
+Q7959818,Wahluke Slope AVA,American Viticultural Area,USA,USA:USA-3519,46.75,-119.833,2,Wahluke Slope AVA,American Viticultural Area in Washington
+Q7962694,Walla Walla Valley AVA,American Viticultural Area,USA,USA:USA-3525,46.0,-118.0,3,Walla Walla Valley AVA,wine region in the Walla Walla Valley
+Q2549710,Warren Hills AVA,American Viticultural Area,USA,USA:USA-3558,40.762,-74.935,2,Warren Hills AVA,American Viticultural Area in New Jersey
+Q602661,West Elks AVA,American Viticultural Area,USA,USA:USA-3522,38.8662,-107.6053,2,West Elks AVA,Colorado wine region in Delta County
+Q133501387,West Sonoma Coast AVA,American Viticultural Area,USA,USA:USA-3521,38.51,-122.93,1,West Sonoma Coast AVA,"American Viticultural Area in Sonoma County, California"
+Q7987754,Western Connecticut Highlands AVA,American Viticultural Area,USA,USA:USA-3537,41.7042,-73.2204,1,Western Connecticut Highlands AVA,American Viticultural Area in Connecticut
+Q131123744,White Bluffs AVA,American Viticultural Area,USA,USA:USA-3519,46.3934,-119.2413,1,White Bluffs AVA,"American viticultural area in Washington, USA"
+Q2570330,Wild Horse Valley AVA,American Viticultural Area,USA,USA:USA-3521,38.3433,-122.2014,2,Wild Horse Valley AVA,American Viticultural Area in California
+Q919057,Willamette Valley AVA,American Viticultural Area,USA,USA:USA-3525,45.35,-123.067,3,Willamette Valley AVA,American Viticultural Area in the region
+Q104872955,Willcox AVA,American Viticultural Area,USA,USA:USA-3520,31.894,-109.4751,1,Willcox AVA,"Wine-growing region in southeastern Arizona, US"
+Q1633697,Willow Creek AVA,American Viticultural Area,USA,USA:USA-3521,40.9695,-123.6267,2,Willow Creek AVA,American Viticultural Area
+Q133568190,Winters Highlands AVA,American Viticultural Area,USA,USA:USA-3521,38.5539,-121.7381,1,Winters Highlands AVA,American Viticultural Area in California
+Q8027221,Wisconsin Ledge AVA,American Viticultural Area,USA,USA:USA-3553,44.5814,-87.5668,1,Wisconsin Ledge AVA,American Viticultural Area in northeast Wisconsin
+Q1570385,Yakima Valley AVA,American Viticultural Area,USA,USA:USA-3519,46.3472,-120.266,3,Yakima Valley AVA,American Viticultural Area in Washington state
+Q1566783,Yamhill-Carlton District AVA,American Viticultural Area,USA,USA:USA-3525,45.35,-123.19,2,Yamhill-Carlton AVA,American Viticultural Area in Oregon
+Q2600872,Yorkville Highlands AVA,American Viticultural Area,USA,USA:USA-3521,38.8949,-123.2097,3,Yorkville Highlands AVA,winegrowing region in California
+Q2601337,Yountville AVA,American Viticultural Area,USA,USA:USA-3521,38.4037,-122.3625,3,Yountville AVA,American Viticultural Area in California
+Q5701673,Helderberg,wine region,ZAF,,-34.0833,18.9167,3,Helderberg,"place in Western Cape, South Africa"
+Q31919666,Hemel-en-Aarde Valley,wine region,ZAF,,-34.3946,19.2201,2,,wine region
+Q15883126,Tygerberg (wine region),wine region,ZAF,,-34.0,20.0,1,,

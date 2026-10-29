@@ -1,0 +1,512 @@
+country_iso3,list,order,drink,wikipedia_title,wikidata,kind
+AGO,national drink,1,Cuca Beer,,,beer
+ALB,national drink,1,Raki,Rakia,Q931946,brandy
+ALB,national liquor,1,Rakia,Rakia,Q931946,brandy
+AND,national drink,1,Brandy,Brandy,Q146470,brandy
+AND,national drink,2,Wine,Wine,Q282,wine
+ARE,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+ARG,national drink,1,Mate,Mate (drink),Q203540,soft
+ARG,national drink,2,Wine,Argentine wine,Q238914,wine
+ARG,national drink,3,Fernet con coca,Fernet con coca,Q10872613,cocktail
+ARG,national drink,4,Hesperidina,Hesperidina,Q5745885,liqueur
+ARG,national liquor,1,Wine,Argentine wine,Q238914,wine
+ARG,national liquor,2,Fernet con coca,Fernet con coca,Q10872613,cocktail
+ARG,national liquor,3,Hesperidina,Hesperidina,Q5745885,liqueur
+ARG,national liquor,4,Apéritif,Apéritif and digestif,Q96755250,spirit
+ARM,national drink,1,Oghi,Oghi (drink),Q7080013,soft
+ARM,national drink,2,Armenian wine,Armenian wine,Q3561258,wine
+ARM,national drink,3,Ararat,Ararat (brandy),Q685705,brandy
+ARM,national liquor,1,Oghi,Oghi (drink),Q7080013,spirit
+ASM,national drink,1,Kava,,,soft
+ATG,national drink,1,Rum,Rum,Q83376,rum
+AUS,national drink,1,Iced coffee,Iced coffee,Q968554,soft
+AUS,national drink,2,"Lemon, lime, and bitters","Lemon, lime and bitters",Q1817060,soft
+AUS,national drink,3,Cocktail,Cocktail,Q134768,cocktail
+AUS,national drink,4,Wine,Australian wine,Q2129654,wine
+AUS,national liquor,1,Bundaberg Rum,Bundaberg Rum,Q3646942,spirit
+AUT,national drink,1,Almdudler,Almdudler,Q180458,soft
+AUT,national liquor,1,Schnapps,Schnapps,Q1815494,spirit
+AZE,national drink,1,Black tea,Black tea,Q203415,tea
+BDI,national drink,1,Sorghum beer,,,trad
+BEL,national drink,1,Belgium,,,unclassified
+BEL,national liquor,1,Jenever,Jenever,Q80680,spirit
+BEN,national drink,1,Sodabi,Sodabi,Q56315775,trad
+BFA,national drink,1,Zoomkoom,Zoomkoom,Q85852488,soft
+BGD,national drink,1,Seven color tea,Seven-color tea,Q43279967,soft
+BGD,national liquor,1,Toddy,Palm wine,Q839492,trad
+BGR,national drink,1,Rakia,Rakia,Q931946,brandy
+BGR,national liquor,1,Rakia,Rakia,Q931946,brandy
+BHR,national drink,1,Coffee,Coffee,Q8486,coffee
+BHS,national drink,1,Switcha,Limeade,Q488482,soft
+BIH,national drink,1,Rakija,Rakia,Q931946,brandy
+BIH,national drink,2,Coffee,Coffee,Q8486,coffee
+BIH,national liquor,1,Rakija,Rakia,Q931946,brandy
+BLR,national drink,1,Byarozavik,,,unclassified
+BLR,national liquor,1,Krambambula,Krambambula (drink),Q1786412,cocktail
+BLZ,national drink,1,Punch,Punch (drink),Q1121224,soft
+BLZ,national liquor,1,Rum,,,spirit
+BMU,national drink,1,Rum swizzle,Rum swizzle,Q7379107,cocktail
+BMU,national drink,2,Dark N' Stormy,Dark 'n' stormy,Q5223103,cocktail
+BMU,national liquor,1,Rum,,,spirit
+BOL,national drink,1,Chuflay,Chuflay,Q5115950,alcohol
+BOL,national drink,2,Singani,Singani,Q1400661,alcohol
+BOL,national liquor,1,Singani,Singani,Q1400661,spirit
+BRA,national drink,1,Caipirinha,Caipirinha,Q625152,cocktail
+BRA,national liquor,1,Cachaça,Cachaça,Q744729,rum
+BRB,national drink,1,Mauby,Mauby,Q3813358,soft
+BRB,national liquor,1,Rum,Rum,Q83376,rum
+BTN,national drink,1,Alcoholic beverage,Alcoholic beverage,Q154,soft
+BWA,national drink,1,Chibuku Shake Shake,Chibuku,Q19903812,soft
+BWA,national drink,2,Ginger beer,Ginger beer,Q1448819,soft
+CAF,national drink,1,Coffee,Coffee,Q8486,coffee
+CAN,national drink,1,Caesar,Caesar (cocktail),Q29288,cocktail
+CAN,national drink,2,Cocktail,Cocktail,Q134768,cocktail
+CAN,national drink,3,Bloody Mary,Bloody Mary (cocktail),Q207711,cocktail
+CAN,national liquor,1,Canadian Whisky,Canadian whisky,Q536976,whisky
+CHE,national drink,1,Rivella,Rivella,Q689134,soft
+CHE,national drink,2,Schweppes,Schweppes,Q838651,soft
+CHE,national liquor,1,Absinthe,Absinthe,Q170210,anise
+CHE,national liquor,2,Goldschläger,Goldschläger,Q3110126,spirit
+CHE,national liquor,3,Kirsch,Kirsch,Q279034,brandy
+CHL,national drink,1,Pisco sour,Pisco sour,Q673012,cocktail
+CHL,national drink,2,Piscola,Piscola,Q3822405,cocktail
+CHL,national liquor,1,Pisco,Pisco,Q388502,brandy
+CHN,national drink,1,Tea,Tea,Q6097,tea
+CHN,national drink,2,White tea,White tea,Q238306,tea
+CHN,national drink,3,Yellow tea,Yellow tea,Q824529,tea
+CHN,national drink,4,Green tea,Green tea,Q484083,tea
+CHN,national drink,5,Oolong tea,Oolong,Q231587,tea
+CHN,national drink,6,Black tea,Black tea,Q203415,tea
+CHN,national drink,7,Post-fermented tea,Fermented tea,Q2542583,tea
+CHN,national liquor,1,Baijiu,Baijiu,Q629266,asian
+CHN,national liquor,2,Kaoliang liquor,Kaoliang liquor,Q906494,asian
+CMR,national drink,1,Odontol,,,unclassified
+COD,national drink,1,Lotoko,Lotoko,Q6684814,spirit
+COK,national drink,1,Tumunu,,,unclassified
+COL,national drink,1,Aguardiente,Aguardiente,Q397926,brandy
+COL,national drink,2,Coffee,Coffee,Q8486,coffee
+COL,national liquor,1,Aguardiente,Aguardiente,Q397926,brandy
+COM,national drink,1,Singani,Singani,Q1400661,alcohol
+CRI,national drink,1,Imperial,Imperial (beer),Q1813698,beer
+CRI,national drink,2,Cacique Guaro,Cacique Guaro,Q57401946,brandy
+CRI,national liquor,1,Guaro,Guaro (drink),Q5614179,brandy
+CUB,national drink,1,Cuba Libre,Rum and Coke,Q471753,cocktail
+CUB,national drink,2,Mojito,Mojito,Q487338,cocktail
+CUB,national drink,3,Daiquiri,Daiquiri,Q917361,cocktail
+CUB,national liquor,1,Rum,,,spirit
+CUW,national drink,1,Curaçao liqueur,Curaçao (liqueur),Q10223,liqueur
+CYP,national drink,1,Zivania,Zivania,Q206757,spirit
+CYP,national drink,2,Brandy sour,Brandy sour,Q4957253,cocktail
+CYP,national liquor,1,Zivania,Zivania,Q206757,spirit
+CYP,national liquor,2,Commandaria,Commandaria,Q1115080,wine
+CYP,national liquor,3,Dessert wine,Dessert wine,Q1200945,wine
+CZE,national drink,1,Kofola,Kofola,Q14955,soft
+CZE,national drink,2,Pilsner,Pilsner,Q152281,beer
+CZE,national drink,3,Becherovka,Becherovka,Q742408,liqueur
+CZE,national liquor,1,Becherovka,Becherovka,Q742408,liqueur
+CZE,national liquor,2,Slivovice,Slivovitz,Q368610,brandy
+DEU,national drink,1,Lager,Lager,Q253481,beer
+DEU,national drink,2,Spezi,Spezi,Q1422578,soft
+DEU,national liquor,1,Schnapps,Schnapps,Q1815494,spirit
+DEU,national liquor,2,Korn,Korn (liquor),Q582877,spirit
+DMA,national drink,1,Kubuli,Kubuli,Q14635771,beer
+DMA,national drink,2,Coconut rum punch,Punch (drink),Q1121224,soft
+DNK,national drink,1,Akvavit,Akvavit,Q178899,spirit
+DNK,national drink,2,Brännvin,Brännvin,Q510461,spirit
+DNK,national drink,3,Snaps,Snaps,Q4166575,cocktail
+DNK,national drink,4,Gammel Dansk,Gammel Dansk,Q1493247,liqueur
+DNK,national liquor,1,Akvavit,Akvavit,Q178899,spirit
+DOM,national drink,1,Mama Juana,Mama Juana,Q1428432,alcohol
+DOM,national drink,2,Presidente,Presidente (beer),Q5400907,beer
+DOM,national drink,3,Coffee,Coffee,Q8486,coffee
+DOM,national drink,4,Rum,Rum,Q83376,rum
+DOM,national drink,5,Morir soñando,Morir soñando,Q6912307,soft
+DOM,national liquor,1,Mamajuana,Mama Juana,Q1428432,spirit
+DZA,national drink,1,Coffee,Coffee,Q8486,coffee
+DZA,national drink,2,Tea,Tea,Q6097,tea
+ECU,national drink,1,Chicha,Chicha,Q516592,trad
+ECU,national liquor,1,Aguardiente,Aguardiente,Q397926,brandy
+EGY,national drink,1,Black tea,Black tea,Q203415,tea
+ERI,national drink,1,Siwa,,,unclassified
+ESP,national drink,1,Sangria,Sangria,Q273296,cocktail
+ESP,national drink,2,Punch,Punch (drink),Q1121224,soft
+ESP,national drink,3,Red wine,Red wine,Q1827,wine
+ESP,national drink,4,Orange juice,Orange juice,Q219059,soft
+ESP,national drink,5,Brandy,Brandy,Q146470,brandy
+ESP,national liquor,1,Sherry,Sherry,Q16398,wine
+EST,national drink,1,Vana Tallinn,Vana Tallinn,Q1481777,liqueur
+EST,national drink,2,Viru Valge,Viru Valge,Q3269196,vodka
+EST,national liquor,1,Vana Tallinn,Vana Tallinn,Q1481777,liqueur
+ETH,national drink,1,Coffee,Coffee,Q8486,coffee
+ETH,national drink,2,Tej,Tej,Q583731,trad
+FIN,national drink,1,Coffee,Coffee,Q8486,coffee
+FIN,national drink,2,Finlandia,Finlandia Vodka,Q1034035,vodka
+FIN,national drink,3,Koskenkorva,Koskenkorva Viina,Q749996,vodka
+FIN,national drink,4,Lonkero,Lonkero,Q1555363,soft
+FIN,national drink,5,Sahti,Sahti,Q3042275,beer
+FIN,national liquor,1,Koskenkorva Viina,Koskenkorva Viina,Q749996,vodka
+FIN,national liquor,2,Finlandia vodka,Finlandia Vodka,Q1034035,vodka
+FRA,national drink,1,Red wine,Red wine,Q1827,wine
+FRA,national drink,2,Wine,Wine,Q282,wine
+FRA,national drink,3,Champagne,Champagne,Q134862,wine
+FRA,national drink,4,Cognac,Cognac,Q284,brandy
+FRA,national drink,5,Orangina,Orangina,Q605830,soft
+FRA,national liquor,1,Calvados,Calvados (brandy),Q3268,brandy
+FRA,national liquor,2,Armagnac,Armagnac,Q503252,brandy
+FRA,national liquor,3,Cognac,Cognac,Q284,brandy
+FRA,national liquor,4,Pastis,Pastis,Q16976,anise
+FRA,national liquor,5,Chartreuse,Chartreuse (liqueur),Q779839,liqueur
+FRA,national liquor,6,Grand Marnier,Grand Marnier,Q651259,liqueur
+FRA,national liquor,7,Crème de cassis,Crème de cassis,Q968019,liqueur
+FRA,national liquor,8,Absinthe,Absinthe,Q170210,anise
+FSM,national drink,1,Sakau,,,soft
+GAB,national drink,1,Regab,,,unclassified
+GBR,national drink,1,Tea,Tea,Q6097,tea
+GBR,national drink,2,Gin,Gin,Q959362,gin
+GBR,national drink,3,Bitter,Bitter (beer),Q27201,beer
+GBR,national drink,4,Stout,Stout,Q217825,beer
+GBR,national drink,5,Blackcurrant cordial,Squash (drink),Q1190923,soft
+GBR,national drink,6,Buck Fizz,Buck's fizz,Q3646285,cocktail
+GBR,national drink,7,Shandy,Shandy,Q13527031,cocktail
+GBR,national drink,8,Dandelion and burdock,Dandelion and burdock,Q444358,soft
+GBR,national drink,9,Scotch,Scotch whisky,Q382947,whisky
+GBR,national drink,10,Whisky,Whisky,Q281,whisky
+GBR,national drink,11,Irn-Bru,Irn-Bru,Q938806,soft
+GBR,national drink,12,Perry,Perry,Q2047030,cider
+GBR,national liquor,1,Irish Whiskey,Irish whiskey,Q909747,whisky
+GBR,national liquor,2,Scotch Whisky,Scotch whisky,Q382947,whisky
+GBR,national liquor,3,Single malt whisky,Single malt whisky,Q1940734,whisky
+GBR,national liquor,4,Welsh Whisky,,,spirit
+GEO,national drink,1,Chacha,Chacha (brandy),Q1539760,brandy
+GEO,national drink,2,Red wine,Georgian wine,Q1859167,wine
+GEO,national liquor,1,Chacha,Chacha (brandy),Q1539760,brandy
+GHA,national drink,1,Akpeteshie,Akpeteshie,Q2829131,spirit
+GIN,national drink,1,Malamba Juice,,,soft
+GMB,national drink,1,Ginger Beer,,,soft
+GNB,national drink,1,Cana de Cajeu,,,unclassified
+GNQ,national drink,1,Malamba Juice,,,soft
+GRC,national drink,1,Ouzo,Ouzo,Q337687,anise
+GRC,national drink,2,Aperitif,Apéritif and digestif,Q96755250,alcohol
+GRC,national liquor,1,Raki,Rakia,Q931946,brandy
+GRC,national liquor,2,Ouzo,Ouzo,Q337687,anise
+GRC,national liquor,3,Tsikoudia,Tsikoudia,Q1607962,spirit
+GRC,national liquor,4,Tsipouro,Tsipouro,Q1930269,brandy
+GRD,national drink,1,Punch,Punch (drink),Q1121224,soft
+GTM,national drink,1,Gallo,,,unclassified
+GTM,national liquor,1,Rum,,,spirit
+GUM,national drink,1,Calamansi Basil Lemonade,,,soft
+GUY,national drink,1,Mauby,Mauby,Q3813358,soft
+HND,national drink,1,Pinol,Pinol,Q21387254,soft
+HND,national liquor,1,Guaro,,,spirit
+HRV,national drink,1,Rakija,Rakia,Q931946,brandy
+HRV,national drink,2,Pelinkovac,Pelinkovac,Q2354863,liqueur
+HRV,national liquor,1,Rakija,Rakia,Q931946,brandy
+HRV,national liquor,2,Pelinkovac,Pelinkovac,Q2354863,liqueur
+HTI,national drink,1,Rum,Rhum agricole,Q3429796,rum
+HTI,national liquor,1,Clairin,Clairin,Q2975159,spirit
+HUN,national drink,1,Pálinka,Pálinka,Q782901,brandy
+HUN,national liquor,1,Unicum,Unicum,Q765604,liqueur
+HUN,national liquor,2,Pálinka,Pálinka,Q782901,brandy
+HUN,national liquor,3,Tokaji,Tokaji,Q667850,wine
+IDN,national drink,1,Es teler,Es teler,Q5396648,soft
+IDN,national liquor,1,Arak,Arrack,Q1458114,spirit
+IMN,national liquor,1,Manx Spirit,Manx Spirit,Q6746137,spirit
+IND,national drink,1,Lassi,Lassi,Q827654,soft
+IND,national drink,2,Chaas,Chaas,Q5065982,soft
+IND,national drink,3,Yogurt,Yogurt,Q13317,soft
+IND,national drink,4,Masala chai,Masala chai,Q877661,tea
+IND,national drink,5,Black tea,Black tea,Q203415,tea
+IND,national drink,6,Kaapi,Indian filter coffee,Q6022264,soft
+IND,national drink,7,Toddy,Palm wine,Q839492,trad
+IND,national drink,8,Feni,Feni (liquor),Q911777,brandy
+IND,national drink,9,Kingfisher beer,Kingfisher (beer),Q1572281,beer
+IND,national liquor,1,Rum,Rum,Q83376,rum
+IND,national liquor,2,Feni,Feni (liquor),Q911777,brandy
+IND,national liquor,3,Toddy,Palm wine,Q839492,trad
+IND,national liquor,4,Tharra,Tharra,Q105955472,spirit
+IRL,national drink,1,Irish whiskey,Irish whiskey,Q909747,whisky
+IRL,national drink,2,Guinness,Guinness,Q194297,beer
+IRL,national drink,3,Irish Stout,Stout,Q217825,beer
+IRL,national drink,4,Club,Club (soft drink),Q5136085,soft
+IRL,national liquor,1,Irish Whiskey,Irish whiskey,Q909747,whisky
+IRL,national liquor,2,Poitín,Poitín,Q1315113,spirit
+IRN,national drink,1,Doogh,Doogh,Q105653630,soft
+IRN,national drink,2,Black tea,Black tea,Q203415,tea
+IRN,national drink,3,Aragh Sagi,Aragh Sagi,Q4783712,spirit
+IRN,national liquor,1,Aragh sagi,Aragh Sagi,Q4783712,spirit
+IRN,national liquor,2,Shiraz wine,Shiraz wine,Q7498341,wine
+IRQ,national drink,1,Coffee,Coffee,Q8486,coffee
+IRQ,national drink,2,Arak,Arak (drink),Q330880,anise
+ISL,national drink,1,Brennivín,Brennivín,Q909415,liqueur
+ISL,national liquor,1,Brennivín,Brennivín,Q909415,liqueur
+ISR,national drink,1,Arak,Arak (drink),Q330880,anise
+ISR,national drink,2,Mint lemonade,Mint lemonade,Q13287,soft
+ISR,national drink,3,Wine,Wine,Q282,wine
+ISR,national liquor,1,Arak,Arak (drink),Q330880,anise
+ISR,national liquor,2,Tubi 60,Tubi 60,Q30637897,liqueur
+ITA,national drink,1,Chinotto,Chinotto (drink),Q950733,soft
+ITA,national drink,2,Carbonated soft drink,Soft drink,Q147538,soft
+ITA,national drink,3,Wine,Wine,Q282,wine
+ITA,national drink,4,Spritz,Spritz (cocktail),Q668635,cocktail
+ITA,national drink,5,Grappa,Grappa,Q693078,brandy
+ITA,national drink,6,Espresso,Espresso,Q180289,soft
+ITA,national drink,7,Cappuccino,Cappuccino,Q159774,soft
+ITA,national liquor,1,Grappa,Grappa,Q693078,brandy
+ITA,national liquor,2,Limoncello,Limoncello,Q736208,liqueur
+ITA,national liquor,3,Amaretto,Amaretto,Q455045,liqueur
+ITA,national liquor,4,Amaro,Amaro (liqueur),Q778524,liqueur
+ITA,national liquor,5,Fernet,Fernet,Q6306654,liqueur
+ITA,national liquor,6,Mirto,Mirto (liqueur),Q1938578,liqueur
+ITA,national liquor,7,Alchermes,Alchermes,Q258615,liqueur
+ITA,national liquor,8,Aperol,Aperol,Q618238,liqueur
+ITA,national liquor,9,Campari,Campari,Q899150,liqueur
+ITA,national liquor,10,Cynar,Cynar,Q928026,liqueur
+ITA,national liquor,11,Frangelico,Frangelico,Q2244300,liqueur
+ITA,national liquor,12,Maraschino,Maraschino,Q1892360,liqueur
+ITA,national liquor,13,Rosolio,Rosolio,Q3825345,liqueur
+ITA,national liquor,14,Sambuca,Sambuca,Q723464,spirit
+ITA,national liquor,15,Strega,Strega (liqueur),Q1812274,liqueur
+JAM,national drink,1,Punch,Punch (drink),Q1121224,soft
+JAM,national liquor,1,Rum,Rum,Q83376,rum
+JOR,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+JOR,national drink,2,Mint lemonade,Mint lemonade,Q13287,soft
+JOR,national drink,3,Arak,Arak (drink),Q330880,anise
+JOR,national liquor,1,Arak,Arak (drink),Q330880,anise
+JPN,national drink,1,Green Tea,Green tea,Q484083,tea
+JPN,national liquor,1,Shōchū,Shōchū,Q1165352,asian
+JPN,national liquor,2,Awamori,Awamori,Q1069948,asian
+JPN,national liquor,3,Japanese whisky,Japanese whisky,Q901367,whisky
+KAZ,national drink,1,Kumis,Kumis,Q61081,trad
+KEN,national drink,1,Tea,Tea,Q6097,tea
+KGZ,national drink,1,Jarma,Jarma (drink),Q43050441,soft
+KHM,national drink,1,Teuk tnaot chhouk,,,unclassified
+KHM,national liquor,1,Rice wine,Rice wine,Q1142986,rice
+KIR,national drink,1,Karewe,Palm wine,Q839492,trad
+KNA,national drink,1,Rum,Rum,Q83376,rum
+KOR,national drink,1,Soju,Soju,Q696105,asian
+KOR,national drink,2,Iced americano,Caffè americano,Q1152551,coffee
+KOR,national liquor,1,Soju,Soju,Q696105,asian
+KWT,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+LAO,national drink,1,Lao-Lao,Lao-Lao,Q2920743,spirit
+LAO,national liquor,1,Lao-Lao,Lao-Lao,Q2920743,spirit
+LBN,national drink,1,Arak,Arak (drink),Q330880,anise
+LBN,national liquor,1,Arak,Arak (drink),Q330880,anise
+LBR,national drink,1,Ginger beer,Ginger beer,Q1448819,soft
+LBY,national drink,1,Libyan tea,Libyan tea,Q28162884,tea
+LBY,national drink,2,Arabic coffee,Arabic coffee,Q1150728,coffee
+LCA,national drink,1,Rum,Rum,Q83376,rum
+LIE,national drink,1,Blauburgunder,,,unclassified
+LKA,national drink,1,Tea,Tea,Q6097,tea
+LKA,national liquor,1,Arrack,Arrack,Q1458114,spirit
+LKA,national liquor,2,Toddy,Palm wine,Q839492,trad
+LSO,national drink,1,Tholoana,,,unclassified
+LTU,national drink,1,Midus,Midus,Q16891242,trad
+LTU,national drink,2,Gira,Kvass,Q173773,trad
+LUX,national drink,1,Crémant,Sparkling wine,Q321263,wine
+LVA,national drink,1,Riga Black Balsam,Riga Black Balsam,Q1539410,liqueur
+LVA,national liquor,1,Riga Black Balsam,Riga Black Balsam,Q1539410,liqueur
+MAR,national drink,1,Moroccan mint tea,Maghrebi mint tea,Q937101,tea
+MAR,national drink,2,Green tea,Green tea,Q484083,tea
+MCO,national drink,1,Champagne,Champagne,Q134862,wine
+MDA,national drink,1,Divin,,,unclassified
+MDG,national drink,1,Rum,Rum,Q83376,rum
+MDV,national drink,1,Toddy tapped from palm trees,Palm wine,Q839492,trad
+MEX,national drink,1,Tequila,Tequila,Q122195,agave
+MEX,national drink,2,Margarita,Margarita,Q657621,cocktail
+MEX,national drink,3,Aguas Frescas,Agua fresca,Q4694505,soft
+MEX,national drink,4,Jamaica,Hibiscus tea,Q940047,tea
+MEX,national drink,5,Horchata,Horchata,Q2889371,soft
+MEX,national drink,6,Hot chocolate,Hot chocolate,Q13261,soft
+MEX,national liquor,1,Tequila,Tequila,Q122195,agave
+MEX,national liquor,2,Mezcal,Mezcal,Q726413,agave
+MEX,national liquor,3,Pulque,Pulque,Q511700,trad
+MEX,national liquor,4,Brandy,Brandy,Q146470,brandy
+MHL,national drink,1,Coconut Water,Coconut water,Q633401,soft
+MKD,national drink,1,Rakija,Rakia,Q931946,brandy
+MKD,national drink,2,Boza,Boza,Q744983,trad
+MKD,national liquor,1,Rakija,Rakia,Q931946,brandy
+MKD,national liquor,2,Mastika,Mastika,Q569332,liqueur
+MLI,national drink,1,Green tea,Green tea,Q484083,tea
+MLT,national drink,1,Kinnie,Kinnie,Q1245719,soft
+MMR,national drink,1,Lahpet yay,,,tea
+MNE,national drink,1,Rakija,Rakia,Q931946,brandy
+MNE,national liquor,1,Rakija,Rakia,Q931946,brandy
+MNG,national drink,1,Fermented dairy product,List of fermented milk products,Q3506176,soft
+MNG,national drink,2,Mare's milk,Mare milk,Q2011964,soft
+MNG,national liquor,1,Kumis,Kumis,Q61081,trad
+MNP,national drink,1,Michelob Ultra,Beer,Q44,beer
+MOZ,national drink,1,Tipo Tinto,,,unclassified
+MRT,national drink,1,Tea,Tea,Q6097,tea
+MRT,national drink,2,Zrig,Zrig,Q139626598,soft
+MUS,national drink,1,Alouda,,,soft
+MWI,national drink,1,Thobwa,Thobwa,Q18394202,soft
+MYS,national drink,1,Teh tarik,Teh tarik,Q3174775,tea
+MYS,national drink,2,Milk tea,Milk tea,Q1884224,tea
+MYS,national drink,3,Black tea,Black tea,Q203415,tea
+MYS,national liquor,1,Tuak,Tuak,Q12683133,spirit
+NAM,national drink,1,Beer,Beer,Q44,beer
+NCL,national drink,1,Wine,Wine,Q282,wine
+NER,national drink,1,Biere,Wheat beer,Q131413,beer
+NFK,national drink,1,Beer,Beer,Q44,beer
+NFK,national drink,2,Wine,Wine,Q282,wine
+NGA,national drink,1,Akpeteshie,Akpeteshie,Q2829131,spirit
+NIC,national drink,1,Macuá,Macuá,Q1883068,cocktail
+NIC,national liquor,1,Rum,Rum,Q83376,rum
+NIU,national drink,1,Coconut Water,Coconut water,Q633401,soft
+NLD,national drink,1,Jenever,Jenever,Q80680,spirit
+NLD,national drink,2,Heineken,Heineken,Q854383,beer
+NLD,national liquor,1,Jenever,Jenever,Q80680,spirit
+NOR,national drink,1,Akvavit,Akvavit,Q178899,spirit
+NOR,national drink,2,Solo,Solo (Norwegian soft drink),Q504281,soft
+NOR,national liquor,1,Akevitt,Akvavit,Q178899,spirit
+NPL,national drink,1,Raksi,Raksi,Q2530402,spirit
+NPL,national drink,2,Sake,Sake,Q170219,rice
+NPL,national drink,3,Tongba,Tongba,Q2658587,alcohol
+NPL,national liquor,1,Raksi,Raksi,Q2530402,spirit
+NPL,national liquor,2,Chhaang,Chhaang,Q2736566,trad
+NRU,national drink,1,Iced Coffee,Iced coffee,Q968554,soft
+NZL,national drink,1,L&P,Lemon & Paeroa,Q1817063,soft
+NZL,national drink,2,Instant Coffee,Instant coffee,Q858049,coffee
+NZL,national liquor,1,Rum,Rum,Q83376,rum
+OMN,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+PAK,national drink,1,Sugarcane juice,Sugarcane juice,Q718680,soft
+PAN,national drink,1,Seco Herrerano,Seco Herrerano,Q7442947,alcohol
+PAN,national liquor,1,Seco Herrerano,Seco Herrerano,Q7442947,spirit
+PCN,national drink,1,Ti' punch,Ti' punch,Q3527971,cocktail
+PER,national drink,1,Pisco sour,Pisco sour,Q673012,cocktail
+PER,national liquor,1,Pisco,Pisco,Q388502,brandy
+PHL,national drink,1,Beer,,,beer
+PHL,national liquor,1,Gin,Gin,Q959362,gin
+PLW,national drink,1,Coconut Water,Coconut water,Q633401,soft
+PNG,national drink,1,Kava,,,soft
+POL,national drink,1,Vodka,Vodka,Q374,vodka
+POL,national drink,2,Bison grass vodka,Żubrówka,Q393188,vodka
+POL,national drink,3,Krupnik,Krupnik,Q1542656,liqueur
+POL,national drink,4,Nalewka,Nalewka,Q2655726,alcohol
+POL,national drink,5,Piołunówka,Piołunówka,Q923642,alcohol
+POL,national drink,6,Polish meads,Mead in Poland,Q30315063,soft
+POL,national liquor,1,Nalewka,Nalewka,Q2655726,spirit
+POL,national liquor,2,Krupnik,Krupnik,Q1542656,liqueur
+POL,national liquor,3,Vodka,Vodka,Q374,vodka
+POL,national liquor,4,Mead,Mead in Poland,Q30315063,spirit
+PRI,national drink,1,Piña colada,Piña colada,Q745886,cocktail
+PRI,national liquor,1,Pitorro,,,spirit
+PRK,national drink,1,Soju,Soju,Q696105,asian
+PRK,national liquor,1,Pyongyang Soju,,,spirit
+PRT,national drink,1,Port wine,Port wine,Q191034,wine
+PRT,national drink,2,Fortified wine,Fortified wine,Q722338,wine
+PRT,national drink,3,Dessert wine,Dessert wine,Q1200945,wine
+PRT,national liquor,1,Madeira wine,Madeira wine,Q27697,wine
+PRT,national liquor,2,Port wine,Port wine,Q191034,wine
+PRT,national liquor,3,Ginjinha,Ginjinha,Q1525038,liqueur
+PRT,national liquor,4,Jeropiga,Jeropiga,Q10306711,spirit
+PRT,national liquor,5,Licor Beirão,Licor Beirão,Q6543535,liqueur
+PRY,national drink,1,Mate,Mate (drink),Q203540,soft
+PRY,national liquor,1,Caña blanca,Aguardiente,Q397926,brandy
+PSE,national drink,1,Coffee,Coffee,Q8486,coffee
+PSE,national drink,2,Arak,Arak (drink),Q330880,anise
+PSE,national drink,3,Mint lemonade,Mint lemonade,Q13287,soft
+PSE,national liquor,1,Arak,Arak (drink),Q330880,anise
+PYF,national drink,1,Lager,Lager,Q253481,beer
+QAT,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+ROU,national drink,1,Țuică,Țuică,Q423425,brandy
+ROU,national drink,2,Fruit brandy,Fruit brandy,Q222216,brandy
+RUS,national drink,1,Kvass,Kvass,Q173773,trad
+RUS,national drink,2,Vodka,Vodka,Q374,vodka
+RUS,national drink,3,Kompot,Kompot,Q1650718,soft
+RUS,national liquor,1,Vodka,Vodka,Q374,vodka
+RWA,national drink,1,Ikigage,,,unclassified
+SAU,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+SDN,national drink,1,Roselle,Hibiscus tea,Q940047,tea
+SDN,national drink,2,Araqi,Araqi (drink),Q4784246,brandy
+SEN,national drink,1,Bissap,Hibiscus tea,Q940047,tea
+SGP,national drink,1,Kopi,Kopi (drink),Q6431091,soft
+SGP,national drink,2,Coffee,Coffee,Q8486,coffee
+SGP,national drink,3,Milk,Milk,Q8495,soft
+SLB,national drink,1,Kava,,,soft
+SLE,national drink,1,Poyo,,,unclassified
+SLV,national drink,1,Pilsener,Pilsner,Q152281,beer
+SLV,national liquor,1,Chaparro,,,spirit
+SMR,national drink,1,Biancale,,,unclassified
+SOM,national drink,1,Camel milk,Camel milk,Q623636,soft
+SRB,national drink,1,Rakija,Rakia,Q931946,brandy
+SRB,national drink,2,Šljivovica,Slivovitz,Q368610,brandy
+SRB,national liquor,1,Rakija,Rakia,Q931946,brandy
+SRB,national liquor,2,Šljivovica,Slivovitz,Q368610,brandy
+SSD,national drink,1,Araqi,Araqi (drink),Q4784246,brandy
+STP,national drink,1,Palm Wine,Palm wine,Q839492,trad
+SUR,national drink,1,Kasiri,Kasiri,Q2020335,alcohol
+SVK,national drink,1,Borovička,Borovička,Q223669,gin
+SVK,national drink,2,Kofola,Kofola,Q14955,soft
+SVK,national liquor,1,Slivovica,Slivovitz,Q368610,brandy
+SVK,national liquor,2,Borovička,Borovička,Q223669,gin
+SVN,national drink,1,Schnapps,Schnapps,Q1815494,spirit
+SWE,national drink,1,Brännvin,Brännvin,Q510461,spirit
+SWE,national drink,2,Punsch,Punsch,Q3053239,liqueur
+SWE,national drink,3,Akvavit,Akvavit,Q178899,spirit
+SWE,national drink,4,Julmust,Julmust,Q251113,soft
+SWE,national drink,5,Pommac,Pommac,Q2470605,soft
+SWE,national drink,6,Champis,Champis,Q2955902,soft
+SWE,national drink,7,Vodka,Vodka,Q374,vodka
+SWE,national liquor,1,Brännvin,Brännvin,Q510461,spirit
+SWE,national liquor,2,Akvavit,Akvavit,Q178899,spirit
+SWE,national liquor,3,Snaps,Snaps,Q4166575,cocktail
+SWE,national liquor,4,Punsch,Punsch,Q3053239,liqueur
+SWZ,national drink,1,Sibebe,,,unclassified
+SYC,national drink,1,Buka,,,unclassified
+SYR,national drink,1,Coffee,Coffee,Q8486,coffee
+SYR,national drink,2,Arak,Arak (drink),Q330880,anise
+SYR,national liquor,1,Arak,Arak (drink),Q330880,anise
+TCD,national drink,1,Tea,Tea,Q6097,tea
+TGO,national drink,1,Tchakpallo,,,unclassified
+THA,national drink,1,Krating Daeng,Krating Daeng,Q508686,soft
+THA,national drink,2,Red Bull,Red Bull,Q51482,soft
+THA,national liquor,1,Lao Khao,Lao khao,Q1805687,spirit
+THA,national liquor,2,Sato,Sato (drink),Q3110669,rice
+THA,national liquor,3,Mekhong whiskey,Mekhong (spirit),Q4926273,spirit
+THA,national liquor,4,Namtanmao,Palm wine,Q839492,trad
+THA,national liquor,5,Sang Som,SangSom,Q2067752,spirit
+TJK,national drink,1,Green tea,Green tea,Q484083,tea
+TKM,national drink,1,Chal,Chal,Q1045836,soft
+TLS,national drink,1,Arrak,Arrack,Q1458114,spirit
+TON,national drink,1,Kava,,,soft
+TTO,national drink,1,Queen's Park Swizzle,,,unclassified
+TUN,national drink,1,Tea,,,tea
+TUR,national drink,1,Raki,Rakı,Q638290,anise
+TUR,national drink,2,Ayran,Doogh,Q105653630,soft
+TUR,national liquor,1,Rakı,Rakı,Q638290,anise
+TUV,national drink,1,Kava,,,soft
+TWN,national liquor,1,Kaoliang liquor,Kaoliang liquor,Q906494,asian
+UGA,national drink,1,Waragi,Waragi,Q486760,spirit
+UKR,national drink,1,Horilka,Horilka,Q2919495,vodka
+UKR,national drink,2,Kvass,Kvass,Q173773,trad
+UKR,national drink,3,Kompot,Kompot,Q1650718,soft
+UKR,national liquor,1,Horilka,Horilka,Q2919495,vodka
+URY,national drink,1,Mate,Mate (drink),Q203540,soft
+URY,national drink,2,Grappamiel,Grappamiel,Q5884988,liqueur
+URY,national drink,3,Amaro,Amaro (liqueur),Q778524,liqueur
+URY,national drink,4,Schnaps,Schnapps,Q1815494,spirit
+URY,national liquor,1,Grappamiel,Grappamiel,Q5884988,liqueur
+URY,national liquor,2,Grappa,Grappa,Q693078,brandy
+USA,national drink,1,Coffee,Coffee,Q8486,coffee
+USA,national drink,2,Coca-Cola,Coca-Cola,Q2813,soft
+USA,national drink,3,Bourbon,Bourbon whiskey,Q543127,whisky
+USA,national liquor,1,Bourbon Whiskey,Bourbon whiskey,Q543127,whisky
+UZB,national drink,1,Green tea,Green tea,Q484083,tea
+VAT,national drink,1,Wine,Wine,Q282,wine
+VCT,national drink,1,Apple Juice,Apple juice,Q618355,soft
+VEN,national drink,1,Rum,,,unclassified
+VEN,national liquor,1,Rum,Rum,Q83376,rum
+VEN,national liquor,2,Cocuy,Cocuy,Q4227483,spirit
+VNM,national drink,1,Cà phê đá,Vietnamese iced coffee,Q2673042,soft
+VNM,national liquor,1,Rượu đế,Rượu đế,Q7386961,spirit
+VNM,national liquor,2,Rượu thuốc,Rượu thuốc,Q7386960,spirit
+VUT,national drink,1,Kava drink,,,soft
+WLF,national drink,1,Kava,,,soft
+WSM,national drink,1,Kava,,,soft
+XKX,national drink,1,Rakia,Rakia,Q931946,brandy
+YEM,national drink,1,Arabic coffee,Arabic coffee,Q1150728,coffee
+YEM,national drink,2,Qishr,Qishr,Q7267922,soft
+ZAF,national drink,1,Beer,Beer,Q44,beer
+ZMB,national drink,1,Munkoyo,Munkoyo,Q1946993,alcohol
+ZWE,national drink,1,Chibuku,Chibuku,Q19903812,soft
